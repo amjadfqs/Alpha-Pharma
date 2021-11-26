@@ -31,6 +31,7 @@ namespace Alpha_Pharma.Classes
                     using (SqlDataAdapter adapter = new SqlDataAdapter(com))
                     {
                         adapter.Fill(dataTable);
+
                     }
                 }
             }
