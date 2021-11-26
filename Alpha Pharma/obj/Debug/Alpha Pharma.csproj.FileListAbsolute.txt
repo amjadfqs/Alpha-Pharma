@@ -78,3 +78,6 @@ C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Man
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.SuppilerUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Properties.Resources.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csproj.GenerateResource.Cache
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe.config
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.exe
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.pdb
