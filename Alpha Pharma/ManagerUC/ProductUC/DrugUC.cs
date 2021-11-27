@@ -10,6 +10,10 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
         private static string myconn = Properties.Settings.Default.Pharmacy_dbConnectionString;
 
         private Drug drug = new Drug();
+        // private Dose dose = new Dose();
+        // private Section section = new Section();
+        // private For form = new For();
+
         public DrugUC()
         {
             InitializeComponent();
@@ -24,9 +28,9 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
                 try
                 {
                     drug.DrugName = txb_DrugN.Text;
-                    drug.Section = combo_SecID.Text;
-                    drug.Form = combo_FormID.Text;
-                    drug.Dose = combo_DoseID.Text;
+                    drug.Section = combo_SecID.SelectedValue.ToString();
+                    drug.Form = combo_FormID.SelectedValue.ToString();
+                    drug.Dose = combo_DoseID.SelectedValue.ToString();
 
                     bool success = drug.InsertDrug(drug);
                     dgv_drug_info.DataSource = Drug.GetDrug();
@@ -53,8 +57,6 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
             {
                 MessageBox.Show("Please Fill All Fields");
             }
-           
-            
         }
 
 
@@ -65,9 +67,9 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
             {
                 drug.ID = lb_DID.Text;
                 drug.DrugName = txb_DrugN.Text;
-                drug.Section = combo_SecID.Text;
-                drug.Form = combo_FormID.Text;
-                drug.Dose = combo_DoseID.Text;
+                drug.Section = combo_SecID.SelectedValue.ToString();
+                drug.Form = combo_FormID.SelectedValue.ToString();
+                drug.Dose = combo_DoseID.SelectedValue.ToString();
 
                 bool success = drug.UpdateDrug(drug);
                 dgv_drug_info.DataSource = Drug.GetDrug();
@@ -130,45 +132,21 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
 
         private void DrugUC_Load(object sender, EventArgs e)
         {
-            string DQ = "select dos_qty from Doses";
-            string SQ = "select sec_name from Sections";
-            string FQ = "select for_name from Forms";
 
-            using (SqlConnection con = new SqlConnection(myconn))
-            {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(DQ, con))
-                {
-                    using (SqlDataReader DR = com.ExecuteReader())
-                    {
-                        while (DR.Read())
-                        {
-                            combo_DoseID.Items.Add(DR[0]);
-                        }
-                    }
-                }
-                using (SqlCommand com = new SqlCommand(SQ, con))
-                {
-                    using (SqlDataReader DR = com.ExecuteReader())
-                    {
-                        while (DR.Read())
-                        {
-                            combo_SecID.Items.Add(DR[0]);
-                        }
-                    }
-                }
-                using (SqlCommand com = new SqlCommand(FQ, con))
-                {
-                    using (SqlDataReader DR = com.ExecuteReader())
-                    {
-                        while (DR.Read())
-                        {
-                            combo_FormID.Items.Add(DR[0]);
-                        }
-                    }
-                }
-            }
+            combo_DoseID.DataSource = Dose.GetDose();
+            combo_DoseID.DisplayMember = "DoseQuantity";
+            combo_DoseID.ValueMember = "ID";
+            combo_DoseID.SelectedIndex = -1;
 
+            combo_SecID.DataSource = Section.GetSection();
+            combo_SecID.DisplayMember = "SectionName";
+            combo_SecID.ValueMember = "ID";
+            combo_SecID.SelectedIndex = -1;
+
+            combo_FormID.DataSource = For.GetForm();
+            combo_FormID.DisplayMember = "FormName";
+            combo_FormID.ValueMember = "ID";
+            combo_FormID.SelectedIndex = -1;
         }
 
         private void dgv_drug_info_CellClick(object sender, DataGridViewCellEventArgs e)
