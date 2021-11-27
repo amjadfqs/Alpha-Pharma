@@ -19,17 +19,15 @@ namespace Alpha_Pharma.Classes
             "Join Forms AS F ON P.for_id = F.for_id " +
             "Join Doses AS D ON P.dos_id = D.dos_id ";
 
-        private const string InsertQuery = "Insert Into Products(pro_name, sec_id, for_id, dos_id ) Values (@DrugName," +
-                                           "(select sec_id from Sections where sec_name = @Section)," +
-                                           "(select for_id from Forms where for_name = @Form), " +
-                                           "(select dos_id from Doses where dos_qty = @Dose))";
+
+        private const string InsertQuery = "Insert Into Products(pro_name, sec_id, for_id, dos_id ) Values (@DrugName,@Section,@Form,@Dose)";
 
         private const string UpdateQuery = "Update Products set pro_name = @DrugName, " +
-                                           "sec_id = (select sec_id from Sections where sec_name = @Section)," +
-                                           "for_id = (select for_id from Forms where for_name = @Form), " +
-                                           "dos_id = (select dos_id from Doses where dos_qty = @Dose)" +
+                                           "sec_id =  @Section," +
+                                           "for_id =  @Form, " +
+                                           "dos_id =  @Dose " +
                                            "where pro_id = @ID";
-
+        
         private const string DeleteQuery = "Delete from Products where pro_id = @ID";
 
 
