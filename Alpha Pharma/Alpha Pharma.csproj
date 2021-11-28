@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Classes\Dose.cs" />
     <Compile Include="Classes\Drug.cs" />
+    <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\For.cs" />
     <Compile Include="Classes\Section.cs" />
     <Compile Include="Classes\User.cs" />
