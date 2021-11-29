@@ -32,7 +32,7 @@
             this.sec_mana = new Guna.UI2.WinForms.Guna2Button();
             this.form_Mana = new Guna.UI2.WinForms.Guna2Button();
             this.dose_Mana = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.drug_Mana = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.sec_mana.CheckedState.Parent = this.sec_mana;
             this.sec_mana.CustomImages.Parent = this.sec_mana;
             this.sec_mana.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.sec_mana.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sec_mana.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sec_mana.ForeColor = System.Drawing.Color.White;
             this.sec_mana.HoverState.Parent = this.sec_mana;
             this.sec_mana.Location = new System.Drawing.Point(540, 24);
@@ -72,7 +72,7 @@
             this.form_Mana.CheckedState.Parent = this.form_Mana;
             this.form_Mana.CustomImages.Parent = this.form_Mana;
             this.form_Mana.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.form_Mana.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.form_Mana.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.form_Mana.ForeColor = System.Drawing.Color.White;
             this.form_Mana.HoverState.Parent = this.form_Mana;
             this.form_Mana.Location = new System.Drawing.Point(360, 24);
@@ -91,7 +91,7 @@
             this.dose_Mana.CheckedState.Parent = this.dose_Mana;
             this.dose_Mana.CustomImages.Parent = this.dose_Mana;
             this.dose_Mana.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.dose_Mana.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dose_Mana.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dose_Mana.ForeColor = System.Drawing.Color.White;
             this.dose_Mana.HoverState.Parent = this.dose_Mana;
             this.dose_Mana.Location = new System.Drawing.Point(180, 24);
@@ -102,29 +102,29 @@
             this.dose_Mana.Text = "Dose";
             this.dose_Mana.Click += new System.EventHandler(this.dose_Mana_Click);
             // 
-            // guna2Button2
+            // drug_Mana
             // 
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.guna2Button2.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 24);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(174, 36);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Drugs";
-            this.guna2Button2.Click += new System.EventHandler(this.drug_Mana);
+            this.drug_Mana.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.drug_Mana.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.drug_Mana.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.drug_Mana.CheckedState.Parent = this.drug_Mana;
+            this.drug_Mana.CustomImages.Parent = this.drug_Mana;
+            this.drug_Mana.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.drug_Mana.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drug_Mana.ForeColor = System.Drawing.Color.White;
+            this.drug_Mana.HoverState.Parent = this.drug_Mana;
+            this.drug_Mana.Location = new System.Drawing.Point(0, 24);
+            this.drug_Mana.Name = "drug_Mana";
+            this.drug_Mana.ShadowDecoration.Parent = this.drug_Mana;
+            this.drug_Mana.Size = new System.Drawing.Size(174, 36);
+            this.drug_Mana.TabIndex = 1;
+            this.drug_Mana.Text = "Drugs";
+            this.drug_Mana.Click += new System.EventHandler(this.drug_Mana_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.panel1.Controls.Add(this.guna2Button2);
+            this.panel1.Controls.Add(this.drug_Mana);
             this.panel1.Controls.Add(this.dose_Mana);
             this.panel1.Controls.Add(this.form_Mana);
             this.panel1.Controls.Add(this.sec_mana);
@@ -152,7 +152,7 @@
         private Guna.UI2.WinForms.Guna2Button sec_mana;
         private Guna.UI2.WinForms.Guna2Button form_Mana;
         private Guna.UI2.WinForms.Guna2Button dose_Mana;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button drug_Mana;
         private System.Windows.Forms.Panel panel1;
     }
 }

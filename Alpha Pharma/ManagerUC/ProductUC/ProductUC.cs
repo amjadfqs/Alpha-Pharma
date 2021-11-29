@@ -25,11 +25,6 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
             userControl.BringToFront();
         }
 
-        private void drug_Mana(object sender, EventArgs e)
-        {
-            DrugUC uc = new DrugUC();
-            openUserControl(uc);
-        }
 
         private void dose_Mana_Click(object sender, EventArgs e)
         {
@@ -46,6 +41,12 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
         private void sec_mana_Click(object sender, EventArgs e)
         {
             SectionUC uc = new SectionUC();
+            openUserControl(uc);
+        }
+
+        private void drug_Mana_Click(object sender, EventArgs e)
+        {
+            DrugUC uc = new DrugUC();
             openUserControl(uc);
         }
     }
