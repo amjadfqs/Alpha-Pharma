@@ -28,7 +28,6 @@ namespace Alpha_Pharma
 
             if (type_user == "Manager")
             {
-                MessageBox.Show(type_user);
                 new Manager().ShowDialog();
             }
             else if (type_user == "Admin")

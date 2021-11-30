@@ -88,7 +88,7 @@
             this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Employee_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Employee_info.EnableHeadersVisualStyles = false;
-            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Employee_info.Location = new System.Drawing.Point(0, 0);
             this.dgv_Employee_info.Name = "dgv_Employee_info";
             this.dgv_Employee_info.ReadOnly = true;
@@ -105,7 +105,7 @@
             this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.dgv_Employee_info.RowTemplate.Height = 24;
             this.dgv_Employee_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 639);
+            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 545);
             this.dgv_Employee_info.TabIndex = 4;
             this.dgv_Employee_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -114,7 +114,7 @@
             this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgv_Employee_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Employee_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
             this.dgv_Employee_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_Employee_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -156,19 +156,20 @@
             this.txb_Emp_email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.FocusedState.Parent = this.txb_Emp_email;
-            this.txb_Emp_email.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_email.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_email.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.HoverState.Parent = this.txb_Emp_email;
-            this.txb_Emp_email.Location = new System.Drawing.Point(434, 67);
+            this.txb_Emp_email.Location = new System.Drawing.Point(434, 62);
             this.txb_Emp_email.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Emp_email.Name = "txb_Emp_email";
             this.txb_Emp_email.PasswordChar = '\0';
             this.txb_Emp_email.PlaceholderText = "Email";
             this.txb_Emp_email.SelectedText = "";
             this.txb_Emp_email.ShadowDecoration.Parent = this.txb_Emp_email;
-            this.txb_Emp_email.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_email.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_email.TabIndex = 3;
+            this.txb_Emp_email.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // btn_update
             // 
@@ -184,7 +185,7 @@
             this.btn_update.HoverState.Parent = this.btn_update;
             this.btn_update.Image = global::Alpha_Pharma.Properties.Resources.updating;
             this.btn_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_update.Location = new System.Drawing.Point(1118, 88);
+            this.btn_update.Location = new System.Drawing.Point(1118, 79);
             this.btn_update.Name = "btn_update";
             this.btn_update.ShadowDecoration.Parent = this.btn_update;
             this.btn_update.Size = new System.Drawing.Size(125, 40);
@@ -207,7 +208,7 @@
             this.btn_Emp_delete.HoverState.Parent = this.btn_Emp_delete;
             this.btn_Emp_delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
             this.btn_Emp_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Emp_delete.Location = new System.Drawing.Point(1118, 142);
+            this.btn_Emp_delete.Location = new System.Drawing.Point(1118, 133);
             this.btn_Emp_delete.Name = "btn_Emp_delete";
             this.btn_Emp_delete.ShadowDecoration.Parent = this.btn_Emp_delete;
             this.btn_Emp_delete.Size = new System.Drawing.Size(125, 40);
@@ -231,7 +232,7 @@
             this.btn_Emp_clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
             this.btn_Emp_clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Emp_clear.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Emp_clear.Location = new System.Drawing.Point(993, 142);
+            this.btn_Emp_clear.Location = new System.Drawing.Point(993, 133);
             this.btn_Emp_clear.Name = "btn_Emp_clear";
             this.btn_Emp_clear.ShadowDecoration.Parent = this.btn_Emp_clear;
             this.btn_Emp_clear.Size = new System.Drawing.Size(120, 40);
@@ -255,7 +256,7 @@
             this.btn_Emp_Click.Image = global::Alpha_Pharma.Properties.Resources.add;
             this.btn_Emp_Click.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Emp_Click.ImageOffset = new System.Drawing.Point(6, 0);
-            this.btn_Emp_Click.Location = new System.Drawing.Point(993, 89);
+            this.btn_Emp_Click.Location = new System.Drawing.Point(993, 80);
             this.btn_Emp_Click.Name = "btn_Emp_Click";
             this.btn_Emp_Click.ShadowDecoration.Parent = this.btn_Emp_Click;
             this.btn_Emp_Click.Size = new System.Drawing.Size(120, 40);
@@ -269,7 +270,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(241, 157);
+            this.label2.Location = new System.Drawing.Point(241, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 17);
             this.label2.TabIndex = 6;
@@ -280,7 +281,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(440, 157);
+            this.label3.Location = new System.Drawing.Point(440, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 17);
             this.label3.TabIndex = 6;
@@ -291,7 +292,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(34, 157);
+            this.label1.Location = new System.Drawing.Point(34, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 17);
             this.label1.TabIndex = 6;
@@ -310,7 +311,7 @@
             this.compo_Emp_DOB.ForeColor = System.Drawing.Color.White;
             this.compo_Emp_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.compo_Emp_DOB.HoverState.Parent = this.compo_Emp_DOB;
-            this.compo_Emp_DOB.Location = new System.Drawing.Point(434, 177);
+            this.compo_Emp_DOB.Location = new System.Drawing.Point(434, 169);
             this.compo_Emp_DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.compo_Emp_DOB.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.compo_Emp_DOB.Name = "compo_Emp_DOB";
@@ -333,7 +334,7 @@
             this.compo_Emp_position.FocusedColor = System.Drawing.Color.Empty;
             this.compo_Emp_position.FocusedState.Parent = this.compo_Emp_position;
             this.compo_Emp_position.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.compo_Emp_position.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.compo_Emp_position.ForeColor = System.Drawing.Color.White;
             this.compo_Emp_position.FormattingEnabled = true;
             this.compo_Emp_position.HoverState.Parent = this.compo_Emp_position;
             this.compo_Emp_position.ItemHeight = 30;
@@ -341,7 +342,7 @@
             "Manager",
             "Employee"});
             this.compo_Emp_position.ItemsAppearance.Parent = this.compo_Emp_position;
-            this.compo_Emp_position.Location = new System.Drawing.Point(232, 177);
+            this.compo_Emp_position.Location = new System.Drawing.Point(232, 169);
             this.compo_Emp_position.Name = "compo_Emp_position";
             this.compo_Emp_position.ShadowDecoration.Parent = this.compo_Emp_position;
             this.compo_Emp_position.Size = new System.Drawing.Size(190, 36);
@@ -360,7 +361,7 @@
             this.compo_Emp_gender.FocusedColor = System.Drawing.Color.Empty;
             this.compo_Emp_gender.FocusedState.Parent = this.compo_Emp_gender;
             this.compo_Emp_gender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.compo_Emp_gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.compo_Emp_gender.ForeColor = System.Drawing.Color.White;
             this.compo_Emp_gender.FormattingEnabled = true;
             this.compo_Emp_gender.HoverState.Parent = this.compo_Emp_gender;
             this.compo_Emp_gender.ItemHeight = 30;
@@ -368,7 +369,7 @@
             "Male",
             "Female"});
             this.compo_Emp_gender.ItemsAppearance.Parent = this.compo_Emp_gender;
-            this.compo_Emp_gender.Location = new System.Drawing.Point(28, 177);
+            this.compo_Emp_gender.Location = new System.Drawing.Point(28, 169);
             this.compo_Emp_gender.Name = "compo_Emp_gender";
             this.compo_Emp_gender.ShadowDecoration.Parent = this.compo_Emp_gender;
             this.compo_Emp_gender.Size = new System.Drawing.Size(190, 36);
@@ -390,19 +391,20 @@
             this.txb_Emp_phone_no.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_phone_no.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_phone_no.FocusedState.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_phone_no.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_phone_no.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_phone_no.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_phone_no.HoverState.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Location = new System.Drawing.Point(232, 110);
+            this.txb_Emp_phone_no.Location = new System.Drawing.Point(232, 105);
             this.txb_Emp_phone_no.Margin = new System.Windows.Forms.Padding(5);
             this.txb_Emp_phone_no.Name = "txb_Emp_phone_no";
             this.txb_Emp_phone_no.PasswordChar = '\0';
             this.txb_Emp_phone_no.PlaceholderText = "Phone Number";
             this.txb_Emp_phone_no.SelectedText = "";
             this.txb_Emp_phone_no.ShadowDecoration.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_phone_no.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_phone_no.TabIndex = 5;
+            this.txb_Emp_phone_no.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_LN
             // 
@@ -419,19 +421,20 @@
             this.txb_Emp_LN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_LN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_LN.FocusedState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_LN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_LN.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_LN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_LN.HoverState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Location = new System.Drawing.Point(232, 67);
+            this.txb_Emp_LN.Location = new System.Drawing.Point(232, 62);
             this.txb_Emp_LN.Margin = new System.Windows.Forms.Padding(8);
             this.txb_Emp_LN.Name = "txb_Emp_LN";
             this.txb_Emp_LN.PasswordChar = '\0';
             this.txb_Emp_LN.PlaceholderText = "Last Name";
             this.txb_Emp_LN.SelectedText = "";
             this.txb_Emp_LN.ShadowDecoration.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Size = new System.Drawing.Size(189, 30);
+            this.txb_Emp_LN.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_LN.TabIndex = 2;
+            this.txb_Emp_LN.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_salary
             // 
@@ -448,19 +451,20 @@
             this.txb_Emp_salary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_salary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_salary.FocusedState.Parent = this.txb_Emp_salary;
-            this.txb_Emp_salary.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_salary.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_salary.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_salary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_salary.HoverState.Parent = this.txb_Emp_salary;
-            this.txb_Emp_salary.Location = new System.Drawing.Point(28, 111);
+            this.txb_Emp_salary.Location = new System.Drawing.Point(28, 106);
             this.txb_Emp_salary.Margin = new System.Windows.Forms.Padding(8);
             this.txb_Emp_salary.Name = "txb_Emp_salary";
             this.txb_Emp_salary.PasswordChar = '\0';
             this.txb_Emp_salary.PlaceholderText = "Salary";
             this.txb_Emp_salary.SelectedText = "";
             this.txb_Emp_salary.ShadowDecoration.Parent = this.txb_Emp_salary;
-            this.txb_Emp_salary.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_salary.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_salary.TabIndex = 4;
+            this.txb_Emp_salary.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_FN
             // 
@@ -477,19 +481,20 @@
             this.txb_Emp_FN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_FN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_FN.FocusedState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_FN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_FN.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_FN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_FN.HoverState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Location = new System.Drawing.Point(28, 67);
+            this.txb_Emp_FN.Location = new System.Drawing.Point(28, 62);
             this.txb_Emp_FN.Margin = new System.Windows.Forms.Padding(6);
             this.txb_Emp_FN.Name = "txb_Emp_FN";
             this.txb_Emp_FN.PasswordChar = '\0';
             this.txb_Emp_FN.PlaceholderText = "First Name";
             this.txb_Emp_FN.SelectedText = "";
             this.txb_Emp_FN.ShadowDecoration.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_FN.TabIndex = 1;
+            this.txb_Emp_FN.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // guna2GroupBox1
             // 
@@ -517,10 +522,10 @@
             this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 639);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 545);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 236);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 220);
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Employee Managment";
             // 
@@ -532,7 +537,7 @@
             this.Controls.Add(this.dgv_Employee_info);
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "EmployeeUC";
-            this.Size = new System.Drawing.Size(1250, 875);
+            this.Size = new System.Drawing.Size(1250, 765);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();

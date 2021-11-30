@@ -72,6 +72,12 @@
     <Compile Include="ManagerUC\CustomerUC.Designer.cs">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\Emp - User\Emp - User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\Emp - User\Emp - User.Designer.cs">
+      <DependentUpon>Emp - User.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerUC\ProductUC\DoseUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,10 +90,10 @@
     <Compile Include="ManagerUC\ProductUC\DrugUC.Designer.cs">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUC\EmployeeUC.cs">
+    <Compile Include="ManagerUC\Emp - User\EmployeeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManagerUC\EmployeeUC.Designer.cs">
+    <Compile Include="ManagerUC\Emp - User\EmployeeUC.Designer.cs">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUC\ProductUC\FormUC.cs">
@@ -114,6 +120,12 @@
     <Compile Include="ManagerUC\SuppilerUC.Designer.cs">
       <DependentUpon>SuppilerUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\Emp - User\UserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\Emp - User\UserUC.Designer.cs">
+      <DependentUpon>UserUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Login.resx">
@@ -125,13 +137,19 @@
     <EmbeddedResource Include="ManagerUC\CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\Emp - User\Emp - User.resx">
+      <DependentUpon>Emp - User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\Emp - User\UserUC.resx">
+      <DependentUpon>UserUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\DoseUC.resx">
       <DependentUpon>DoseUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\DrugUC.resx">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUC\EmployeeUC.resx">
+    <EmbeddedResource Include="ManagerUC\Emp - User\EmployeeUC.resx">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\FormUC.resx">

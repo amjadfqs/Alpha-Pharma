@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Alpha_Pharma.ManagerUC;
+using Alpha_Pharma.ManagerUC.Emp___User;
 using Alpha_Pharma.ManagerUC.ProductUC;
 
 namespace Alpha_Pharma
@@ -29,7 +30,7 @@ namespace Alpha_Pharma
 
         private void btn_EmpMana_Click(object sender, EventArgs e)
         {
-            EmployeeUC uc = new EmployeeUC();
+            Emp___User uc = new Emp___User();
             openUserControl(uc);
         }
 
