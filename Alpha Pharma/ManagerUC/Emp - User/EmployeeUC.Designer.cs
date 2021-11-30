@@ -156,7 +156,7 @@
             this.txb_Emp_email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.FocusedState.Parent = this.txb_Emp_email;
-            this.txb_Emp_email.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_email.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_email.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.HoverState.Parent = this.txb_Emp_email;
@@ -167,8 +167,9 @@
             this.txb_Emp_email.PlaceholderText = "Email";
             this.txb_Emp_email.SelectedText = "";
             this.txb_Emp_email.ShadowDecoration.Parent = this.txb_Emp_email;
-            this.txb_Emp_email.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_email.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_email.TabIndex = 3;
+            this.txb_Emp_email.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // btn_update
             // 
@@ -390,7 +391,7 @@
             this.txb_Emp_phone_no.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_phone_no.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_phone_no.FocusedState.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_phone_no.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_phone_no.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_phone_no.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_phone_no.HoverState.Parent = this.txb_Emp_phone_no;
@@ -401,8 +402,9 @@
             this.txb_Emp_phone_no.PlaceholderText = "Phone Number";
             this.txb_Emp_phone_no.SelectedText = "";
             this.txb_Emp_phone_no.ShadowDecoration.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_phone_no.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_phone_no.TabIndex = 5;
+            this.txb_Emp_phone_no.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_LN
             // 
@@ -419,7 +421,7 @@
             this.txb_Emp_LN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_LN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_LN.FocusedState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_LN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_LN.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_LN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_LN.HoverState.Parent = this.txb_Emp_LN;
@@ -430,8 +432,9 @@
             this.txb_Emp_LN.PlaceholderText = "Last Name";
             this.txb_Emp_LN.SelectedText = "";
             this.txb_Emp_LN.ShadowDecoration.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Size = new System.Drawing.Size(189, 30);
+            this.txb_Emp_LN.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_LN.TabIndex = 2;
+            this.txb_Emp_LN.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_salary
             // 
@@ -448,7 +451,7 @@
             this.txb_Emp_salary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_salary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_salary.FocusedState.Parent = this.txb_Emp_salary;
-            this.txb_Emp_salary.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_salary.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_salary.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_salary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_salary.HoverState.Parent = this.txb_Emp_salary;
@@ -459,8 +462,9 @@
             this.txb_Emp_salary.PlaceholderText = "Salary";
             this.txb_Emp_salary.SelectedText = "";
             this.txb_Emp_salary.ShadowDecoration.Parent = this.txb_Emp_salary;
-            this.txb_Emp_salary.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_salary.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_salary.TabIndex = 4;
+            this.txb_Emp_salary.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // txb_Emp_FN
             // 
@@ -477,7 +481,7 @@
             this.txb_Emp_FN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_FN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_FN.FocusedState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_FN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Emp_FN.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_FN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_FN.HoverState.Parent = this.txb_Emp_FN;
@@ -488,8 +492,9 @@
             this.txb_Emp_FN.PlaceholderText = "First Name";
             this.txb_Emp_FN.SelectedText = "";
             this.txb_Emp_FN.ShadowDecoration.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 30);
+            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_FN.TabIndex = 1;
+            this.txb_Emp_FN.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // guna2GroupBox1
             // 
