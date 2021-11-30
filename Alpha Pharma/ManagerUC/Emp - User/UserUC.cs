@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
@@ -42,24 +43,32 @@ namespace Alpha_Pharma.ManagerUC
 
         private void txb_Sphone_TextChanged(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(myconn))
+            if (txb_Sphone.Text.All(char.IsDigit))
             {
-                con.Open();
-                using (SqlCommand com = new SqlCommand("Select emp_id, emp_fname, emp_lname, emp_position from Employees where emp_phone = @Phone", con))
+                using (SqlConnection con = new SqlConnection(myconn))
                 {
-                    com.Parameters.AddWithValue("@Phone", txb_Sphone.Text);
-
-                    using (SqlDataReader DR = com.ExecuteReader())
+                    con.Open();
+                    using (SqlCommand com = new SqlCommand("Select emp_id, emp_fname, emp_lname, emp_position from Employees where emp_phone = @Phone", con))
                     {
-                        while (DR.Read())
+                        com.Parameters.AddWithValue("@Phone", txb_Sphone.Text);
+
+                        using (SqlDataReader DR = com.ExecuteReader())
                         {
-                            txb_ID.Text = DR.GetValue(0).ToString();
-                            txb_Fname.Text = DR.GetValue(1).ToString();
-                            txb_Lname.Text = DR.GetValue(2).ToString();
-                            txb_posi.Text = DR.GetValue(3).ToString();
+                            while (DR.Read())
+                            {
+                                txb_ID.Text = DR.GetValue(0).ToString();
+                                txb_Fname.Text = DR.GetValue(1).ToString();
+                                txb_Lname.Text = DR.GetValue(2).ToString();
+                                txb_posi.Text = DR.GetValue(3).ToString();
+                            }
                         }
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Please Enter only numbers!");
+                txb_Sphone.Text = "";
             }
         }
 
@@ -110,6 +119,7 @@ namespace Alpha_Pharma.ManagerUC
             {
                 try
                 {
+                    user.ID = txb_ID.Text;
                     user.UserName = txb_username.Text;
                     user.Password = txb_pass.Text;
                     user.Type = txb_posi.Text;
@@ -187,13 +197,20 @@ namespace Alpha_Pharma.ManagerUC
 
         private void dgv_user_info_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            var index = e.RowIndex;
-            txb_ID.Text = dgv_user_info.Rows[index].Cells[0].Value.ToString();
-            txb_Fname.Text = dgv_user_info.Rows[index].Cells[1].Value.ToString();
-            txb_Lname.Text = dgv_user_info.Rows[index].Cells[2].Value.ToString();
-            txb_username.Text = dgv_user_info.Rows[index].Cells[3].Value.ToString();
-            txb_pass.Text = dgv_user_info.Rows[index].Cells[4].Value.ToString();
-            txb_posi.Text = dgv_user_info.Rows[index].Cells[5].Value.ToString();
+            try
+            {
+                var index = e.RowIndex;
+                txb_ID.Text = dgv_user_info.Rows[index].Cells[0].Value.ToString();
+                txb_Fname.Text = dgv_user_info.Rows[index].Cells[1].Value.ToString();
+                txb_Lname.Text = dgv_user_info.Rows[index].Cells[2].Value.ToString();
+                txb_username.Text = dgv_user_info.Rows[index].Cells[3].Value.ToString();
+                txb_pass.Text = dgv_user_info.Rows[index].Cells[4].Value.ToString();
+                txb_posi.Text = dgv_user_info.Rows[index].Cells[5].Value.ToString();
+            }
+            catch (Exception)
+            {
+                return;
+            }
         }
     }
 }
