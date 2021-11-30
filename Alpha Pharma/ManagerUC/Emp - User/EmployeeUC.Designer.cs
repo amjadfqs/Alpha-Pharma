@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lb_Emp_id = new System.Windows.Forms.Label();
             this.txb_Emp_email = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_update = new Guna.UI2.WinForms.Guna2Button();
@@ -50,86 +49,10 @@
             this.txb_Emp_salary = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_FN = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).BeginInit();
+            this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgv_Employee_info
-            // 
-            this.dgv_Employee_info.AllowUserToAddRows = false;
-            this.dgv_Employee_info.AllowUserToDeleteRows = false;
-            this.dgv_Employee_info.AllowUserToResizeColumns = false;
-            this.dgv_Employee_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_Employee_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Employee_info.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_Employee_info.CausesValidation = false;
-            this.dgv_Employee_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Employee_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Employee_info.ColumnHeadersHeight = 27;
-            this.dgv_Employee_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_Employee_info.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_Employee_info.EnableHeadersVisualStyles = false;
-            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.Location = new System.Drawing.Point(0, 0);
-            this.dgv_Employee_info.Name = "dgv_Employee_info";
-            this.dgv_Employee_info.ReadOnly = true;
-            this.dgv_Employee_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_Employee_info.RowHeadersVisible = false;
-            this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            this.dgv_Employee_info.RowTemplate.Height = 24;
-            this.dgv_Employee_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 545);
-            this.dgv_Employee_info.TabIndex = 4;
-            this.dgv_Employee_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Height = 27;
-            this.dgv_Employee_info.ThemeStyle.ReadOnly = true;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Employee_info.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_info_CellContentClick);
             // 
             // lb_Emp_id
             // 
@@ -161,7 +84,7 @@
             this.txb_Emp_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.HoverState.Parent = this.txb_Emp_email;
             this.txb_Emp_email.Location = new System.Drawing.Point(434, 62);
-            this.txb_Emp_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_Emp_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txb_Emp_email.Name = "txb_Emp_email";
             this.txb_Emp_email.PasswordChar = '\0';
             this.txb_Emp_email.PlaceholderText = "Email";
@@ -529,6 +452,83 @@
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Employee Managment";
             // 
+            // dgv_Employee_info
+            // 
+            this.dgv_Employee_info.AllowUserToAddRows = false;
+            this.dgv_Employee_info.AllowUserToDeleteRows = false;
+            this.dgv_Employee_info.AllowUserToResizeColumns = false;
+            this.dgv_Employee_info.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Employee_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Employee_info.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Employee_info.CausesValidation = false;
+            this.dgv_Employee_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Employee_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Employee_info.ColumnHeadersHeight = 27;
+            this.dgv_Employee_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_Employee_info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Employee_info.EnableHeadersVisualStyles = false;
+            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Employee_info.Name = "dgv_Employee_info";
+            this.dgv_Employee_info.ReadOnly = true;
+            this.dgv_Employee_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_Employee_info.RowHeadersVisible = false;
+            this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.dgv_Employee_info.RowTemplate.Height = 24;
+            this.dgv_Employee_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 545);
+            this.dgv_Employee_info.TabIndex = 4;
+            this.dgv_Employee_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgv_Employee_info.ThemeStyle.ReadOnly = true;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Employee_info.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_info_CellContentClick);
+            // 
             // EmployeeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -538,16 +538,14 @@
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "EmployeeUC";
             this.Size = new System.Drawing.Size(1250, 765);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_Employee_info;
         private System.Windows.Forms.Label lb_Emp_id;
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_email;
         private Guna.UI2.WinForms.Guna2Button btn_update;
@@ -565,5 +563,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_salary;
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_FN;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_Employee_info;
     }
 }

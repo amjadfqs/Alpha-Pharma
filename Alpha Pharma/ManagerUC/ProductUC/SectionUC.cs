@@ -101,7 +101,7 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
                 lb_SID.Text = dgv_section_info.Rows[index].Cells[0].Value.ToString();
                 txb_SecN.Text = dgv_section_info.Rows[index].Cells[1].Value.ToString();
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 return;
             }
