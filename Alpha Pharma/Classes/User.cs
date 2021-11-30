@@ -68,6 +68,7 @@ namespace Alpha_Pharma.Classes
                 con.Open();
                 using (SqlCommand com = new SqlCommand(UpdateQuery, con))
                 {
+                    com.Parameters.AddWithValue("@ID", user.ID);
                     com.Parameters.AddWithValue("@Name", user.UserName);
                     com.Parameters.AddWithValue("@Password", user.Password);
                     com.Parameters.AddWithValue("@Type", user.Type);
