@@ -22,7 +22,7 @@ namespace Alpha_Pharma.ManagerUC
         private void btn_Emp_Click_Click(object sender, EventArgs e)
         {
             if (txb_Emp_FN.Text.Trim() != "" && txb_Emp_LN.Text.Trim() != ""
-            && txb_Emp_salary.Text.Trim() != "" && txb_Emp_phone_no.Text.Trim() != ""
+            && txb_Emp_salary.Text.Trim() != "" && txb_Emp_phone_no.Text.All(char.IsDigit) 
             && txb_Emp_email.Text.Trim() != "" && compo_Emp_gender.Text.Trim() != ""
             && compo_Emp_position.Text.Trim() != "")
             {

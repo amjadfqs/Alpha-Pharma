@@ -48,6 +48,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\Dose.cs" />
     <Compile Include="Classes\Drug.cs" />
     <Compile Include="Classes\Employee.cs" />

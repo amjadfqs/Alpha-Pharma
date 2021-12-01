@@ -456,6 +456,7 @@
             this.txb_Sphone.Size = new System.Drawing.Size(212, 35);
             this.txb_Sphone.TabIndex = 0;
             this.txb_Sphone.TextChanged += new System.EventHandler(this.txb_Sphone_TextChanged);
+            this.txb_Sphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Sphone_KeyPress);
             // 
             // dgv_user_info
             // 
@@ -493,6 +494,7 @@
             this.dgv_user_info.Location = new System.Drawing.Point(0, 0);
             this.dgv_user_info.Name = "dgv_user_info";
             this.dgv_user_info.ReadOnly = true;
+            this.dgv_user_info.RowHeadersVisible = false;
             this.dgv_user_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_user_info.RowTemplate.Height = 24;
             this.dgv_user_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
