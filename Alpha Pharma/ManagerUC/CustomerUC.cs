@@ -45,7 +45,7 @@ namespace Alpha_Pharma.ManagerUC
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error", "Error exception", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Error", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                
             }
@@ -57,23 +57,38 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-            custmer.ID = id_lb.Text;
-            custmer.CuFirstName = txb_CFN.Text;
-            custmer.CuLastName = txb_CLN.Text;
-            custmer.CuNumber = mb_CPN.Text;
-            custmer.Gender = combo_CG.Text;
-            custmer.Date = datetimepicker_CD.Text;
-
-            bool success = custmer.UpdateCustomer(custmer);
-
-            dgv_customer_info.DataSource = Customer.GetCustomers();
-            if (success)
+            if (txb_CFN.Text.Trim() != "" && txb_CLN.Text.Trim() != "" && mb_CPN.Text.All(char.IsDigit) &&
+                combo_CG.Text.Trim() != "")
             {
-                ClearControls();
-                MessageBox.Show(@"User Updated");
+                try
+                {
+                    custmer.ID = id_lb.Text;
+                    custmer.CuFirstName = txb_CFN.Text;
+                    custmer.CuLastName = txb_CLN.Text;
+                    custmer.CuNumber = mb_CPN.Text;
+                    custmer.Gender = combo_CG.Text;
+                    custmer.Date = datetimepicker_CD.Text;
+
+                    bool success = custmer.UpdateCustomer(custmer);
+
+                    dgv_customer_info.DataSource = Customer.GetCustomers();
+                    if (success)
+                    {
+                        ClearControls();
+                        MessageBox.Show(@"User Updated");
+                    }
+                    else
+                        MessageBox.Show(@"Error Happened");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
-                MessageBox.Show(@"Error Happened");
+            {
+                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
@@ -91,17 +106,24 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            custmer.ID = id_lb.Text;
-            bool success = custmer.DeleteCustomer(custmer);
-
-            dgv_customer_info.DataSource = Customer.GetCustomers();
-            if (success)
+            try
             {
-                ClearControls();
-                MessageBox.Show(@"User Deleted");
+                custmer.ID = id_lb.Text;
+                bool success = custmer.DeleteCustomer(custmer);
+
+                dgv_customer_info.DataSource = Customer.GetCustomers();
+                if (success)
+                {
+                    ClearControls();
+                    MessageBox.Show(@"User Deleted");
+                }
+                else
+                    MessageBox.Show(@"Error Happened");
             }
-            else
-                MessageBox.Show(@"Error Happened");
+            catch (Exception exce)
+            {
+                MessageBox.Show("Error" + exce.ToString(), "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void dgv_customer_info_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -120,6 +142,11 @@ namespace Alpha_Pharma.ManagerUC
             {
                 return;
             }
+        }
+
+        private void mb_CPN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

@@ -173,7 +173,7 @@
             this.txb_SPN.ForeColor = System.Drawing.Color.White;
             this.txb_SPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_SPN.HoverState.Parent = this.txb_SPN;
-            this.txb_SPN.Location = new System.Drawing.Point(83, 179);
+            this.txb_SPN.Location = new System.Drawing.Point(83, 174);
             this.txb_SPN.Margin = new System.Windows.Forms.Padding(5);
             this.txb_SPN.Name = "txb_SPN";
             this.txb_SPN.PasswordChar = '\0';

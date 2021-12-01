@@ -27,7 +27,6 @@ namespace Alpha_Pharma.ManagerUC
                 con.Open();
                 using (SqlCommand com = new SqlCommand("Select emp_phone from Employees", con))
                 {
-
                     using (SqlDataReader DR = com.ExecuteReader())
                     {
                         while (DR.Read())
@@ -211,6 +210,11 @@ namespace Alpha_Pharma.ManagerUC
             {
                 return;
             }
+        }
+
+        private void txb_Sphone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }
