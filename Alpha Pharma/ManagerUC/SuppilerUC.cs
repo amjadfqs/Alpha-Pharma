@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Alpha_Pharma.ManagerUC
@@ -37,6 +31,7 @@ namespace Alpha_Pharma.ManagerUC
                     if (success)
                     {
                         MessageBox.Show(@"Supplier has been added successfully");
+                        ClearControls();
                     }
                     else
                         MessageBox.Show(@"Error occured. Please try again...");
@@ -55,47 +50,64 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            if (txb_SN.Text.Trim() != "" && txb_SA.Text.Trim() != "" && txb_SPN.Text.All(char.IsDigit))
+            {
+                try
+                {
+                    supplier.Sup_id = lb_id.Text;
+                    supplier.Sup_name = txb_SN.Text;
+                    supplier.Sup_address = txb_SA.Text;
+                    supplier.Sup_phone = txb_SPN.Text;
+                    var success = supplier.UpdateSupplier(supplier);
+
+                    dgv_Supplier_info.DataSource = Supplier.GetSuppliers();
+                    if (success)
+                    {
+                        MessageBox.Show(@"Supplier has been Updated successfully");
+                        ClearControls();
+                    }
+                    else
+                        MessageBox.Show(@"Error occured,Please try again..");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
             try
             {
                 supplier.Sup_id = lb_id.Text;
                 supplier.Sup_name = txb_SN.Text;
-                supplier.Sup_address = txb_SA.Text;
-                supplier.Sup_phone = txb_SPN.Text;
-                var success = supplier.UpdateSupplier(supplier);
-
+                var Success = supplier.DeleteSupplier(supplier);
                 dgv_Supplier_info.DataSource = Supplier.GetSuppliers();
-                if (success)
+                if (Success)
                 {
-                    MessageBox.Show(@"Supplier has been Updated successfully");
+                    MessageBox.Show(@"Supplier has been Deleted successfully ");
+                    ClearControls();
                 }
                 else
-                    MessageBox.Show(@"Error occured,Please try again..");
+                    MessageBox.Show(@"Error occured. Please try again...");
             }
             catch (Exception)
             {
                 MessageBox.Show("Error", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
-
-        }
-
-        private void btn_Delete_Click(object sender, EventArgs e)
-        {
-            supplier.Sup_id = lb_id.Text;
-            supplier.Sup_name = txb_SN.Text;
-            var Success = supplier.DeleteSupplier(supplier);
-            dgv_Supplier_info.DataSource = Supplier.GetSuppliers();
-            if (Success)
-            {
-                MessageBox.Show(@"Supplier has been Deleted successfully ");
-
-            }
-            else
-                MessageBox.Show(@"Error occured. Please try again...");
         }
 
         private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            ClearControls();
+        }
+
+        void ClearControls()
         {
             txb_SA.Clear();
             txb_SN.Clear();
@@ -116,6 +128,11 @@ namespace Alpha_Pharma.ManagerUC
             {
                 return;
             }
+        }
+
+        private void txb_SPN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

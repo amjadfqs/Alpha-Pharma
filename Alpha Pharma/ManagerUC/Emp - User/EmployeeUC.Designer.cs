@@ -328,6 +328,7 @@
             this.txb_Emp_phone_no.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_phone_no.TabIndex = 5;
             this.txb_Emp_phone_no.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_Emp_phone_no.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Emp_phone_no_KeyPress);
             // 
             // txb_Emp_LN
             // 
