@@ -13,7 +13,7 @@ namespace Alpha_Pharma
         public string CuNumber { get; set; }
         public string Gender { get; set; }
         public string Date { get; set; }
-        private const string SelectQuery = "Select cus_id as ID, cus_fname as CuFirstName, cus_lname as CuLastName, cus_number as CuNumber, cus_gender as Gender, cus_date as Date from Customers";
+        private const string SelectQuery = "Select cus_id as ID, cus_fname as FirstName, cus_lname as LastName, cus_number as Number, cus_gender as Gender, cus_date as Date from Customers";
         private const string InsertQuery = "Insert Into Customers(cus_fname,cus_lname,cus_number,cus_gender,cus_date) Values (@CuFirstName,@CuLastName,@CuNumber,@Gender,@Date)";
         private const string UpdateQuery = "Update Customers set cus_fname=@CuFirstName, cus_lname=@CuLastName, cus_number=@CuNumber, cus_gender=@Gender, cus_date=@Date where cus_id=@ID";
         private const string DeleteQuery = "Delete from Customers where cus_id=@ID";
