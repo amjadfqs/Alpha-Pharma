@@ -21,39 +21,38 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            // if (txb_CFN.Text.Trim() != "" && txb_CLN.Text.Trim() != "" && mb_CPN.Text.All(char.IsDigit) &&
-            //     combo_CG.Text.Trim() != "" && datetimepicker_CD.Text.Trim() != "")
-            // {
-            //     try
-            //     {
+            if (txb_CFN.Text.Trim() != "" && txb_CLN.Text.Trim() != "" && mb_CPN.Text.All(char.IsDigit) &&
+                combo_CG.Text.Trim() != "" )
+            {
+                try
+                {
                     custmer.CuFirstName = txb_CFN.Text;
                     custmer.CuLastName = txb_CLN.Text;
                     custmer.CuNumber = mb_CPN.Text;
                     custmer.Gender = combo_CG.Text;
                     custmer.Date = datetimepicker_CD.Text;
-            //     }
-            //     catch (Exception)
-            //     {
-            //         MessageBox.Show("Error", "Error exception", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //     }
-            //    
-            // }
-            // else
-            // {
-            //     MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            // }
 
+                    bool success = custmer.InsertCustomer(custmer);
 
-            bool success = custmer.InsertCustomer(custmer);
-
-            dgv_customer_info.DataSource = Customer.GetCustomers();
-            if (success)
-            {
-                ClearControls();
-                MessageBox.Show(@"User Added");
+                    dgv_customer_info.DataSource = Customer.GetCustomers();
+                    if (success)
+                    {
+                        ClearControls();
+                        MessageBox.Show(@"User Added");
+                    }
+                    else
+                        MessageBox.Show(@"Error Happened");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error", "Error exception", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+               
             }
             else
-                MessageBox.Show(@"Error Happened");
+            {
+                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btn_update_Click(object sender, EventArgs e)
@@ -114,6 +113,8 @@ namespace Alpha_Pharma.ManagerUC
                 txb_CFN.Text = dgv_customer_info.Rows[index].Cells[1].Value.ToString();
                 txb_CLN.Text = dgv_customer_info.Rows[index].Cells[2].Value.ToString();
                 mb_CPN.Text = dgv_customer_info.Rows[index].Cells[3].Value.ToString();
+                combo_CG.Text = dgv_customer_info.Rows[index].Cells[4].Value.ToString();
+                datetimepicker_CD.Text = dgv_customer_info.Rows[index].Cells[5].Value.ToString();
             }
             catch (Exception)
             {
