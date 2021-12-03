@@ -109,6 +109,7 @@ namespace Alpha_Pharma.ManagerUC
 
         void ClearControls()
         {
+            lb_id.Text = "";
             txb_SA.Clear();
             txb_SN.Clear();
             txb_SPN.Clear();
@@ -133,6 +134,13 @@ namespace Alpha_Pharma.ManagerUC
         private void txb_SPN_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+            if (char.IsDigit(e.KeyChar))
+            {
+                //Count the digits already in the text.  I'm using linq:
+                if (txb_SPN.Text.Count(Char.IsDigit) == 9)
+                    e.Handled = true;
+            }
         }
     }
 }

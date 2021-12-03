@@ -31,9 +31,18 @@ namespace Alpha_Pharma.ManagerUC
                     employee.Gender = compo_Emp_gender.Text;
                     employee.Position = compo_Emp_position.Text;
                     employee.Dob = compo_Emp_DOB.Text;
+
                     bool Success = employee.InsertEmployee(employee);
                     dgv_Employee_info.DataSource = Employee.GetEmployees();
-                    MessageBox.Show(Success ? @"Employee info has been added" : @"Error occurred. Please try again");
+                    if (Success)
+                    {
+                        MessageBox.Show("Employee info has been added");
+                        ClearControls();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error occurred. Please try again");
+                    }
                 }
 
                 catch (Exception)
@@ -60,9 +69,18 @@ namespace Alpha_Pharma.ManagerUC
                 employee.Gender = compo_Emp_gender.Text;
                 employee.Position = compo_Emp_position.Text;
                 employee.Dob = compo_Emp_DOB.Text;
+
                 var success = employee.UpdateEmployee(employee);
                 dgv_Employee_info.DataSource = Employee.GetEmployees();
-                MessageBox.Show(success ? @"Employee info has been updated." : @"Error occurred. Please try again");
+                if (success)
+                {
+                    MessageBox.Show("Employee info has been updated");
+                    ClearControls();
+                }
+                else
+                {
+                    MessageBox.Show("Error occurred. Please try again");
+                }
             }
 
             catch (Exception)
@@ -73,6 +91,29 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_Emp_clear_Click(object sender, EventArgs e)
         {
+            ClearControls();   
+        }
+
+        private void btn_Emp_delete_Click(object sender, EventArgs e)
+        {
+            employee.Id = lb_Emp_id.Text;
+            employee.FName = txb_Emp_FN.Text;
+            var success = employee.DeleteEmployee(employee);
+            dgv_Employee_info.DataSource = Employee.GetEmployees();
+            if (success)
+            {
+                MessageBox.Show("Employee info has been deleted");
+                ClearControls();
+            }
+            else
+            {
+                MessageBox.Show("Error occurred. Please try again");
+            }
+        }
+
+        void ClearControls()
+        {
+            lb_Emp_id.Text = "";
             txb_Emp_FN.Clear();
             txb_Emp_LN.Clear();
             txb_Emp_salary.Clear();
@@ -83,16 +124,18 @@ namespace Alpha_Pharma.ManagerUC
             compo_Emp_DOB.Text = DateTime.Now.ToString();
         }
 
-        private void btn_Emp_delete_Click(object sender, EventArgs e)
+        private void txb_Emp_phone_no_KeyPress(object sender, KeyPressEventArgs e)
         {
-            employee.Id = lb_Emp_id.Text;
-            employee.FName = txb_Emp_FN.Text;
-            var success = employee.DeleteEmployee(employee);
-            dgv_Employee_info.DataSource = Employee.GetEmployees();
-            MessageBox.Show(success ? @"Employee has been Deleted. " : @"Error occurred. please try again");
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            if (char.IsDigit(e.KeyChar))
+            {
+                //Count the digits already in the text.  I'm using linq:
+                if (txb_Emp_phone_no.Text.Count(Char.IsDigit) == 9)
+                    e.Handled = true;
+            }
         }
 
-        private void dgv_Employee_info_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_Employee_info_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -111,11 +154,6 @@ namespace Alpha_Pharma.ManagerUC
             {
                 return;
             }
-        }
-
-        private void txb_Emp_phone_no_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

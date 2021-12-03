@@ -31,6 +31,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>alpha.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
@@ -199,6 +206,8 @@
     <None Include="Resources\Enter.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alpha %281%29.ico" />
+    <Content Include="alpha.ico" />
     <Content Include="Guna.UI2.dll" />
     <Content Include="Pharmacy.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
