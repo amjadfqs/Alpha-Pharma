@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manager));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SaleMana = new Guna.UI2.WinForms.Guna2Button();
@@ -39,7 +37,9 @@
             this.btn_SuppMana = new Guna.UI2.WinForms.Guna2Button();
             this.btn_CusMana = new Guna.UI2.WinForms.Guna2Button();
             this.btn_EmpMana = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -64,28 +64,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(306, 875);
             this.guna2Panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(83, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 34);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Manager";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelContainer.Location = new System.Drawing.Point(305, 0);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.ShadowDecoration.Parent = this.panelContainer;
-            this.panelContainer.Size = new System.Drawing.Size(1250, 875);
-            this.panelContainer.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -234,6 +212,18 @@
             this.btn_EmpMana.Text = "Employee Managment";
             this.btn_EmpMana.Click += new System.EventHandler(this.btn_EmpMana_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(83, 180);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Manager";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -247,6 +237,17 @@
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // panelContainer
+            // 
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.ShadowDecoration.Parent = this.panelContainer;
+            this.panelContainer.Size = new System.Drawing.Size(1556, 875);
+            this.panelContainer.TabIndex = 2;
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,6 +256,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Manager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";

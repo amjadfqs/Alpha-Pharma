@@ -141,6 +141,12 @@ namespace Alpha_Pharma.ManagerUC
         private void mb_CPN_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            if (char.IsDigit(e.KeyChar))
+            {
+                //Count the digits already in the text.  I'm using linq:
+                if (mb_CPN.Text.Count(Char.IsDigit) == 9)
+                    e.Handled = true;
+            }
         }
     }
 }

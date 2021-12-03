@@ -28,14 +28,19 @@ namespace Alpha_Pharma
 
             if (type_user == "Manager")
             {
+                this.Hide();
                 new Manager().ShowDialog();
             }
             else if (type_user == "Admin")
             {
+                this.Hide();
+
                 MessageBox.Show(type_user);
             }
             else if (type_user == "Employee")
             {
+                this.Hide();
+
                 MessageBox.Show(type_user);
             }
             else
