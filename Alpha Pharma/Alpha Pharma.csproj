@@ -215,6 +215,8 @@
       <DependentUpon>Pharmacy.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\no.png" />
+    <Content Include="Resources\yes.png" />
     <None Include="Resources\Login1.png" />
     <None Include="Resources\eraser.png" />
     <None Include="Resources\updating.png" />
