@@ -206,7 +206,6 @@
     <None Include="Resources\Enter.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="alpha %281%29.ico" />
     <Content Include="alpha.ico" />
     <Content Include="Guna.UI2.dll" />
     <Content Include="Pharmacy.mdf">
