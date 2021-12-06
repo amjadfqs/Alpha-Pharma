@@ -241,7 +241,7 @@
             // 
             this.panelContainer.BackColor = System.Drawing.Color.White;
             this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelContainer.Location = new System.Drawing.Point(306, 0);
+            this.panelContainer.Location = new System.Drawing.Point(305, 0);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.ShadowDecoration.Parent = this.panelContainer;
             this.panelContainer.Size = new System.Drawing.Size(1250, 875);
