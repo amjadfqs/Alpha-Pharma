@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
@@ -215,6 +217,37 @@ namespace Alpha_Pharma.ManagerUC
         private void txb_Sphone_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txb_username_TextChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(myconn))
+            {
+                con.Open();
+                using (SqlCommand com = new SqlCommand("select * from Users where user_name='" + txb_username.Text + "'", con))
+                {
+                    using (SqlDataReader DR = com.ExecuteReader())
+                    {
+                        if (DR.HasRows)
+                        {
+                          
+                            lb_check.Image = System.Drawing.Image.FromFile(@"C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\Resources\no.png");
+                        }
+                        else if (txb_username.Text.Trim() == "")
+                        {
+                            lb_check.Image = null;
+                        }
+                        else
+                        {
+                            lb_check.Image = System.Drawing.Image.FromFile(
+                                @"C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\Resources\yes.png");
+                        }
+                        
+                    }
+
+                }
+
+            }
         }
     }
 }
