@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
+using Alpha_Pharma.Properties;
 
 namespace Alpha_Pharma.ManagerUC
 {
@@ -230,17 +231,16 @@ namespace Alpha_Pharma.ManagerUC
                     {
                         if (DR.HasRows)
                         {
-                          
-                            lb_check.Image = System.Drawing.Image.FromFile(@"C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\Resources\no.png");
+                            var bmp = 
+                            status_pic.Image = Resources.no;
                         }
                         else if (txb_username.Text.Trim() == "")
                         {
-                            lb_check.Image = null;
+                            status_pic.Image = null;
                         }
                         else
                         {
-                            lb_check.Image = System.Drawing.Image.FromFile(
-                                @"C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\Resources\yes.png");
+                            status_pic.Image = Resources.yes;
                         }
                         
                     }
