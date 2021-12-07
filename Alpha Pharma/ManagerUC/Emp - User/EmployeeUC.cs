@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Linq;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace Alpha_Pharma.ManagerUC
@@ -154,6 +156,70 @@ namespace Alpha_Pharma.ManagerUC
             {
                 return;
             }
+        }
+
+        private void Control_Validating(object sender, CancelEventArgs e)
+        {
+            double i = 0;
+            if (double.TryParse(txb_Emp_salary.Text, out i))
+            {
+                errorProvider1.SetError(txb_Emp_salary, "");
+                e.Cancel = false;
+            }
+           
+            else
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
+            }
+        }
+
+        private void Control_Validating2(object sender, CancelEventArgs e)
+        {
+            //double i = 0;
+            //if (double.TryParse(txb_Emp_phone_no.Text, out i))
+            //{
+            //    errorProvider1.SetError(txb_Emp_salary, "");
+            //    e.Cancel = false;
+            //}
+            //else
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
+            //}
+
+            //if you want it to work delete the txb_Emp_phone_no_KeyPress or see anything else!....
+
+        }
+
+        private void Contr_val(object sender, CancelEventArgs e)
+        {
+            string error = null;
+            if (((Control)sender).Text.Length == 0)
+            {
+                error = "This field is required!";
+                e.Cancel = true;
+
+            }
+            errorProvider1.SetError((Control) sender, error);
+
+        }
+
+        private void txb_Email_Validating(object sender, CancelEventArgs e)
+        {
+            Contr_val(sender, e);
+            string error = null;
+            try
+            {
+                new MailAddress(txb_Emp_email.Text);
+            }
+            catch (Exception)
+            {
+                error = "Please use a valid format email";
+                e.Cancel = true;
+
+            }
+            errorProvider1.SetError((Control)sender, error);
         }
     }
 }
