@@ -67,7 +67,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(362, 25);
+            this.guna2Button1.Location = new System.Drawing.Point(181, 25);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(175, 36);
@@ -105,7 +105,7 @@
             this.btn_user.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_user.ForeColor = System.Drawing.Color.White;
             this.btn_user.HoverState.Parent = this.btn_user;
-            this.btn_user.Location = new System.Drawing.Point(181, 25);
+            this.btn_user.Location = new System.Drawing.Point(362, 25);
             this.btn_user.Name = "btn_user";
             this.btn_user.ShadowDecoration.Parent = this.btn_user;
             this.btn_user.Size = new System.Drawing.Size(175, 36);
