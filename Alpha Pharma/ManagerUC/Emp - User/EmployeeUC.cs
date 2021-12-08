@@ -194,32 +194,32 @@ namespace Alpha_Pharma.ManagerUC
 
         private void Contr_val(object sender, CancelEventArgs e)
         {
-            string error = null;
-            if (((Control)sender).Text.Length == 0)
-            {
-                error = "This field is required!";
-                e.Cancel = true;
+            //string error = null;
+            //if (((Control)sender).Text.Length == 0)
+            //{
+            //    error = "This field is required!";
+            //    e.Cancel = true;
 
-            }
-            errorProvider1.SetError((Control) sender, error);
+            //}
+            //errorProvider1.SetError((Control) sender, error);
 
         }
 
         private void txb_Email_Validating(object sender, CancelEventArgs e)
         {
-            Contr_val(sender, e);
-            string error = null;
-            try
-            {
-                new MailAddress(txb_Emp_email.Text);
-            }
-            catch (Exception)
-            {
-                error = "Please use a valid format email";
-                e.Cancel = true;
+            //Contr_val(sender, e);
+            //string error = null;
+            //try
+            //{
+            //    new MailAddress(txb_Emp_email.Text);
+            //}
+            //catch (Exception)
+            //{
+            //    error = "Please use a valid format email";
+            //    e.Cancel = true;
 
-            }
-            errorProvider1.SetError((Control)sender, error);
+            //}
+            //errorProvider1.SetError((Control)sender, error);
         }
     }
 }
