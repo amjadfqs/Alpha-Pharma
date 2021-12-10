@@ -1,6 +1,6 @@
-﻿namespace Alpha_Pharma.ManagerUC
+﻿namespace Alpha_Pharma.ManagerUC.Emp___User
 {
-    partial class UserUC
+    partial class SessionUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,20 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.status_pic = new System.Windows.Forms.PictureBox();
-            this.txb_posi = new Guna.UI2.WinForms.Guna2TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgv_session_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txb_ID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txb_username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_pass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_Emp_id = new System.Windows.Forms.Label();
             this.txb_Fname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Lname = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
@@ -49,87 +44,81 @@
             this.btn_Cear = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
             this.txb_Sphone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv_user_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lb_ses_id = new System.Windows.Forms.Label();
+            this.txb_ses_desc = new Guna.UI2.WinForms.Guna2TextBox();
+            this.compo_ses_end = new System.Windows.Forms.DateTimePicker();
+            this.compo_ses_start = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_session_info)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.status_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_user_info)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2GroupBox1
+            // dgv_session_info
             // 
-            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderThickness = 0;
-            this.guna2GroupBox1.Controls.Add(this.status_pic);
-            this.guna2GroupBox1.Controls.Add(this.txb_posi);
-            this.guna2GroupBox1.Controls.Add(this.label5);
-            this.guna2GroupBox1.Controls.Add(this.txb_ID);
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.txb_username);
-            this.guna2GroupBox1.Controls.Add(this.txb_pass);
-            this.guna2GroupBox1.Controls.Add(this.lb_Emp_id);
-            this.guna2GroupBox1.Controls.Add(this.txb_Fname);
-            this.guna2GroupBox1.Controls.Add(this.txb_Lname);
-            this.guna2GroupBox1.Controls.Add(this.btn_Update);
-            this.guna2GroupBox1.Controls.Add(this.btn_Delete);
-            this.guna2GroupBox1.Controls.Add(this.btn_Cear);
-            this.guna2GroupBox1.Controls.Add(this.btn_Add);
-            this.guna2GroupBox1.Controls.Add(this.txb_Sphone);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 545);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 220);
-            this.guna2GroupBox1.TabIndex = 4;
-            this.guna2GroupBox1.Text = "User Managment";
-            // 
-            // status_pic
-            // 
-            this.status_pic.Location = new System.Drawing.Point(785, 67);
-            this.status_pic.Name = "status_pic";
-            this.status_pic.Size = new System.Drawing.Size(47, 42);
-            this.status_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.status_pic.TabIndex = 23;
-            this.status_pic.TabStop = false;
-            // 
-            // txb_posi
-            // 
-            this.txb_posi.BackColor = System.Drawing.Color.Transparent;
-            this.txb_posi.BorderColor = System.Drawing.Color.Transparent;
-            this.txb_posi.BorderRadius = 8;
-            this.txb_posi.BorderThickness = 0;
-            this.txb_posi.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txb_posi.DefaultText = "";
-            this.txb_posi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_posi.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txb_posi.DisabledState.Parent = this.txb_posi;
-            this.txb_posi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_posi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_posi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_posi.FocusedState.Parent = this.txb_posi;
-            this.txb_posi.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_posi.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_posi.ForeColor = System.Drawing.Color.White;
-            this.txb_posi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_posi.HoverState.Parent = this.txb_posi;
-            this.txb_posi.Location = new System.Drawing.Point(345, 144);
-            this.txb_posi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txb_posi.Name = "txb_posi";
-            this.txb_posi.PasswordChar = '\0';
-            this.txb_posi.PlaceholderText = "Position";
-            this.txb_posi.ReadOnly = true;
-            this.txb_posi.SelectedText = "";
-            this.txb_posi.ShadowDecoration.Parent = this.txb_posi;
-            this.txb_posi.Size = new System.Drawing.Size(150, 35);
-            this.txb_posi.TabIndex = 22;
-            this.txb_posi.TabStop = false;
-            this.txb_posi.TextOffset = new System.Drawing.Point(0, -2);
+            this.dgv_session_info.AllowUserToAddRows = false;
+            this.dgv_session_info.AllowUserToDeleteRows = false;
+            this.dgv_session_info.AllowUserToResizeColumns = false;
+            this.dgv_session_info.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_session_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_session_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_session_info.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_session_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_session_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_session_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_session_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_session_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_session_info.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_session_info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_session_info.EnableHeadersVisualStyles = false;
+            this.dgv_session_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_session_info.Location = new System.Drawing.Point(0, 0);
+            this.dgv_session_info.Name = "dgv_session_info";
+            this.dgv_session_info.ReadOnly = true;
+            this.dgv_session_info.RowHeadersVisible = false;
+            this.dgv_session_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_session_info.RowTemplate.Height = 24;
+            this.dgv_session_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_session_info.Size = new System.Drawing.Size(1250, 545);
+            this.dgv_session_info.TabIndex = 7;
+            this.dgv_session_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgv_session_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_session_info.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_session_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_session_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_session_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_session_info.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_session_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_session_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.dgv_session_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_session_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_session_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_session_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_session_info.ThemeStyle.HeaderStyle.Height = 23;
+            this.dgv_session_info.ThemeStyle.ReadOnly = true;
+            this.dgv_session_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_session_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_session_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_session_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_session_info.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_session_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_session_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_session_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_session_info_CellClick);
             // 
             // label5
             // 
@@ -180,103 +169,33 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(602, 55);
+            this.label4.Location = new System.Drawing.Point(491, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 17);
+            this.label4.Size = new System.Drawing.Size(94, 17);
             this.label4.TabIndex = 19;
-            this.label4.Text = "User Name:";
+            this.label4.Text = "Session Start:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(603, 121);
+            this.label3.Location = new System.Drawing.Point(491, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 17);
+            this.label3.Size = new System.Drawing.Size(91, 17);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Password:";
+            this.label3.Text = "Session end:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(32, 52);
+            this.label1.Location = new System.Drawing.Point(36, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(185, 17);
             this.label1.TabIndex = 17;
             this.label1.Text = "Search by Phone Number:";
-            // 
-            // txb_username
-            // 
-            this.txb_username.BackColor = System.Drawing.Color.Transparent;
-            this.txb_username.BorderColor = System.Drawing.Color.Transparent;
-            this.txb_username.BorderRadius = 8;
-            this.txb_username.BorderThickness = 0;
-            this.txb_username.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_username.DefaultText = "";
-            this.txb_username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_username.DisabledState.Parent = this.txb_username;
-            this.txb_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_username.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_username.FocusedState.Parent = this.txb_username;
-            this.txb_username.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_username.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_username.ForeColor = System.Drawing.Color.White;
-            this.txb_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_username.HoverState.Parent = this.txb_username;
-            this.txb_username.Location = new System.Drawing.Point(596, 73);
-            this.txb_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txb_username.Name = "txb_username";
-            this.txb_username.PasswordChar = '\0';
-            this.txb_username.PlaceholderText = "UserName";
-            this.txb_username.SelectedText = "";
-            this.txb_username.ShadowDecoration.Parent = this.txb_username;
-            this.txb_username.Size = new System.Drawing.Size(190, 35);
-            this.txb_username.TabIndex = 1;
-            this.txb_username.TextChanged += new System.EventHandler(this.txb_username_TextChanged);
-            // 
-            // txb_pass
-            // 
-            this.txb_pass.BackColor = System.Drawing.Color.Transparent;
-            this.txb_pass.BorderColor = System.Drawing.Color.Transparent;
-            this.txb_pass.BorderRadius = 8;
-            this.txb_pass.BorderThickness = 0;
-            this.txb_pass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_pass.DefaultText = "";
-            this.txb_pass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_pass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_pass.DisabledState.Parent = this.txb_pass;
-            this.txb_pass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_pass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_pass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_pass.FocusedState.Parent = this.txb_pass;
-            this.txb_pass.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.txb_pass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_pass.ForeColor = System.Drawing.Color.White;
-            this.txb_pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_pass.HoverState.Parent = this.txb_pass;
-            this.txb_pass.Location = new System.Drawing.Point(596, 139);
-            this.txb_pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txb_pass.Name = "txb_pass";
-            this.txb_pass.PasswordChar = '\0';
-            this.txb_pass.PlaceholderText = "Password";
-            this.txb_pass.SelectedText = "";
-            this.txb_pass.ShadowDecoration.Parent = this.txb_pass;
-            this.txb_pass.Size = new System.Drawing.Size(190, 35);
-            this.txb_pass.TabIndex = 2;
-            // 
-            // lb_Emp_id
-            // 
-            this.lb_Emp_id.AutoSize = true;
-            this.lb_Emp_id.Location = new System.Drawing.Point(33, 52);
-            this.lb_Emp_id.Name = "lb_Emp_id";
-            this.lb_Emp_id.Size = new System.Drawing.Size(0, 24);
-            this.lb_Emp_id.TabIndex = 1;
-            this.lb_Emp_id.Visible = false;
             // 
             // txb_Fname
             // 
@@ -469,111 +388,152 @@
             this.txb_Sphone.Size = new System.Drawing.Size(212, 35);
             this.txb_Sphone.TabIndex = 0;
             this.txb_Sphone.TextChanged += new System.EventHandler(this.txb_Sphone_TextChanged);
-            this.txb_Sphone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Sphone_KeyPress);
             // 
-            // dgv_user_info
+            // guna2GroupBox1
             // 
-            this.dgv_user_info.AllowUserToAddRows = false;
-            this.dgv_user_info.AllowUserToDeleteRows = false;
-            this.dgv_user_info.AllowUserToResizeColumns = false;
-            this.dgv_user_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgv_user_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_user_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_user_info.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_user_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_user_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_user_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_user_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_user_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_user_info.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv_user_info.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_user_info.EnableHeadersVisualStyles = false;
-            this.dgv_user_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_user_info.Location = new System.Drawing.Point(0, 0);
-            this.dgv_user_info.Name = "dgv_user_info";
-            this.dgv_user_info.ReadOnly = true;
-            this.dgv_user_info.RowHeadersVisible = false;
-            this.dgv_user_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_user_info.RowTemplate.Height = 24;
-            this.dgv_user_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_user_info.Size = new System.Drawing.Size(1250, 545);
-            this.dgv_user_info.TabIndex = 5;
-            this.dgv_user_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgv_user_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_user_info.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_user_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_user_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_user_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_user_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_user_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_user_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.dgv_user_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_user_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_user_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_user_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_user_info.ThemeStyle.HeaderStyle.Height = 23;
-            this.dgv_user_info.ThemeStyle.ReadOnly = true;
-            this.dgv_user_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_user_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_user_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_user_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_user_info.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_user_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_user_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_user_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_user_info_CellClick);
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderThickness = 0;
+            this.guna2GroupBox1.Controls.Add(this.lb_ses_id);
+            this.guna2GroupBox1.Controls.Add(this.txb_ses_desc);
+            this.guna2GroupBox1.Controls.Add(this.compo_ses_end);
+            this.guna2GroupBox1.Controls.Add(this.compo_ses_start);
+            this.guna2GroupBox1.Controls.Add(this.label5);
+            this.guna2GroupBox1.Controls.Add(this.txb_ID);
+            this.guna2GroupBox1.Controls.Add(this.label2);
+            this.guna2GroupBox1.Controls.Add(this.label4);
+            this.guna2GroupBox1.Controls.Add(this.label3);
+            this.guna2GroupBox1.Controls.Add(this.label1);
+            this.guna2GroupBox1.Controls.Add(this.txb_Fname);
+            this.guna2GroupBox1.Controls.Add(this.txb_Lname);
+            this.guna2GroupBox1.Controls.Add(this.btn_Update);
+            this.guna2GroupBox1.Controls.Add(this.btn_Delete);
+            this.guna2GroupBox1.Controls.Add(this.btn_Cear);
+            this.guna2GroupBox1.Controls.Add(this.btn_Add);
+            this.guna2GroupBox1.Controls.Add(this.txb_Sphone);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 545);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 220);
+            this.guna2GroupBox1.TabIndex = 6;
+            this.guna2GroupBox1.Text = "User Managment";
             // 
-            // UserUC
+            // lb_ses_id
+            // 
+            this.lb_ses_id.AutoSize = true;
+            this.lb_ses_id.Location = new System.Drawing.Point(20, 52);
+            this.lb_ses_id.Name = "lb_ses_id";
+            this.lb_ses_id.Size = new System.Drawing.Size(0, 24);
+            this.lb_ses_id.TabIndex = 26;
+            this.lb_ses_id.Visible = false;
+            // 
+            // txb_ses_desc
+            // 
+            this.txb_ses_desc.BackColor = System.Drawing.Color.Transparent;
+            this.txb_ses_desc.BorderColor = System.Drawing.Color.Transparent;
+            this.txb_ses_desc.BorderRadius = 4;
+            this.txb_ses_desc.BorderThickness = 0;
+            this.txb_ses_desc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_ses_desc.DefaultText = "";
+            this.txb_ses_desc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_ses_desc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_ses_desc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_ses_desc.DisabledState.Parent = this.txb_ses_desc;
+            this.txb_ses_desc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_ses_desc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_ses_desc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_ses_desc.FocusedState.Parent = this.txb_ses_desc;
+            this.txb_ses_desc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_ses_desc.ForeColor = System.Drawing.Color.White;
+            this.txb_ses_desc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_ses_desc.HoverState.Parent = this.txb_ses_desc;
+            this.txb_ses_desc.Location = new System.Drawing.Point(654, 73);
+            this.txb_ses_desc.Margin = new System.Windows.Forms.Padding(5);
+            this.txb_ses_desc.Multiline = true;
+            this.txb_ses_desc.Name = "txb_ses_desc";
+            this.txb_ses_desc.PasswordChar = '\0';
+            this.txb_ses_desc.PlaceholderText = "type here....";
+            this.txb_ses_desc.SelectedText = "";
+            this.txb_ses_desc.ShadowDecoration.Parent = this.txb_ses_desc;
+            this.txb_ses_desc.Size = new System.Drawing.Size(234, 106);
+            this.txb_ses_desc.TabIndex = 25;
+            this.txb_ses_desc.TextOffset = new System.Drawing.Point(0, -2);
+            // 
+            // compo_ses_end
+            // 
+            this.compo_ses_end.CustomFormat = " ";
+            this.compo_ses_end.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.compo_ses_end.Location = new System.Drawing.Point(490, 151);
+            this.compo_ses_end.Name = "compo_ses_end";
+            this.compo_ses_end.ShowUpDown = true;
+            this.compo_ses_end.Size = new System.Drawing.Size(141, 28);
+            this.compo_ses_end.TabIndex = 24;
+            this.compo_ses_end.MouseDown += new System.Windows.Forms.MouseEventHandler(this.compo_ses_end_MouseDown);
+            // 
+            // compo_ses_start
+            // 
+            this.compo_ses_start.CustomFormat = " ";
+            this.compo_ses_start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.compo_ses_start.Location = new System.Drawing.Point(490, 73);
+            this.compo_ses_start.Name = "compo_ses_start";
+            this.compo_ses_start.ShowUpDown = true;
+            this.compo_ses_start.Size = new System.Drawing.Size(139, 28);
+            this.compo_ses_start.TabIndex = 23;
+            this.compo_ses_start.Value = new System.DateTime(2021, 12, 9, 23, 18, 0, 0);
+            this.compo_ses_start.MouseDown += new System.Windows.Forms.MouseEventHandler(this.compo_ses_start_MouseDown);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(660, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 17);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Session description:";
+            // 
+            // SessionUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgv_user_info);
+            this.Controls.Add(this.dgv_session_info);
             this.Controls.Add(this.guna2GroupBox1);
-            this.Name = "UserUC";
+            this.Name = "SessionUC";
             this.Size = new System.Drawing.Size(1250, 765);
-            this.Load += new System.EventHandler(this.UserUC_Load);
+            this.Load += new System.EventHandler(this.SessionUC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_session_info)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.status_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_user_info)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private System.Windows.Forms.Label lb_Emp_id;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_session_info;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txb_ID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txb_Fname;
         private Guna.UI2.WinForms.Guna2TextBox txb_Lname;
         private Guna.UI2.WinForms.Guna2Button btn_Update;
         private Guna.UI2.WinForms.Guna2Button btn_Delete;
         private Guna.UI2.WinForms.Guna2Button btn_Cear;
         private Guna.UI2.WinForms.Guna2Button btn_Add;
         private Guna.UI2.WinForms.Guna2TextBox txb_Sphone;
-        private Guna.UI2.WinForms.Guna2TextBox txb_Fname;
-        private Guna.UI2.WinForms.Guna2TextBox txb_username;
-        private Guna.UI2.WinForms.Guna2TextBox txb_pass;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_user_info;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txb_ID;
-        private Guna.UI2.WinForms.Guna2TextBox txb_posi;
-        private System.Windows.Forms.PictureBox status_pic;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private System.Windows.Forms.DateTimePicker compo_ses_end;
+        private System.Windows.Forms.DateTimePicker compo_ses_start;
+        private Guna.UI2.WinForms.Guna2TextBox txb_ses_desc;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_ses_id;
     }
 }

@@ -25,6 +25,7 @@ namespace Alpha_Pharma.ManagerUC
                     custmer.CuNumber = mb_CPN.Text;
                     custmer.Gender = combo_CG.Text;
                     custmer.Date = datetimepicker_CD.Text;
+                    custmer.Customer_Desc = txb_cus_desc.Text;
 
                     bool success = custmer.InsertCustomer(custmer);
 
@@ -62,6 +63,7 @@ namespace Alpha_Pharma.ManagerUC
                     custmer.CuNumber = mb_CPN.Text;
                     custmer.Gender = combo_CG.Text;
                     custmer.Date = datetimepicker_CD.Text;
+                    custmer.Customer_Desc = txb_cus_desc.Text;
 
                     bool success = custmer.UpdateCustomer(custmer);
 
@@ -96,6 +98,7 @@ namespace Alpha_Pharma.ManagerUC
             txb_CLN.Text = "";
             mb_CPN.Text = "";
             combo_CG.SelectedIndex = -1;
+            txb_cus_desc.Text = "";
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -131,6 +134,7 @@ namespace Alpha_Pharma.ManagerUC
                 mb_CPN.Text = dgv_customer_info.Rows[index].Cells[3].Value.ToString();
                 combo_CG.Text = dgv_customer_info.Rows[index].Cells[4].Value.ToString();
                 datetimepicker_CD.Text = dgv_customer_info.Rows[index].Cells[5].Value.ToString();
+                txb_cus_desc.Text = dgv_customer_info.Rows[index].Cells[6].Value.ToString();
             }
             catch (Exception)
             {

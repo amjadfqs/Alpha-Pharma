@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lb_Emp_id = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txb_Emp_FN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txb_Emp_LN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lb_Emp_id = new System.Windows.Forms.Label();
             this.btn_update = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Emp_delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Emp_clear = new Guna.UI2.WinForms.Guna2Button();
@@ -45,23 +51,79 @@
             this.compo_Emp_position = new Guna.UI2.WinForms.Guna2ComboBox();
             this.compo_Emp_gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txb_Emp_phone_no = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_Emp_LN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_salary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_Emp_FN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).BeginInit();
+            this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lb_Emp_id
+            // errorProvider1
             // 
-            this.lb_Emp_id.AutoSize = true;
-            this.lb_Emp_id.Location = new System.Drawing.Point(33, 52);
-            this.lb_Emp_id.Name = "lb_Emp_id";
-            this.lb_Emp_id.Size = new System.Drawing.Size(0, 24);
-            this.lb_Emp_id.TabIndex = 1;
-            this.lb_Emp_id.Visible = false;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txb_Emp_FN
+            // 
+            this.txb_Emp_FN.BackColor = System.Drawing.Color.Transparent;
+            this.txb_Emp_FN.BorderRadius = 8;
+            this.txb_Emp_FN.BorderThickness = 0;
+            this.txb_Emp_FN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Emp_FN.DefaultText = "";
+            this.txb_Emp_FN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Emp_FN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Emp_FN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Emp_FN.DisabledState.Parent = this.txb_Emp_FN;
+            this.txb_Emp_FN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.errorProvider1.SetError(this.txb_Emp_FN, "First name is required");
+            this.txb_Emp_FN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_Emp_FN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Emp_FN.FocusedState.Parent = this.txb_Emp_FN;
+            this.txb_Emp_FN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_FN.ForeColor = System.Drawing.Color.White;
+            this.txb_Emp_FN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Emp_FN.HoverState.Parent = this.txb_Emp_FN;
+            this.txb_Emp_FN.Location = new System.Drawing.Point(28, 62);
+            this.txb_Emp_FN.Margin = new System.Windows.Forms.Padding(6);
+            this.txb_Emp_FN.Name = "txb_Emp_FN";
+            this.txb_Emp_FN.PasswordChar = '\0';
+            this.txb_Emp_FN.PlaceholderText = "First Name";
+            this.txb_Emp_FN.SelectedText = "";
+            this.txb_Emp_FN.ShadowDecoration.Parent = this.txb_Emp_FN;
+            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 33);
+            this.txb_Emp_FN.TabIndex = 1;
+            this.txb_Emp_FN.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_Emp_FN.Validating += new System.ComponentModel.CancelEventHandler(this.Contr_val);
+            // 
+            // txb_Emp_LN
+            // 
+            this.txb_Emp_LN.BackColor = System.Drawing.Color.Transparent;
+            this.txb_Emp_LN.BorderRadius = 8;
+            this.txb_Emp_LN.BorderThickness = 0;
+            this.txb_Emp_LN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Emp_LN.DefaultText = "";
+            this.txb_Emp_LN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Emp_LN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Emp_LN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Emp_LN.DisabledState.Parent = this.txb_Emp_LN;
+            this.txb_Emp_LN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.errorProvider1.SetError(this.txb_Emp_LN, "Last name is required");
+            this.txb_Emp_LN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_Emp_LN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Emp_LN.FocusedState.Parent = this.txb_Emp_LN;
+            this.txb_Emp_LN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Emp_LN.ForeColor = System.Drawing.Color.White;
+            this.txb_Emp_LN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Emp_LN.HoverState.Parent = this.txb_Emp_LN;
+            this.txb_Emp_LN.Location = new System.Drawing.Point(232, 62);
+            this.txb_Emp_LN.Margin = new System.Windows.Forms.Padding(8);
+            this.txb_Emp_LN.Name = "txb_Emp_LN";
+            this.txb_Emp_LN.PasswordChar = '\0';
+            this.txb_Emp_LN.PlaceholderText = "Last Name";
+            this.txb_Emp_LN.SelectedText = "";
+            this.txb_Emp_LN.ShadowDecoration.Parent = this.txb_Emp_LN;
+            this.txb_Emp_LN.Size = new System.Drawing.Size(190, 33);
+            this.txb_Emp_LN.TabIndex = 2;
+            this.txb_Emp_LN.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_Emp_LN.Validating += new System.ComponentModel.CancelEventHandler(this.Contr_val);
             // 
             // txb_Emp_email
             // 
@@ -76,6 +138,7 @@
             this.txb_Emp_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_Emp_email.DisabledState.Parent = this.txb_Emp_email;
             this.txb_Emp_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.errorProvider1.SetError(this.txb_Emp_email, "Email is required");
             this.txb_Emp_email.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_Emp_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_email.FocusedState.Parent = this.txb_Emp_email;
@@ -93,6 +156,126 @@
             this.txb_Emp_email.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_email.TabIndex = 3;
             this.txb_Emp_email.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_Emp_email.Validating += new System.ComponentModel.CancelEventHandler(this.txb_Email_Validating);
+            // 
+            // dgv_Employee_info
+            // 
+            this.dgv_Employee_info.AllowUserToAddRows = false;
+            this.dgv_Employee_info.AllowUserToDeleteRows = false;
+            this.dgv_Employee_info.AllowUserToResizeColumns = false;
+            this.dgv_Employee_info.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgv_Employee_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Employee_info.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Employee_info.CausesValidation = false;
+            this.dgv_Employee_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Employee_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgv_Employee_info.ColumnHeadersHeight = 27;
+            this.dgv_Employee_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dgv_Employee_info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Employee_info.EnableHeadersVisualStyles = false;
+            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Employee_info.Name = "dgv_Employee_info";
+            this.dgv_Employee_info.ReadOnly = true;
+            this.dgv_Employee_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.dgv_Employee_info.RowHeadersVisible = false;
+            this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.dgv_Employee_info.RowTemplate.Height = 24;
+            this.dgv_Employee_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 545);
+            this.dgv_Employee_info.TabIndex = 4;
+            this.dgv_Employee_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_Employee_info.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgv_Employee_info.ThemeStyle.ReadOnly = true;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Employee_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_info_CellClick);
+            // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderThickness = 0;
+            this.guna2GroupBox1.Controls.Add(this.lb_Emp_id);
+            this.guna2GroupBox1.Controls.Add(this.txb_Emp_email);
+            this.guna2GroupBox1.Controls.Add(this.btn_update);
+            this.guna2GroupBox1.Controls.Add(this.btn_Emp_delete);
+            this.guna2GroupBox1.Controls.Add(this.btn_Emp_clear);
+            this.guna2GroupBox1.Controls.Add(this.btn_Emp_Click);
+            this.guna2GroupBox1.Controls.Add(this.label2);
+            this.guna2GroupBox1.Controls.Add(this.label3);
+            this.guna2GroupBox1.Controls.Add(this.label1);
+            this.guna2GroupBox1.Controls.Add(this.compo_Emp_DOB);
+            this.guna2GroupBox1.Controls.Add(this.compo_Emp_position);
+            this.guna2GroupBox1.Controls.Add(this.compo_Emp_gender);
+            this.guna2GroupBox1.Controls.Add(this.txb_Emp_phone_no);
+            this.guna2GroupBox1.Controls.Add(this.txb_Emp_LN);
+            this.guna2GroupBox1.Controls.Add(this.txb_Emp_salary);
+            this.guna2GroupBox1.Controls.Add(this.txb_Emp_FN);
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 545);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 220);
+            this.guna2GroupBox1.TabIndex = 3;
+            this.guna2GroupBox1.Text = "Employee Managment";
+            // 
+            // lb_Emp_id
+            // 
+            this.lb_Emp_id.AutoSize = true;
+            this.lb_Emp_id.Location = new System.Drawing.Point(33, 52);
+            this.lb_Emp_id.Name = "lb_Emp_id";
+            this.lb_Emp_id.Size = new System.Drawing.Size(0, 24);
+            this.lb_Emp_id.TabIndex = 1;
+            this.lb_Emp_id.Visible = false;
             // 
             // btn_update
             // 
@@ -229,6 +412,7 @@
             this.compo_Emp_DOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.compo_Emp_DOB.BorderRadius = 17;
             this.compo_Emp_DOB.CheckedState.Parent = this.compo_Emp_DOB;
+            this.compo_Emp_DOB.CustomFormat = "    ";
             this.compo_Emp_DOB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.compo_Emp_DOB.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compo_Emp_DOB.ForeColor = System.Drawing.Color.White;
@@ -318,7 +502,7 @@
             this.txb_Emp_phone_no.ForeColor = System.Drawing.Color.White;
             this.txb_Emp_phone_no.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_Emp_phone_no.HoverState.Parent = this.txb_Emp_phone_no;
-            this.txb_Emp_phone_no.Location = new System.Drawing.Point(232, 105);
+            this.txb_Emp_phone_no.Location = new System.Drawing.Point(232, 106);
             this.txb_Emp_phone_no.Margin = new System.Windows.Forms.Padding(5);
             this.txb_Emp_phone_no.Name = "txb_Emp_phone_no";
             this.txb_Emp_phone_no.PasswordChar = '\0';
@@ -329,36 +513,7 @@
             this.txb_Emp_phone_no.TabIndex = 5;
             this.txb_Emp_phone_no.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_Emp_phone_no.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Emp_phone_no_KeyPress);
-            // 
-            // txb_Emp_LN
-            // 
-            this.txb_Emp_LN.BackColor = System.Drawing.Color.Transparent;
-            this.txb_Emp_LN.BorderRadius = 8;
-            this.txb_Emp_LN.BorderThickness = 0;
-            this.txb_Emp_LN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_Emp_LN.DefaultText = "";
-            this.txb_Emp_LN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_Emp_LN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_Emp_LN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_Emp_LN.DisabledState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_Emp_LN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_Emp_LN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_Emp_LN.FocusedState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Emp_LN.ForeColor = System.Drawing.Color.White;
-            this.txb_Emp_LN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_Emp_LN.HoverState.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Location = new System.Drawing.Point(232, 62);
-            this.txb_Emp_LN.Margin = new System.Windows.Forms.Padding(8);
-            this.txb_Emp_LN.Name = "txb_Emp_LN";
-            this.txb_Emp_LN.PasswordChar = '\0';
-            this.txb_Emp_LN.PlaceholderText = "Last Name";
-            this.txb_Emp_LN.SelectedText = "";
-            this.txb_Emp_LN.ShadowDecoration.Parent = this.txb_Emp_LN;
-            this.txb_Emp_LN.Size = new System.Drawing.Size(190, 33);
-            this.txb_Emp_LN.TabIndex = 2;
-            this.txb_Emp_LN.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_Emp_phone_no.Validating += new System.ComponentModel.CancelEventHandler(this.Control_Validating2);
             // 
             // txb_Emp_salary
             // 
@@ -389,146 +544,7 @@
             this.txb_Emp_salary.Size = new System.Drawing.Size(190, 33);
             this.txb_Emp_salary.TabIndex = 4;
             this.txb_Emp_salary.TextOffset = new System.Drawing.Point(0, -2);
-            // 
-            // txb_Emp_FN
-            // 
-            this.txb_Emp_FN.BackColor = System.Drawing.Color.Transparent;
-            this.txb_Emp_FN.BorderRadius = 8;
-            this.txb_Emp_FN.BorderThickness = 0;
-            this.txb_Emp_FN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_Emp_FN.DefaultText = "";
-            this.txb_Emp_FN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_Emp_FN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_Emp_FN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_Emp_FN.DisabledState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_Emp_FN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_Emp_FN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_Emp_FN.FocusedState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Emp_FN.ForeColor = System.Drawing.Color.White;
-            this.txb_Emp_FN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_Emp_FN.HoverState.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Location = new System.Drawing.Point(28, 62);
-            this.txb_Emp_FN.Margin = new System.Windows.Forms.Padding(6);
-            this.txb_Emp_FN.Name = "txb_Emp_FN";
-            this.txb_Emp_FN.PasswordChar = '\0';
-            this.txb_Emp_FN.PlaceholderText = "First Name";
-            this.txb_Emp_FN.SelectedText = "";
-            this.txb_Emp_FN.ShadowDecoration.Parent = this.txb_Emp_FN;
-            this.txb_Emp_FN.Size = new System.Drawing.Size(190, 33);
-            this.txb_Emp_FN.TabIndex = 1;
-            this.txb_Emp_FN.TextOffset = new System.Drawing.Point(0, -2);
-            // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderThickness = 0;
-            this.guna2GroupBox1.Controls.Add(this.lb_Emp_id);
-            this.guna2GroupBox1.Controls.Add(this.txb_Emp_email);
-            this.guna2GroupBox1.Controls.Add(this.btn_update);
-            this.guna2GroupBox1.Controls.Add(this.btn_Emp_delete);
-            this.guna2GroupBox1.Controls.Add(this.btn_Emp_clear);
-            this.guna2GroupBox1.Controls.Add(this.btn_Emp_Click);
-            this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.compo_Emp_DOB);
-            this.guna2GroupBox1.Controls.Add(this.compo_Emp_position);
-            this.guna2GroupBox1.Controls.Add(this.compo_Emp_gender);
-            this.guna2GroupBox1.Controls.Add(this.txb_Emp_phone_no);
-            this.guna2GroupBox1.Controls.Add(this.txb_Emp_LN);
-            this.guna2GroupBox1.Controls.Add(this.txb_Emp_salary);
-            this.guna2GroupBox1.Controls.Add(this.txb_Emp_FN);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 545);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 220);
-            this.guna2GroupBox1.TabIndex = 3;
-            this.guna2GroupBox1.Text = "Employee Managment";
-            // 
-            // dgv_Employee_info
-            // 
-            this.dgv_Employee_info.AllowUserToAddRows = false;
-            this.dgv_Employee_info.AllowUserToDeleteRows = false;
-            this.dgv_Employee_info.AllowUserToResizeColumns = false;
-            this.dgv_Employee_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_Employee_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Employee_info.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_Employee_info.CausesValidation = false;
-            this.dgv_Employee_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Employee_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Employee_info.ColumnHeadersHeight = 27;
-            this.dgv_Employee_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_Employee_info.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_Employee_info.EnableHeadersVisualStyles = false;
-            this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.Location = new System.Drawing.Point(0, 0);
-            this.dgv_Employee_info.Name = "dgv_Employee_info";
-            this.dgv_Employee_info.ReadOnly = true;
-            this.dgv_Employee_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_Employee_info.RowHeadersVisible = false;
-            this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            this.dgv_Employee_info.RowTemplate.Height = 24;
-            this.dgv_Employee_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Employee_info.Size = new System.Drawing.Size(1250, 545);
-            this.dgv_Employee_info.TabIndex = 4;
-            this.dgv_Employee_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_Employee_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_Employee_info.ThemeStyle.HeaderStyle.Height = 27;
-            this.dgv_Employee_info.ThemeStyle.ReadOnly = true;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Employee_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_info_CellClick);
+            this.txb_Emp_salary.Validating += new System.ComponentModel.CancelEventHandler(this.Control_Validating);
             // 
             // EmployeeUC
             // 
@@ -539,14 +555,19 @@
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "EmployeeUC";
             this.Size = new System.Drawing.Size(1250, 765);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        public System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_Employee_info;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private System.Windows.Forms.Label lb_Emp_id;
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_email;
         private Guna.UI2.WinForms.Guna2Button btn_update;
@@ -563,7 +584,5 @@
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_LN;
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_salary;
         private Guna.UI2.WinForms.Guna2TextBox txb_Emp_FN;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_Employee_info;
     }
 }

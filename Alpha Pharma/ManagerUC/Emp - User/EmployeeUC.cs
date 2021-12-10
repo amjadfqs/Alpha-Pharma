@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Linq;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace Alpha_Pharma.ManagerUC
@@ -10,6 +12,7 @@ namespace Alpha_Pharma.ManagerUC
         public EmployeeUC()
         {
             InitializeComponent();
+            errorProvider1.Clear();
             dgv_Employee_info.DataSource = Employee.GetEmployees();
         }
 
@@ -91,7 +94,8 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_Emp_clear_Click(object sender, EventArgs e)
         {
-            ClearControls();   
+            ClearControls();
+            compo_Emp_DOB.Format = DateTimePickerFormat.Custom;
         }
 
         private void btn_Emp_delete_Click(object sender, EventArgs e)
@@ -121,7 +125,7 @@ namespace Alpha_Pharma.ManagerUC
             txb_Emp_email.Clear();
             compo_Emp_gender.SelectedIndex = -1;
             compo_Emp_position.SelectedIndex = -1;
-            compo_Emp_DOB.Text = DateTime.Now.ToString();
+            compo_Emp_DOB.CustomFormat = " ";
         }
 
         private void txb_Emp_phone_no_KeyPress(object sender, KeyPressEventArgs e)
@@ -149,11 +153,83 @@ namespace Alpha_Pharma.ManagerUC
                 compo_Emp_gender.Text = dgv_Employee_info.Rows[index].Cells[6].Value.ToString();
                 compo_Emp_position.Text = dgv_Employee_info.Rows[index].Cells[7].Value.ToString();
                 compo_Emp_DOB.Text = dgv_Employee_info.Rows[index].Cells[8].Value.ToString();
+                compo_Emp_DOB.Format = DateTimePickerFormat.Short;
             }
             catch (Exception)
             {
                 return;
             }
+        }
+
+        private void Control_Validating(object sender, CancelEventArgs e)
+        {
+            double i = 0;
+            if (double.TryParse(txb_Emp_salary.Text, out i))
+            {
+                errorProvider1.SetError(txb_Emp_salary, "");
+                e.Cancel = false;
+            }
+           
+            else
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
+            }
+        }
+
+        private void Control_Validating2(object sender, CancelEventArgs e)
+        {
+            //double i = 0;
+            //if (double.TryParse(txb_Emp_phone_no.Text, out i))
+            //{
+            //    errorProvider1.SetError(txb_Emp_salary, "");
+            //    e.Cancel = false;
+            //}
+            //else
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
+            //}
+
+            //if you want it to work delete the txb_Emp_phone_no_KeyPress or see anything else!....
+
+        }
+
+        private void Contr_val(object sender, CancelEventArgs e)
+        {
+            //if (string.IsNullOrEmpty(((Control)sender).Text))
+            //{
+            //    e.Cancel = true;
+            //    ((Control)sender).Focus();
+            //    errorProvider1.SetError((Control)sender, "This field is required!");
+            //}
+            //else
+            //{
+            //    errorProvider1.SetError((Control)sender, null);
+            //} 
+
+        }
+
+        private void txb_Email_Validating(object sender, CancelEventArgs e)
+        {
+            //Contr_val(sender, e);
+            //string error = null;
+            //try
+            //{
+            //    new MailAddress(txb_Emp_email.Text);
+            //}
+            //catch (Exception)
+            //{
+            //    error = "Please use a valid format email";
+            //    e.Cancel = true;
+
+            //}
+            //errorProvider1.SetError((Control)sender, error);
+        }
+
+        private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)
+        {
+            compo_Emp_DOB.CustomFormat = "dd/MM/yy";
         }
     }
 }
