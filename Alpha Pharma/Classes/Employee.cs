@@ -15,7 +15,7 @@ namespace Alpha_Pharma
         public string Gender { get; set; }
         public string Position { get; set; }
         public string Dob { get; set; }
-        public string Created { get; set; }
+        public string Created_At { get; set; }
 
 
         //select
@@ -24,7 +24,7 @@ namespace Alpha_Pharma
             " emp_lname as LName, emp_salary as Salary, emp_phone as Phone," +
             "emp_email as Email, emp_sex as Gender," +
             " emp_position as Position, emp_dob as DOB," +
-            " created_at as Created from Employees";
+            " created_at as Created_At, updated_at as Updated_At from Employees";
         //insert
         private const string InsertQuery =
             "Insert Into Employees(emp_fname, emp_lname, emp_salary, emp_phone, emp_email, emp_sex, emp_position, emp_dob, created_at) Values " +
@@ -32,7 +32,7 @@ namespace Alpha_Pharma
         //Update
         private const string UpdateQuery =
             "Update Employees set emp_fname=@FName, emp_lname=@LName, emp_salary=@Salary, " +
-            "emp_phone=@Phone, emp_email=@Email, emp_sex=@Gender, emp_position=@Position, emp_dob=@DOB where emp_id=@Id";
+            "emp_phone=@Phone, emp_email=@Email, emp_sex=@Gender, emp_position=@Position, emp_dob=@DOB, updated_at = Cast(GETDATE() as Date) where emp_id=@Id";
         //delete
         private const string DeleteQuery = "Delete from Employees where emp_id=@Id";
 

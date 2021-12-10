@@ -12,6 +12,7 @@ namespace Alpha_Pharma.ManagerUC
         public EmployeeUC()
         {
             InitializeComponent();
+            errorProvider1.Clear();
             dgv_Employee_info.DataSource = Employee.GetEmployees();
         }
 
@@ -93,7 +94,8 @@ namespace Alpha_Pharma.ManagerUC
 
         private void btn_Emp_clear_Click(object sender, EventArgs e)
         {
-            ClearControls();   
+            ClearControls();
+            compo_Emp_DOB.Format = DateTimePickerFormat.Custom;
         }
 
         private void btn_Emp_delete_Click(object sender, EventArgs e)
@@ -123,7 +125,7 @@ namespace Alpha_Pharma.ManagerUC
             txb_Emp_email.Clear();
             compo_Emp_gender.SelectedIndex = -1;
             compo_Emp_position.SelectedIndex = -1;
-            compo_Emp_DOB.Text = DateTime.Now.ToString();
+            compo_Emp_DOB.CustomFormat = " ";
         }
 
         private void txb_Emp_phone_no_KeyPress(object sender, KeyPressEventArgs e)
@@ -151,6 +153,7 @@ namespace Alpha_Pharma.ManagerUC
                 compo_Emp_gender.Text = dgv_Employee_info.Rows[index].Cells[6].Value.ToString();
                 compo_Emp_position.Text = dgv_Employee_info.Rows[index].Cells[7].Value.ToString();
                 compo_Emp_DOB.Text = dgv_Employee_info.Rows[index].Cells[8].Value.ToString();
+                compo_Emp_DOB.Format = DateTimePickerFormat.Short;
             }
             catch (Exception)
             {
@@ -194,14 +197,16 @@ namespace Alpha_Pharma.ManagerUC
 
         private void Contr_val(object sender, CancelEventArgs e)
         {
-            //string error = null;
-            //if (((Control)sender).Text.Length == 0)
+            //if (string.IsNullOrEmpty(((Control)sender).Text))
             //{
-            //    error = "This field is required!";
             //    e.Cancel = true;
-
+            //    ((Control)sender).Focus();
+            //    errorProvider1.SetError((Control)sender, "This field is required!");
             //}
-            //errorProvider1.SetError((Control) sender, error);
+            //else
+            //{
+            //    errorProvider1.SetError((Control)sender, null);
+            //} 
 
         }
 
@@ -220,6 +225,11 @@ namespace Alpha_Pharma.ManagerUC
 
             //}
             //errorProvider1.SetError((Control)sender, error);
+        }
+
+        private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)
+        {
+            compo_Emp_DOB.CustomFormat = "dd/MM/yy";
         }
     }
 }

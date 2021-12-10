@@ -61,6 +61,7 @@
     <Compile Include="Classes\Employee.cs" />
     <Compile Include="Classes\For.cs" />
     <Compile Include="Classes\Section.cs" />
+    <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\Supplier.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Forms\Login.cs">
