@@ -24,6 +24,7 @@ namespace Alpha_Pharma.ManagerUC
                     supplier.Sup_name = txb_SN.Text;
                     supplier.Sup_address = txb_SA.Text;
                     supplier.Sup_phone = txb_SPN.Text;
+                    supplier.Suppplier_Desc = txb_sup_desc.Text;
 
                     bool success = supplier.InsertSupplier(supplier);
 
@@ -58,6 +59,8 @@ namespace Alpha_Pharma.ManagerUC
                     supplier.Sup_name = txb_SN.Text;
                     supplier.Sup_address = txb_SA.Text;
                     supplier.Sup_phone = txb_SPN.Text;
+                    supplier.Suppplier_Desc = txb_sup_desc.Text;
+
                     var success = supplier.UpdateSupplier(supplier);
 
                     dgv_Supplier_info.DataSource = Supplier.GetSuppliers();
@@ -124,6 +127,7 @@ namespace Alpha_Pharma.ManagerUC
                 txb_SN.Text = dgv_Supplier_info.Rows[index].Cells[1].Value.ToString();
                 txb_SA.Text = dgv_Supplier_info.Rows[index].Cells[2].Value.ToString();
                 txb_SPN.Text = dgv_Supplier_info.Rows[index].Cells[3].Value.ToString();
+                txb_sup_desc.Text = dgv_Supplier_info.Rows[index].Cells[4].Value.ToString();
             }
             catch (Exception)
             {

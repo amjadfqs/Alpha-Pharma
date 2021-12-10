@@ -88,12 +88,6 @@
     <Compile Include="ManagerUC\Emp - User\Emp - User.Designer.cs">
       <DependentUpon>Emp - User.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUC\Emp - User\SessionUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ManagerUC\Emp - User\SessionUC.Designer.cs">
-      <DependentUpon>SessionUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="ManagerUC\ProductUC\DoseUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +124,12 @@
     <Compile Include="ManagerUC\ProductUC\SectionUC.Designer.cs">
       <DependentUpon>SectionUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\Pro_ReportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\Pro_ReportUC.Designer.cs">
+      <DependentUpon>Pro_ReportUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerUC\SuppilerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,9 +156,6 @@
     <EmbeddedResource Include="ManagerUC\Emp - User\Emp - User.resx">
       <DependentUpon>Emp - User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUC\Emp - User\SessionUC.resx">
-      <DependentUpon>SessionUC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\Emp - User\UserUC.resx">
       <DependentUpon>UserUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\SectionUC.resx">
       <DependentUpon>SectionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\Pro_ReportUC.resx">
+      <DependentUpon>Pro_ReportUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\SuppilerUC.resx">
       <DependentUpon>SuppilerUC.cs</DependentUpon>

@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.product_report = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -48,6 +49,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.guna2Panel1.Controls.Add(this.product_report);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.btn_SaleMana);
@@ -137,7 +139,7 @@
             this.btn_DrugMana.Image = global::Alpha_Pharma.Properties.Resources.drugs;
             this.btn_DrugMana.ImageOffset = new System.Drawing.Point(-6, 0);
             this.btn_DrugMana.ImageSize = new System.Drawing.Size(26, 26);
-            this.btn_DrugMana.Location = new System.Drawing.Point(7, 500);
+            this.btn_DrugMana.Location = new System.Drawing.Point(7, 444);
             this.btn_DrugMana.Name = "btn_DrugMana";
             this.btn_DrugMana.ShadowDecoration.Parent = this.btn_DrugMana;
             this.btn_DrugMana.Size = new System.Drawing.Size(292, 45);
@@ -159,7 +161,7 @@
             this.btn_SuppMana.HoverState.Parent = this.btn_SuppMana;
             this.btn_SuppMana.Image = global::Alpha_Pharma.Properties.Resources.supplier;
             this.btn_SuppMana.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_SuppMana.Location = new System.Drawing.Point(7, 422);
+            this.btn_SuppMana.Location = new System.Drawing.Point(7, 375);
             this.btn_SuppMana.Name = "btn_SuppMana";
             this.btn_SuppMana.ShadowDecoration.Parent = this.btn_SuppMana;
             this.btn_SuppMana.Size = new System.Drawing.Size(292, 45);
@@ -181,7 +183,7 @@
             this.btn_CusMana.HoverState.Parent = this.btn_CusMana;
             this.btn_CusMana.Image = global::Alpha_Pharma.Properties.Resources.profile;
             this.btn_CusMana.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_CusMana.Location = new System.Drawing.Point(7, 342);
+            this.btn_CusMana.Location = new System.Drawing.Point(7, 307);
             this.btn_CusMana.Margin = new System.Windows.Forms.Padding(3, 90, 3, 3);
             this.btn_CusMana.Name = "btn_CusMana";
             this.btn_CusMana.ShadowDecoration.Parent = this.btn_CusMana;
@@ -204,7 +206,7 @@
             this.btn_EmpMana.HoverState.Parent = this.btn_EmpMana;
             this.btn_EmpMana.Image = global::Alpha_Pharma.Properties.Resources.profile;
             this.btn_EmpMana.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_EmpMana.Location = new System.Drawing.Point(7, 264);
+            this.btn_EmpMana.Location = new System.Drawing.Point(7, 239);
             this.btn_EmpMana.Name = "btn_EmpMana";
             this.btn_EmpMana.ShadowDecoration.Parent = this.btn_EmpMana;
             this.btn_EmpMana.Size = new System.Drawing.Size(291, 45);
@@ -247,6 +249,28 @@
             this.panelContainer.Size = new System.Drawing.Size(1250, 875);
             this.panelContainer.TabIndex = 2;
             // 
+            // product_report
+            // 
+            this.product_report.BorderRadius = 20;
+            this.product_report.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.product_report.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.product_report.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.product_report.CheckedState.Parent = this.product_report;
+            this.product_report.CustomImages.Parent = this.product_report;
+            this.product_report.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.product_report.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_report.ForeColor = System.Drawing.Color.White;
+            this.product_report.HoverState.Parent = this.product_report;
+            this.product_report.Image = global::Alpha_Pharma.Properties.Resources.drugs;
+            this.product_report.ImageOffset = new System.Drawing.Point(-17, 0);
+            this.product_report.ImageSize = new System.Drawing.Size(26, 26);
+            this.product_report.Location = new System.Drawing.Point(7, 513);
+            this.product_report.Name = "product_report";
+            this.product_report.ShadowDecoration.Parent = this.product_report;
+            this.product_report.Size = new System.Drawing.Size(292, 45);
+            this.product_report.TabIndex = 7;
+            this.product_report.Text = "Drug Report";
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -279,5 +303,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_EmpMana;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button product_report;
     }
 }

@@ -153,7 +153,6 @@ namespace Alpha_Pharma.ManagerUC
                 compo_Emp_gender.Text = dgv_Employee_info.Rows[index].Cells[6].Value.ToString();
                 compo_Emp_position.Text = dgv_Employee_info.Rows[index].Cells[7].Value.ToString();
                 compo_Emp_DOB.Text = dgv_Employee_info.Rows[index].Cells[8].Value.ToString();
-                compo_Emp_DOB.Format = DateTimePickerFormat.Short;
             }
             catch (Exception)
             {
