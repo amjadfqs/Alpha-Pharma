@@ -1,6 +1,6 @@
-﻿namespace Alpha_Pharma
+﻿namespace Alpha_Pharma.Forms
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txb_UserName = new System.Windows.Forms.TextBox();
             this.txb_Pass = new System.Windows.Forms.TextBox();
             this.btn_Mini = new System.Windows.Forms.Button();

@@ -1,5 +1,7 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
+using Alpha_Pharma.Forms;
 
 namespace Alpha_Pharma.Classes
 {
@@ -15,10 +17,10 @@ namespace Alpha_Pharma.Classes
         public string Lname { get; set; }
         public string Position { get; set; }
 
-        private const string SelectQuery = "Select sec_id as SesssionID, E.emp_id as ID, E.emp_fname as Fname, E.emp_lname as Lname, Convert(VARCHAR, ses_start ,100) as SessionStart,Convert(VARCHAR, ses_end ,100) as SessionEnd, ses_description as SessionDescription from Sessions AS U " +
+        private const string SelectQuery = "Select sec_id as SesssionID, E.emp_id as ID, E.emp_fname as Fname, E.emp_lname as Lname, Convert(VARCHAR, ses_start ,100) as SessionStart,Convert(VARCHAR, ses_end ,100) as SessionEnd,DateDiff(Hour,ses_start, ses_end) As Duration_in_Hour from Sessions AS U " +
                                            "Join Employees AS E on U.emp_id = E.emp_id";
-        private const string InsertQuery = "Insert Into Sessions (ses_start, ses_end, ses_description, emp_id) Values (@SessionStart, @SessionEnd, @SessionDescription, @ID)";
-        private const string UpdateQuery = "Update Sessions set ses_start = @SessionStart, ses_end = @SessionEnd, ses_description = @SessionDescription where sec_id = @SessionID";
+        private const string InsertQuery = "Insert Into Sessions (ses_start, ses_end, emp_id) Values (@SessionStart, @SessionEnd, @ID)";
+        private const string UpdateQuery = "Update Sessions set ses_start = @SessionStart, ses_end = @SessionEnd where sec_id = @SessionID";
         private const string DeletQuery = "Delete from Sessions where sec_id = @SessionID";
 
         public static DataTable GetSession()
@@ -48,8 +50,7 @@ namespace Alpha_Pharma.Classes
                 {
                     com.Parameters.AddWithValue("@ID", session.ID);
                     com.Parameters.AddWithValue("@SessionStart", session.SessionStart);
-                    com.Parameters.AddWithValue("@SessionEnd",session.SessionEnd);
-                    com.Parameters.AddWithValue("@SessionDescription",session.SessionDescription);
+                    com.Parameters.AddWithValue("@SessionEnd", session.SessionEnd);
                     rows = com.ExecuteNonQuery();
                 }
             }
@@ -68,7 +69,6 @@ namespace Alpha_Pharma.Classes
                     //com.Parameters.AddWithValue("@ID", session.ID);
                     com.Parameters.AddWithValue("@SessionStart", session.SessionStart);
                     com.Parameters.AddWithValue("@SessionEnd", session.SessionEnd);
-                    com.Parameters.AddWithValue("@SessionDescription", session.SessionDescription);
                     rows = com.ExecuteNonQuery();
                 }
             }

@@ -1,4 +1,4 @@
-﻿namespace Alpha_Pharma
+﻿namespace Alpha_Pharma.Forms
 {
     partial class Manager
     {
@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manager));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.product_report = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_logout = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SaleMana = new Guna.UI2.WinForms.Guna2Button();
             this.btn_DrugMana = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SuppMana = new Guna.UI2.WinForms.Guna2Button();
@@ -40,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.product_report = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -51,7 +51,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
             this.guna2Panel1.Controls.Add(this.product_report);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btn_logout);
             this.guna2Panel1.Controls.Add(this.btn_SaleMana);
             this.guna2Panel1.Controls.Add(this.btn_DrugMana);
             this.guna2Panel1.Controls.Add(this.btn_SuppMana);
@@ -67,6 +67,28 @@
             this.guna2Panel1.Size = new System.Drawing.Size(306, 875);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // product_report
+            // 
+            this.product_report.BorderRadius = 20;
+            this.product_report.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.product_report.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.product_report.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.product_report.CheckedState.Parent = this.product_report;
+            this.product_report.CustomImages.Parent = this.product_report;
+            this.product_report.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.product_report.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_report.ForeColor = System.Drawing.Color.White;
+            this.product_report.HoverState.Parent = this.product_report;
+            this.product_report.Image = global::Alpha_Pharma.Properties.Resources.drugs;
+            this.product_report.ImageOffset = new System.Drawing.Point(-17, 0);
+            this.product_report.ImageSize = new System.Drawing.Size(26, 26);
+            this.product_report.Location = new System.Drawing.Point(7, 513);
+            this.product_report.Name = "product_report";
+            this.product_report.ShadowDecoration.Parent = this.product_report;
+            this.product_report.Size = new System.Drawing.Size(292, 45);
+            this.product_report.TabIndex = 7;
+            this.product_report.Text = "Drug Report";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -78,28 +100,28 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Button1
+            // btn_logout
             // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.guna2Button1.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Alpha_Pharma.Properties.Resources.logout;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(8, 656);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(291, 45);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Text = "Logout";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_logout.BorderRadius = 20;
+            this.btn_logout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_logout.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_logout.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btn_logout.CheckedState.Parent = this.btn_logout;
+            this.btn_logout.CustomImages.Parent = this.btn_logout;
+            this.btn_logout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.btn_logout.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.HoverState.Parent = this.btn_logout;
+            this.btn_logout.Image = global::Alpha_Pharma.Properties.Resources.logout;
+            this.btn_logout.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.btn_logout.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_logout.Location = new System.Drawing.Point(8, 656);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.ShadowDecoration.Parent = this.btn_logout;
+            this.btn_logout.Size = new System.Drawing.Size(291, 45);
+            this.btn_logout.TabIndex = 5;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // btn_SaleMana
             // 
@@ -122,7 +144,6 @@
             this.btn_SaleMana.Size = new System.Drawing.Size(291, 45);
             this.btn_SaleMana.TabIndex = 5;
             this.btn_SaleMana.Text = "Sales Managment";
-            this.btn_SaleMana.Click += new System.EventHandler(this.btn_SaleMana_Click);
             // 
             // btn_DrugMana
             // 
@@ -249,28 +270,6 @@
             this.panelContainer.Size = new System.Drawing.Size(1250, 875);
             this.panelContainer.TabIndex = 2;
             // 
-            // product_report
-            // 
-            this.product_report.BorderRadius = 20;
-            this.product_report.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.product_report.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.product_report.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.product_report.CheckedState.Parent = this.product_report;
-            this.product_report.CustomImages.Parent = this.product_report;
-            this.product_report.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.product_report.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_report.ForeColor = System.Drawing.Color.White;
-            this.product_report.HoverState.Parent = this.product_report;
-            this.product_report.Image = global::Alpha_Pharma.Properties.Resources.drugs;
-            this.product_report.ImageOffset = new System.Drawing.Point(-17, 0);
-            this.product_report.ImageSize = new System.Drawing.Size(26, 26);
-            this.product_report.Location = new System.Drawing.Point(7, 513);
-            this.product_report.Name = "product_report";
-            this.product_report.ShadowDecoration.Parent = this.product_report;
-            this.product_report.Size = new System.Drawing.Size(292, 45);
-            this.product_report.TabIndex = 7;
-            this.product_report.Text = "Drug Report";
-            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -302,7 +301,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_CusMana;
         private Guna.UI2.WinForms.Guna2Button btn_EmpMana;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_logout;
         private Guna.UI2.WinForms.Guna2Button product_report;
     }
 }

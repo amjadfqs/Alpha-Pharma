@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
+using Alpha_Pharma.Classes;
 using Alpha_Pharma.ManagerUC;
 using Alpha_Pharma.ManagerUC.Emp___User;
 using Alpha_Pharma.ManagerUC.ProductUC;
 
-namespace Alpha_Pharma
+namespace Alpha_Pharma.Forms
 {
     public partial class Manager : Form
     {
+        private Session session = new Session();
         public Manager()
         {
             InitializeComponent();
@@ -45,15 +47,16 @@ namespace Alpha_Pharma
             openUserControl(uc);
         }
 
-        private void btn_SaleMana_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_logout_Click_1(object sender, EventArgs e)
         {
+            session.ID = User.User_ID.ToString();
+            session.SessionStart = Login.startSession.ToString();
+            session.SessionEnd = DateTime.Now.ToString();
+            session.InsertSession(session);
+           
             this.Hide();
-            Form1 f = new Form1();
+            Login f = new Login();
             f.Show();
         }
     }

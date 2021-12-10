@@ -14,7 +14,10 @@ namespace Alpha_Pharma.Classes
         public string Fname { get; set; }
         public string Lname { get; set; }
         public string Position { get; set; }
-        
+
+        public static string User_Name { get; set; }
+        public static int User_ID { get; set; }
+
 
         private const string SelectQuery = "Select E.emp_id as ID, E.emp_fname as Fname, E.emp_lname as Lname, user_name as UserName, user_pass as Password, user_type as Type from Users AS U " +
                                            "Join Employees AS E on U.emp_id = E.emp_id";
@@ -97,6 +100,8 @@ namespace Alpha_Pharma.Classes
         public string loginChecker(string name, string pass)
         {
             string type = null;
+            int id = 0;
+            string uname = null;
 
             // string select = "select * from Users where user_name=" + "'" + name + "'" + "and user_pass=" + "'" + pass + "'" ;
             string select = "select * from Users where user_name= @Name and user_pass= @Pass"  ;
@@ -115,11 +120,15 @@ namespace Alpha_Pharma.Classes
                             while (DR.Read())
                             {
                                 type = DR["user_type"].ToString();
+                                id = (int) DR["emp_id"];
+                                uname = DR["user_name"].ToString();
                             }
                         }
                     }
                 }
             }
+            User_Name = uname;
+            User_ID = id;
 
             return type;
         }

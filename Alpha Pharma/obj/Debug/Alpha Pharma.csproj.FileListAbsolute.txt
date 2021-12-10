@@ -83,8 +83,6 @@ C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.pdb
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Guna.UI2.dll
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Form1.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Manager.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.CustomerUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.Emp___User.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.UserUC.resources
@@ -105,3 +103,5 @@ C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csp
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.SessionUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Pro_ReportUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Login.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Manager.resources
