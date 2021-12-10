@@ -2,12 +2,15 @@
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
-namespace Alpha_Pharma
+namespace Alpha_Pharma.Forms
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
+        public static string UserName { get; set; }
+        public static DateTime startSession { get; set; }
+
         private User user = new User();
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -25,6 +28,8 @@ namespace Alpha_Pharma
         private void but_enter_Click(object sender, EventArgs e)
         {
             string type_user = user.loginChecker(txb_UserName.Text, txb_Pass.Text);
+
+            startSession = DateTime.Now;
 
             if (type_user == "Manager")
             {
@@ -47,6 +52,7 @@ namespace Alpha_Pharma
             {
                 MessageBox.Show("Invalid Inforamtion !", "Try Again");
             }
+
         }
 
        

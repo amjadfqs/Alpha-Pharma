@@ -37,6 +37,8 @@
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_update = new Guna.UI2.WinForms.Guna2Button();
             this.group_Box_Customer = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txb_cus_desc = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.id_lb = new System.Windows.Forms.Label();
             this.mb_CPN = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txb_CLN = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_customer_info = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txb_cus_desc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.group_Box_Customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).BeginInit();
             this.SuspendLayout();
@@ -176,6 +176,49 @@
             this.group_Box_Customer.Size = new System.Drawing.Size(1250, 233);
             this.group_Box_Customer.TabIndex = 3;
             this.group_Box_Customer.Text = "Customer Managment";
+            // 
+            // txb_cus_desc
+            // 
+            this.txb_cus_desc.BackColor = System.Drawing.Color.Transparent;
+            this.txb_cus_desc.BorderColor = System.Drawing.Color.Transparent;
+            this.txb_cus_desc.BorderRadius = 8;
+            this.txb_cus_desc.BorderThickness = 0;
+            this.txb_cus_desc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_cus_desc.DefaultText = "";
+            this.txb_cus_desc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_cus_desc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_cus_desc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_cus_desc.DisabledState.Parent = this.txb_cus_desc;
+            this.txb_cus_desc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_cus_desc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_cus_desc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_cus_desc.FocusedState.Parent = this.txb_cus_desc;
+            this.txb_cus_desc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_cus_desc.ForeColor = System.Drawing.Color.White;
+            this.txb_cus_desc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_cus_desc.HoverState.Parent = this.txb_cus_desc;
+            this.txb_cus_desc.Location = new System.Drawing.Point(474, 73);
+            this.txb_cus_desc.Margin = new System.Windows.Forms.Padding(5);
+            this.txb_cus_desc.Multiline = true;
+            this.txb_cus_desc.Name = "txb_cus_desc";
+            this.txb_cus_desc.PasswordChar = '\0';
+            this.txb_cus_desc.PlaceholderText = "type here....";
+            this.txb_cus_desc.SelectedText = "";
+            this.txb_cus_desc.ShadowDecoration.Parent = this.txb_cus_desc;
+            this.txb_cus_desc.Size = new System.Drawing.Size(306, 114);
+            this.txb_cus_desc.TabIndex = 27;
+            this.txb_cus_desc.TextOffset = new System.Drawing.Point(0, -2);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(482, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 17);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Customer Description:";
             // 
             // id_lb
             // 
@@ -422,49 +465,6 @@
             this.dgv_customer_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_customer_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellClick);
-            // 
-            // txb_cus_desc
-            // 
-            this.txb_cus_desc.BackColor = System.Drawing.Color.Transparent;
-            this.txb_cus_desc.BorderColor = System.Drawing.Color.Transparent;
-            this.txb_cus_desc.BorderRadius = 8;
-            this.txb_cus_desc.BorderThickness = 0;
-            this.txb_cus_desc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_cus_desc.DefaultText = "";
-            this.txb_cus_desc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_cus_desc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_cus_desc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_cus_desc.DisabledState.Parent = this.txb_cus_desc;
-            this.txb_cus_desc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_cus_desc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_cus_desc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_cus_desc.FocusedState.Parent = this.txb_cus_desc;
-            this.txb_cus_desc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_cus_desc.ForeColor = System.Drawing.Color.White;
-            this.txb_cus_desc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_cus_desc.HoverState.Parent = this.txb_cus_desc;
-            this.txb_cus_desc.Location = new System.Drawing.Point(474, 73);
-            this.txb_cus_desc.Margin = new System.Windows.Forms.Padding(5);
-            this.txb_cus_desc.Multiline = true;
-            this.txb_cus_desc.Name = "txb_cus_desc";
-            this.txb_cus_desc.PasswordChar = '\0';
-            this.txb_cus_desc.PlaceholderText = "type here....";
-            this.txb_cus_desc.SelectedText = "";
-            this.txb_cus_desc.ShadowDecoration.Parent = this.txb_cus_desc;
-            this.txb_cus_desc.Size = new System.Drawing.Size(306, 114);
-            this.txb_cus_desc.TabIndex = 27;
-            this.txb_cus_desc.TextOffset = new System.Drawing.Point(0, -2);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(482, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 17);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Session description:";
             // 
             // CustomerUC
             // 

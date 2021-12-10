@@ -32,8 +32,7 @@ namespace Alpha_Pharma.ManagerUC.Emp___User
 
         private void btn_Session_Click(object sender, EventArgs e)
         {
-            SessionUC uc = new SessionUC();
-            openUserControl(uc);
+          
         }
     }
 }
