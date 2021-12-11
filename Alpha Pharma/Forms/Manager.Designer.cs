@@ -109,6 +109,7 @@
             this.btn_logout.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btn_logout.CheckedState.Parent = this.btn_logout;
             this.btn_logout.CustomImages.Parent = this.btn_logout;
+            this.btn_logout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_logout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.btn_logout.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_logout.ForeColor = System.Drawing.Color.White;

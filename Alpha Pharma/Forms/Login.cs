@@ -31,27 +31,28 @@ namespace Alpha_Pharma.Forms
 
             startSession = DateTime.Now;
 
-            if (type_user == "Manager")
-            {
-                this.Hide();
-                new Manager().ShowDialog();
-            }
-            else if (type_user == "Admin")
-            {
-                this.Hide();
-
-                MessageBox.Show(type_user);
-            }
-            else if (type_user == "Employee")
-            {
-                this.Hide();
-
-                MessageBox.Show(type_user);
-            }
-            else
-            {
-                MessageBox.Show("Invalid Inforamtion !", "Try Again");
-            }
+                if (type_user == "Manager")
+                {
+                    this.Hide();
+                    new Loading().ShowDialog();
+                    new Manager().Show();
+                }
+                else if (type_user == "Admin")
+                {
+                    this.Hide();
+                    new Loading().ShowDialog();
+                    MessageBox.Show(type_user);
+                }
+                else if (type_user == "Employee")
+                {
+                    this.Hide();
+                    new Loading().ShowDialog();
+                    MessageBox.Show(type_user);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Inforamtion !", "Try Again");
+                }
 
         }
 
