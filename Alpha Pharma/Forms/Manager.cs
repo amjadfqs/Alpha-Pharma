@@ -4,6 +4,8 @@ using Alpha_Pharma.Classes;
 using Alpha_Pharma.ManagerUC;
 using Alpha_Pharma.ManagerUC.Emp___User;
 using Alpha_Pharma.ManagerUC.ProductUC;
+using Alpha_Pharma.ManagerUC.Reports;
+
 
 namespace Alpha_Pharma.Forms
 {
@@ -58,6 +60,12 @@ namespace Alpha_Pharma.Forms
             this.Hide();
             Login f = new Login();
             f.Show();
+        }
+
+        private void product_report_Click(object sender, EventArgs e)
+        {
+            Reports uc = new Reports();
+            openUserControl(uc);
         }
     }
 }

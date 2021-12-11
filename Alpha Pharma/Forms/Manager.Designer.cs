@@ -79,15 +79,16 @@
             this.product_report.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.product_report.ForeColor = System.Drawing.Color.White;
             this.product_report.HoverState.Parent = this.product_report;
-            this.product_report.Image = global::Alpha_Pharma.Properties.Resources.drugs;
-            this.product_report.ImageOffset = new System.Drawing.Point(-17, 0);
-            this.product_report.ImageSize = new System.Drawing.Size(26, 26);
-            this.product_report.Location = new System.Drawing.Point(7, 513);
+            this.product_report.Image = global::Alpha_Pharma.Properties.Resources.report;
+            this.product_report.ImageOffset = new System.Drawing.Point(-22, 0);
+            this.product_report.ImageSize = new System.Drawing.Size(30, 30);
+            this.product_report.Location = new System.Drawing.Point(7, 581);
             this.product_report.Name = "product_report";
             this.product_report.ShadowDecoration.Parent = this.product_report;
             this.product_report.Size = new System.Drawing.Size(292, 45);
             this.product_report.TabIndex = 7;
-            this.product_report.Text = "Drug Report";
+            this.product_report.Text = "Reports";
+            this.product_report.Click += new System.EventHandler(this.product_report_Click);
             // 
             // pictureBox1
             // 
@@ -138,7 +139,7 @@
             this.btn_SaleMana.Image = global::Alpha_Pharma.Properties.Resources.sales;
             this.btn_SaleMana.ImageOffset = new System.Drawing.Point(-3, 0);
             this.btn_SaleMana.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_SaleMana.Location = new System.Drawing.Point(8, 581);
+            this.btn_SaleMana.Location = new System.Drawing.Point(8, 514);
             this.btn_SaleMana.Name = "btn_SaleMana";
             this.btn_SaleMana.ShadowDecoration.Parent = this.btn_SaleMana;
             this.btn_SaleMana.Size = new System.Drawing.Size(291, 45);
@@ -274,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_logout;
             this.ClientSize = new System.Drawing.Size(1556, 875);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelContainer);
