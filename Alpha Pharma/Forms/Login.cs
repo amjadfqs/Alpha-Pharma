@@ -46,7 +46,8 @@ namespace Alpha_Pharma.Forms
             {
                 this.Hide();
 
-                new Employeev().ShowDialog();
+                MessageBox.Show(type_user);
+
             }
             else
             {

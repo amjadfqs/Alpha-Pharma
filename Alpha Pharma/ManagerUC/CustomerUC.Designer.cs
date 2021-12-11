@@ -477,6 +477,7 @@ namespace Alpha_Pharma.ManagerUC
             this.Controls.Add(this.group_Box_Customer);
             this.Name = "CustomerUC";
             this.Size = new System.Drawing.Size(1250, 875);
+            this.Load += new System.EventHandler(this.CustomerUC_Load);
             this.group_Box_Customer.ResumeLayout(false);
             this.group_Box_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).EndInit();

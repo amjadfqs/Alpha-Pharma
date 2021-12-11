@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Alpha_Pharma.ManagerUC;
-using Alpha_Pharma.ManagerUC.Reports;
 
 namespace Alpha_Pharma.Forms
 {
@@ -46,7 +38,7 @@ namespace Alpha_Pharma.Forms
 
         private void product_report_Click(object sender, EventArgs e)
         {
-            Reports uc = new Reports();
+            Pro_ReportUC uc = new Pro_ReportUC();
             openUserControl(uc);
         }
     }
