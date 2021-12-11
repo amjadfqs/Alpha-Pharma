@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
-using Alpha_Pharma.Classes;
 
 namespace Alpha_Pharma.ManagerUC
 {
@@ -151,15 +150,6 @@ namespace Alpha_Pharma.ManagerUC
                 //Count the digits already in the text.  I'm using linq:
                 if (mb_CPN.Text.Count(Char.IsDigit) == 9)
                     e.Handled = true;
-            }
-        }
-
-        private void CustomerUC_Load(object sender, EventArgs e)
-        {
-            if (User.User_Type == "Employee")
-            {
-                btn_update.Enabled = false;
-                btn_delete.Enabled = false;
             }
         }
     }
