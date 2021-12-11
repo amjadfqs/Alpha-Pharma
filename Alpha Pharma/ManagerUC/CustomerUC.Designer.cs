@@ -1,4 +1,7 @@
-﻿namespace Alpha_Pharma.ManagerUC
+﻿using System;
+using System.Windows.Forms;
+
+namespace Alpha_Pharma.ManagerUC
 {
     partial class CustomerUC
     {
@@ -499,5 +502,10 @@
         private System.Windows.Forms.Label id_lb;
         private Guna.UI2.WinForms.Guna2TextBox txb_cus_desc;
         private System.Windows.Forms.Label label2;
+
+        public static implicit operator Form(CustomerUC v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
