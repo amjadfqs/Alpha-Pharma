@@ -64,6 +64,12 @@
     <Compile Include="Classes\Session.cs" />
     <Compile Include="Classes\Supplier.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\Employeev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employeev.Designer.cs">
+      <DependentUpon>Employeev.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Employeev.resx">
+      <DependentUpon>Employeev.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +252,7 @@
       <DependentUpon>Pharmacy.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\output-onlinegiftools.gif" />
     <None Include="Resources\report.png" />
     <None Include="Resources\yes.png" />
     <None Include="Resources\no.bmp" />
