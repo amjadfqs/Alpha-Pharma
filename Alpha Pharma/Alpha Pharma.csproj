@@ -124,11 +124,23 @@
     <Compile Include="ManagerUC\ProductUC\SectionUC.Designer.cs">
       <DependentUpon>SectionUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUC\Pro_ReportUC.cs">
+    <Compile Include="ManagerUC\Reports\Pro_ReportUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManagerUC\Pro_ReportUC.Designer.cs">
+    <Compile Include="ManagerUC\Reports\Pro_ReportUC.Designer.cs">
       <DependentUpon>Pro_ReportUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUC\Reports\Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\Reports\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUC\Reports\SessionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\Reports\SessionUC.Designer.cs">
+      <DependentUpon>SessionUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUC\SuppilerUC.cs">
       <SubType>UserControl</SubType>
@@ -177,8 +189,14 @@
     <EmbeddedResource Include="ManagerUC\ProductUC\SectionUC.resx">
       <DependentUpon>SectionUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUC\Pro_ReportUC.resx">
+    <EmbeddedResource Include="ManagerUC\Reports\Pro_ReportUC.resx">
       <DependentUpon>Pro_ReportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\Reports\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\Reports\SessionUC.resx">
+      <DependentUpon>SessionUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\SuppilerUC.resx">
       <DependentUpon>SuppilerUC.cs</DependentUpon>
@@ -225,6 +243,7 @@
       <DependentUpon>Pharmacy.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\report.png" />
     <None Include="Resources\yes.png" />
     <None Include="Resources\no.bmp" />
     <Content Include="Resources\no.png" />

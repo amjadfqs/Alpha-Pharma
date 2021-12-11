@@ -38,6 +38,7 @@
             this.txb_Emp_LN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_email = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lb_Emp_id = new System.Windows.Forms.Label();
             this.btn_update = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +53,6 @@
             this.compo_Emp_gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txb_Emp_phone_no = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_salary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee_info)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
@@ -236,6 +236,17 @@
             this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Employee_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Employee_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_info_CellClick);
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID.DataPropertyName = "ID";
+            this.ID.Frozen = true;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ID.Width = 30;
             // 
             // guna2GroupBox1
             // 
@@ -547,17 +558,6 @@
             this.txb_Emp_salary.TabIndex = 4;
             this.txb_Emp_salary.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_Emp_salary.Validating += new System.ComponentModel.CancelEventHandler(this.Control_Validating);
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID.DataPropertyName = "ID";
-            this.ID.Frozen = true;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ID.Width = 30;
             // 
             // EmployeeUC
             // 

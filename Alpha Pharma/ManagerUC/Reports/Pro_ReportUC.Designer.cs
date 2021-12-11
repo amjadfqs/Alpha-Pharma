@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "Pro_ReportUC";
-            this.Size = new System.Drawing.Size(1250, 875);
+            this.Size = new System.Drawing.Size(1250, 765);
             this.ResumeLayout(false);
 
         }
