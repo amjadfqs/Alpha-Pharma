@@ -20,7 +20,8 @@ namespace Alpha_Pharma.ManagerUC.Reports
 
         private void btn_pro_Click(object sender, EventArgs e)
         {
-
+            Pro_ReportUC uc = new Pro_ReportUC();
+            openReportControl(uc);
         }
 
         private void btn_session_Click(object sender, EventArgs e)
