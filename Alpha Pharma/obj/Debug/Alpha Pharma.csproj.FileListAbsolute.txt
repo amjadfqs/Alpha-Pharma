@@ -119,3 +119,4 @@ C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pha
 >>>>>>> parent of 871f4e0 (Done Fixing disable btn for custoemr)
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources

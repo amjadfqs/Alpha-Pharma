@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using Alpha_Pharma.Classes;
 
 namespace Alpha_Pharma.ManagerUC
 {
@@ -144,6 +145,15 @@ namespace Alpha_Pharma.ManagerUC
                 //Count the digits already in the text.  I'm using linq:
                 if (txb_SPN.Text.Count(Char.IsDigit) == 9)
                     e.Handled = true;
+            }
+        }
+
+        private void SuppilerUC_Load(object sender, EventArgs e)
+        {
+            if (User.User_Type == "Employee")
+            {
+                btn_Delete.Enabled = false;
+                btn_Update.Enabled = false;
             }
         }
     }

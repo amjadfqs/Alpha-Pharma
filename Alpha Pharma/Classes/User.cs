@@ -16,6 +16,7 @@ namespace Alpha_Pharma.Classes
         public string Position { get; set; }
 
         public static string User_Name { get; set; }
+        public static string User_Type { get; set; }
         public static int User_ID { get; set; }
 
 
@@ -129,6 +130,7 @@ namespace Alpha_Pharma.Classes
             }
             User_Name = uname;
             User_ID = id;
+            User_Type = type;
 
             return type;
         }
