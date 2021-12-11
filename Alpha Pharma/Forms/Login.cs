@@ -31,6 +31,7 @@ namespace Alpha_Pharma.Forms
 
             startSession = DateTime.Now;
 
+<<<<<<< HEAD
                 if (type_user == "Manager")
                 {
                     this.Hide();
@@ -53,6 +54,29 @@ namespace Alpha_Pharma.Forms
                 {
                     MessageBox.Show("Invalid Inforamtion !", "Try Again");
                 }
+=======
+            if (type_user == "Manager")
+            {
+                this.Hide();
+                new Manager().ShowDialog();
+            }
+            else if (type_user == "Admin")
+            {
+                this.Hide();
+
+                MessageBox.Show(type_user);
+            }
+            else if (type_user == "Employee")
+            {
+                this.Hide();
+
+                new Employeev().ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Inforamtion !", "Try Again");
+            }
+>>>>>>> parent of 871f4e0 (Done Fixing disable btn for custoemr)
 
         }
 
