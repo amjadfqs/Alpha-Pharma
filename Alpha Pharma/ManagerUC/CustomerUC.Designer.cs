@@ -1,4 +1,7 @@
-﻿namespace Alpha_Pharma.ManagerUC
+﻿using System;
+using System.Windows.Forms;
+
+namespace Alpha_Pharma.ManagerUC
 {
     partial class CustomerUC
     {
@@ -474,6 +477,7 @@
             this.Controls.Add(this.group_Box_Customer);
             this.Name = "CustomerUC";
             this.Size = new System.Drawing.Size(1250, 875);
+            this.Load += new System.EventHandler(this.CustomerUC_Load);
             this.group_Box_Customer.ResumeLayout(false);
             this.group_Box_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).EndInit();
@@ -499,5 +503,10 @@
         private System.Windows.Forms.Label id_lb;
         private Guna.UI2.WinForms.Guna2TextBox txb_cus_desc;
         private System.Windows.Forms.Label label2;
+
+        public static implicit operator Form(CustomerUC v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

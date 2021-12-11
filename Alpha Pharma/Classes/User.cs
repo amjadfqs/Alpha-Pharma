@@ -17,6 +17,7 @@ namespace Alpha_Pharma.Classes
 
         public static string User_Name { get; set; }
         public static int User_ID { get; set; }
+        public static string User_Type { get; set; }
 
 
         private const string SelectQuery = "Select E.emp_id as ID, E.emp_fname as Fname, E.emp_lname as Lname, user_name as UserName, user_pass as Password, user_type as Type from Users AS U " +
@@ -129,6 +130,7 @@ namespace Alpha_Pharma.Classes
             }
             User_Name = uname;
             User_ID = id;
+            User_Type = type;
 
             return type;
         }
