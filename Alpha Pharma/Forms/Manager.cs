@@ -67,5 +67,10 @@ namespace Alpha_Pharma.Forms
             Reports uc = new Reports();
             openUserControl(uc);
         }
+
+        private void Manager_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            btn_logout.PerformClick();
+        }
     }
 }

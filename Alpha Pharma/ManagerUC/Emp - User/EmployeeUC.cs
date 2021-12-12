@@ -196,34 +196,34 @@ namespace Alpha_Pharma.ManagerUC
 
         private void Contr_val(object sender, CancelEventArgs e)
         {
-            //if (string.IsNullOrEmpty(((Control)sender).Text))
-            //{
-            //    e.Cancel = true;
-            //    ((Control)sender).Focus();
-            //    errorProvider1.SetError((Control)sender, "This field is required!");
-            //}
-            //else
-            //{
-            //    errorProvider1.SetError((Control)sender, null);
-            //} 
+            // if (string.IsNullOrEmpty(((Control)sender).Text))
+            // {
+            //     e.Cancel = true;
+            //     ((Control)sender).Focus();
+            //     errorProvider1.SetError((Control)sender, "This field is required!");
+            // }
+            // else
+            // {
+            //     errorProvider1.SetError((Control)sender, null);
+            // } 
 
         }
 
         private void txb_Email_Validating(object sender, CancelEventArgs e)
         {
-            //Contr_val(sender, e);
-            //string error = null;
-            //try
-            //{
-            //    new MailAddress(txb_Emp_email.Text);
-            //}
-            //catch (Exception)
-            //{
-            //    error = "Please use a valid format email";
-            //    e.Cancel = true;
+            Contr_val(sender, e);
+            string error = null;
+            try
+            {
+                new MailAddress(txb_Emp_email.Text);
+            }
+            catch (Exception)
+            {
+                error = "Please use a valid format email";
+                e.Cancel = true;
 
-            //}
-            //errorProvider1.SetError((Control)sender, error);
+            }
+            errorProvider1.SetError((Control)sender, error);
         }
 
         private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)

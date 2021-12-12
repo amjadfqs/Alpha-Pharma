@@ -39,7 +39,7 @@
             this.progres_bar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.progres_bar.Font = new System.Drawing.Font("Consolas", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progres_bar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.progres_bar.Location = new System.Drawing.Point(112, 200);
+            this.progres_bar.Location = new System.Drawing.Point(158, 300);
             this.progres_bar.Name = "progres_bar";
             this.progres_bar.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.Solid;
             this.progres_bar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
@@ -59,9 +59,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Alpha_Pharma.Properties.Resources.Loading;
+            this.BackgroundImage = global::Alpha_Pharma.Properties.Resources.LOAD;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(521, 670);
+            this.ClientSize = new System.Drawing.Size(600, 800);
             this.Controls.Add(this.progres_bar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
