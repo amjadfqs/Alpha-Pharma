@@ -5,6 +5,7 @@ using Alpha_Pharma.ManagerUC;
 using Alpha_Pharma.ManagerUC.Emp___User;
 using Alpha_Pharma.ManagerUC.ProductUC;
 using Alpha_Pharma.ManagerUC.Reports;
+using Alpha_Pharma.ManagerUC.StoreSales;
 
 
 namespace Alpha_Pharma.Forms
@@ -71,6 +72,12 @@ namespace Alpha_Pharma.Forms
         private void Manager_FormClosed(object sender, FormClosedEventArgs e)
         {
             btn_logout.PerformClick();
+        }
+
+        private void btn_SaleMana_Click(object sender, EventArgs e)
+        {
+            SalesContainerUC uc = new SalesContainerUC();
+            openUserControl(uc);
         }
     }
 }

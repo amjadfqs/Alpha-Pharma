@@ -117,3 +117,5 @@ C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pha
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.SalesContainerUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.StoreUC.resources

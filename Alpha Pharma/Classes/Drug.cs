@@ -13,7 +13,7 @@ namespace Alpha_Pharma.Classes
         public string Dose { get; set; }
 
         private const string SelectQuery =
-            "select pro_id as ID, pro_name as DrugName, S.sec_name as Section, F.for_name as Form, D.dos_qty as Dose " +
+            "select pro_id as ID, pro_name as DrugName, S.sec_name as Section, F.for_name as Form, D.dos_qty as Dose , (pro_name + ' , ' + F.for_name + ' , ' + D.dos_qty) as DrugAll " +
             "from Products AS P " +
             "Join Sections AS S ON P.sec_id = S.sec_id " +
             "Join Forms AS F ON P.for_id = F.for_id " +

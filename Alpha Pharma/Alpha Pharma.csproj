@@ -62,8 +62,14 @@
     <Compile Include="Classes\For.cs" />
     <Compile Include="Classes\Section.cs" />
     <Compile Include="Classes\Session.cs" />
+    <Compile Include="Classes\Store.cs" />
     <Compile Include="Classes\Supplier.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,18 @@
     <Compile Include="ManagerUC\Reports\SessionUC.Designer.cs">
       <DependentUpon>SessionUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\StoreSales\SalesContainerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\StoreSales\SalesContainerUC.Designer.cs">
+      <DependentUpon>SalesContainerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUC\StoreSales\StoreUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\StoreSales\StoreUC.Designer.cs">
+      <DependentUpon>StoreUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerUC\SuppilerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +234,12 @@
     <EmbeddedResource Include="ManagerUC\Reports\SessionUC.resx">
       <DependentUpon>SessionUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\StoreSales\SalesContainerUC.resx">
+      <DependentUpon>SalesContainerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\StoreSales\StoreUC.resx">
+      <DependentUpon>StoreUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\SuppilerUC.resx">
       <DependentUpon>SuppilerUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +253,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

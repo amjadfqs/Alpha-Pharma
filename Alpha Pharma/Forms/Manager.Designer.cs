@@ -146,6 +146,7 @@
             this.btn_SaleMana.Size = new System.Drawing.Size(291, 45);
             this.btn_SaleMana.TabIndex = 5;
             this.btn_SaleMana.Text = "Sales Managment";
+            this.btn_SaleMana.Click += new System.EventHandler(this.btn_SaleMana_Click);
             // 
             // btn_DrugMana
             // 
