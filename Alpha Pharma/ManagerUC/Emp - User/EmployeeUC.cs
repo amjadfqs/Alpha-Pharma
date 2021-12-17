@@ -227,41 +227,17 @@ namespace Alpha_Pharma.ManagerUC
             compo_Emp_DOB.CustomFormat = "dd/MM/yy";
         }
     
-        DataTable dataTable = new DataTable();
-        private void EmployeeUC_Load(object sender, EventArgs e)
-        {
-
-            using (SqlConnection con = new SqlConnection(employeeConn))
-            {
-                con.Open();
-                using (SqlCommand comm = new SqlCommand("Select * from Employees ", con))
-               
-                {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(comm))
-                    {
-                        adapter.Fill(dataTable);
-                        dgv_Employee_info.DataSource = dataTable;
-                    }
-                }
-            }
-
-        }
 
         private void txb_search_TextChanged(object sender, EventArgs e)
         {
-            DataView Dv = new DataView(dataTable);
-            Dv.RowFilter = "emp_fname like '%" + txb_search.Text + "%'";
+            DataView Dv = new DataView(Employee.GetEmployees());
+            Dv.RowFilter = "FNAME like '%" + txb_search.Text + "%'";
             dgv_Employee_info.DataSource = Dv;
         }
 
         private void Contr_val_Firstname(object sender, CancelEventArgs e)
         {
           
-        }
-
-        private void txb_Emp_FN_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void txb_Emp_FN_Validated(object sender, EventArgs e)
