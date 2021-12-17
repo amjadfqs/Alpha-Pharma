@@ -21,7 +21,7 @@ namespace Alpha_Pharma
 
         //select
         private const string SelectQuery =
-            "Select emp_id as Id, emp_fname as FName," +
+            "Select emp_id as Id, emp_fname as FNAME," +
             " emp_lname as LName, emp_salary as Salary, emp_phone as Phone," +
             "emp_email as Email, emp_sex as Gender," +
             " emp_position as Position, emp_dob as DOB," +

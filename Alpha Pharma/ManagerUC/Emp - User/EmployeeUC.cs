@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Mail;
 using System.Windows.Forms;
@@ -8,6 +10,7 @@ namespace Alpha_Pharma.ManagerUC
 {
     public partial class EmployeeUC : UserControl
     {
+        private static string employeeConn = Properties.Settings.Default.Pharmacy_dbConnectionString;
         private Employee employee = new Employee();
         public EmployeeUC()
         {
@@ -96,6 +99,7 @@ namespace Alpha_Pharma.ManagerUC
         {
             ClearControls();
             compo_Emp_DOB.Format = DateTimePickerFormat.Custom;
+            
         }
 
         private void btn_Emp_delete_Click(object sender, EventArgs e)
@@ -152,7 +156,8 @@ namespace Alpha_Pharma.ManagerUC
                 txb_Emp_email.Text = dgv_Employee_info.Rows[index].Cells[5].Value.ToString();
                 compo_Emp_gender.Text = dgv_Employee_info.Rows[index].Cells[6].Value.ToString();
                 compo_Emp_position.Text = dgv_Employee_info.Rows[index].Cells[7].Value.ToString();
-                compo_Emp_DOB.Text = dgv_Employee_info.Rows[index].Cells[8].Value.ToString();
+                compo_Emp_DOB.Format = DateTimePickerFormat.Short;
+
             }
             catch (Exception)
             {
@@ -196,16 +201,7 @@ namespace Alpha_Pharma.ManagerUC
 
         private void Contr_val(object sender, CancelEventArgs e)
         {
-            // if (string.IsNullOrEmpty(((Control)sender).Text))
-            // {
-            //     e.Cancel = true;
-            //     ((Control)sender).Focus();
-            //     errorProvider1.SetError((Control)sender, "This field is required!");
-            // }
-            // else
-            // {
-            //     errorProvider1.SetError((Control)sender, null);
-            // } 
+            
 
         }
 
@@ -229,6 +225,58 @@ namespace Alpha_Pharma.ManagerUC
         private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)
         {
             compo_Emp_DOB.CustomFormat = "dd/MM/yy";
+        }
+    
+        DataTable dataTable = new DataTable();
+        private void EmployeeUC_Load(object sender, EventArgs e)
+        {
+
+            using (SqlConnection con = new SqlConnection(employeeConn))
+            {
+                con.Open();
+                using (SqlCommand comm = new SqlCommand("Select * from Employees ", con))
+               
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(comm))
+                    {
+                        adapter.Fill(dataTable);
+                        dgv_Employee_info.DataSource = dataTable;
+                    }
+                }
+            }
+
+        }
+
+        private void txb_search_TextChanged(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(dataTable);
+            Dv.RowFilter = "emp_fname like '%" + txb_search.Text + "%'";
+            dgv_Employee_info.DataSource = Dv;
+        }
+
+        private void Contr_val_Firstname(object sender, CancelEventArgs e)
+        {
+          
+        }
+
+        private void txb_Emp_FN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txb_Emp_FN_Validated(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(((Control)sender).Text))
+            {
+
+                ((Control)sender).Focus();
+                errorProvider1.SetError((Control)sender, "This field is required!");
+            }
+            else
+            {
+
+                errorProvider1.SetError((Control)sender, null);
+            }
         }
     }
 }

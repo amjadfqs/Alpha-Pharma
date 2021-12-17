@@ -261,6 +261,7 @@
       <DependentUpon>Pharmacy.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\search.png" />
     <None Include="Resources\LOAD.png" />
     <Content Include="Resources\output-onlinegiftools.gif" />
     <None Include="Resources\report.png" />
