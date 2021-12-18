@@ -116,12 +116,12 @@ namespace Alpha_Pharma.Classes
                     com.Parameters.AddWithValue("@Pass", pass);
                     using (SqlDataReader DR = com.ExecuteReader())
                     {
-                        if (DR.HasRows)     
+                        if (DR.HasRows)
                         {
                             while (DR.Read())
                             {
                                 type = DR["user_type"].ToString();
-                                id = (int) DR["emp_id"];
+                                id = (int)DR["emp_id"];
                                 uname = DR["user_name"].ToString();
                             }
                         }

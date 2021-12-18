@@ -160,6 +160,12 @@
     <Compile Include="ManagerUC\Reports\SessionUC.Designer.cs">
       <DependentUpon>SessionUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\StoreSales\ReceiptUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\StoreSales\ReceiptUC.Designer.cs">
+      <DependentUpon>ReceiptUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerUC\StoreSales\SalesContainerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\Reports\SessionUC.resx">
       <DependentUpon>SessionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\StoreSales\ReceiptUC.resx">
+      <DependentUpon>ReceiptUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\StoreSales\SalesContainerUC.resx">
       <DependentUpon>SalesContainerUC.cs</DependentUpon>
