@@ -2,8 +2,10 @@
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Alpha_Pharma.ManagerUC
@@ -98,8 +100,6 @@ namespace Alpha_Pharma.ManagerUC
         private void btn_Emp_clear_Click(object sender, EventArgs e)
         {
             ClearControls();
-            compo_Emp_DOB.Format = DateTimePickerFormat.Custom;
-            
         }
 
         private void btn_Emp_delete_Click(object sender, EventArgs e)
@@ -130,6 +130,7 @@ namespace Alpha_Pharma.ManagerUC
             compo_Emp_gender.SelectedIndex = -1;
             compo_Emp_position.SelectedIndex = -1;
             compo_Emp_DOB.CustomFormat = " ";
+            compo_Emp_DOB.Text = "";
         }
 
         private void txb_Emp_phone_no_KeyPress(object sender, KeyPressEventArgs e)
@@ -143,7 +144,7 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-        private void dgv_Employee_info_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_Employee_info_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -156,7 +157,9 @@ namespace Alpha_Pharma.ManagerUC
                 txb_Emp_email.Text = dgv_Employee_info.Rows[index].Cells[5].Value.ToString();
                 compo_Emp_gender.Text = dgv_Employee_info.Rows[index].Cells[6].Value.ToString();
                 compo_Emp_position.Text = dgv_Employee_info.Rows[index].Cells[7].Value.ToString();
-                compo_Emp_DOB.Format = DateTimePickerFormat.Short;
+                compo_Emp_DOB.Text = dgv_Employee_info.Rows[index].Cells[8].Value.ToString();
+                compo_Emp_DOB.CustomFormat = "MM/dd/yyyy";
+                compo_Emp_DOB.Format = DateTimePickerFormat.Custom;
 
             }
             catch (Exception)
@@ -177,7 +180,7 @@ namespace Alpha_Pharma.ManagerUC
             else
             {
                 e.Cancel = true;
-                errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
+                errorProvider1.SetError(txb_Emp_salary, "Please Enter Only Number !");
             }
         }
 
@@ -199,15 +202,45 @@ namespace Alpha_Pharma.ManagerUC
 
         }
 
-        private void Contr_val(object sender, CancelEventArgs e)
-        {
-            
+       
 
+        private void compo_Emp_DOB_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            compo_Emp_DOB.CustomFormat = "MM/dd/yyyy";
         }
 
-        private void txb_Email_Validating(object sender, CancelEventArgs e)
+
+        private void txb_search_TextChanged(object sender, EventArgs e)
         {
-            Contr_val(sender, e);
+            DataView Dv = new DataView(Employee.GetEmployees());
+            Dv.RowFilter = "FNAME like '%" + txb_search.Text + "%'";
+            dgv_Employee_info.DataSource = Dv;
+        }
+
+      
+
+        private void txb_Emp_FN_Validated(object sender, EventArgs e)
+        {
+            //if (string.IsNullOrEmpty(((Control)sender).Text))
+            //{
+
+            //    ((Control)sender).Focus();
+            //    errorProvider1.SetError((Control)sender, "This field is required!");
+            //}
+            //else
+            //{
+
+            //    errorProvider1.SetError((Control)sender, null);
+            //}
+        }
+
+        private void txb_Emp_email_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txb_Emp_email.Text.Trim()))
+            {
+                txb_Emp_FN.Focus();
+                errorProvider1.SetError(txb_Emp_email, "Please Enter Employee's email");
+            }
             string error = null;
             try
             {
@@ -219,40 +252,38 @@ namespace Alpha_Pharma.ManagerUC
                 e.Cancel = true;
 
             }
-            errorProvider1.SetError((Control)sender, error);
         }
 
-        private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)
+        private void txb_Emp_FN_Validating(object sender, CancelEventArgs e)
         {
-            compo_Emp_DOB.CustomFormat = "dd/MM/yy";
-        }
-    
-
-        private void txb_search_TextChanged(object sender, EventArgs e)
-        {
-            DataView Dv = new DataView(Employee.GetEmployees());
-            Dv.RowFilter = "FNAME like '%" + txb_search.Text + "%'";
-            dgv_Employee_info.DataSource = Dv;
-        }
-
-        private void Contr_val_Firstname(object sender, CancelEventArgs e)
-        {
-          
-        }
-
-        private void txb_Emp_FN_Validated(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(((Control)sender).Text))
+            //{1,100} it Means the name length should not less then 50 letters at least 
+            // we use System.Text.RegularExpressions package 
+            if (!Regex.IsMatch(txb_Emp_FN.Text, "^[A-Za-z]{1,50}$"))
             {
-
-                ((Control)sender).Focus();
-                errorProvider1.SetError((Control)sender, "This field is required!");
+                txb_Emp_FN.Focus();
+                errorProvider1.SetError(txb_Emp_FN, "Please Enter The employee FName without any numbers or 1@_=&*^%$#");
             }
             else
             {
-
-                errorProvider1.SetError((Control)sender, null);
+                errorProvider1.Clear();
+                e.Cancel = false;
             }
         }
+
+        private void txb_Emp_LN_Validating_1(object sender, CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txb_Emp_LN.Text, "^[A-Za-z]{1,50}$"))
+            {
+                txb_Emp_FN.Focus();
+                errorProvider1.SetError(txb_Emp_LN, "Please Enter The employee FName without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+       
     }
 }

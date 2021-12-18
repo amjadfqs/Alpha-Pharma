@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
@@ -7,6 +8,7 @@ namespace Alpha_Pharma.ManagerUC
 {
     public partial class CustomerUC : UserControl
     {
+
         Customer custmer = new Customer();
         public CustomerUC()
         {
@@ -91,6 +93,7 @@ namespace Alpha_Pharma.ManagerUC
         private void btn_clear_Click(object sender, EventArgs e)
         {
             ClearControls();
+           
         }
         private void ClearControls()
         {
@@ -100,6 +103,8 @@ namespace Alpha_Pharma.ManagerUC
             mb_CPN.Text = "";
             combo_CG.SelectedIndex = -1;
             txb_cus_desc.Text = "";
+            datetimepicker_CD.CustomFormat = " ";
+            datetimepicker_CD.Text = "";
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -136,6 +141,8 @@ namespace Alpha_Pharma.ManagerUC
                 combo_CG.Text = dgv_customer_info.Rows[index].Cells[4].Value.ToString();
                 datetimepicker_CD.Text = dgv_customer_info.Rows[index].Cells[5].Value.ToString();
                 txb_cus_desc.Text = dgv_customer_info.Rows[index].Cells[6].Value.ToString();
+                datetimepicker_CD.Format = DateTimePickerFormat.Custom;
+                datetimepicker_CD.CustomFormat = "MM/dd/yyyy";
             }
             catch (Exception)
             {
@@ -161,6 +168,18 @@ namespace Alpha_Pharma.ManagerUC
                 btn_delete.Enabled = false;
                 btn_update.Enabled = false;
             }
+        }
+
+        private void txb_search_TextChanged(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(Customer.GetCustomers());
+            Dv.RowFilter = "FirstName like '%" + txb_search.Text + "%'";
+            dgv_customer_info.DataSource = Dv;
+        }
+
+        private void datetimepicker_CD_MouseDown(object sender, MouseEventArgs e)
+        {
+            datetimepicker_CD.CustomFormat = "MM/dd/yyyy";
         }
     }
 }

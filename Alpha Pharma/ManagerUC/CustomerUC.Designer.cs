@@ -32,10 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_update = new Guna.UI2.WinForms.Guna2Button();
             this.group_Box_Customer = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txb_cus_desc = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,104 +43,17 @@
             this.txb_CFN = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txb_CLN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_update = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_customer_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txb_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.group_Box_Customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_add
-            // 
-            this.btn_add.AutoRoundedCorners = true;
-            this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_add.BorderRadius = 19;
-            this.btn_add.BorderThickness = 1;
-            this.btn_add.CheckedState.Parent = this.btn_add;
-            this.btn_add.CustomImages.Parent = this.btn_add;
-            this.btn_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_add.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.HoverState.Parent = this.btn_add;
-            this.btn_add.Image = global::Alpha_Pharma.Properties.Resources.add;
-            this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.ImageOffset = new System.Drawing.Point(6, 0);
-            this.btn_add.Location = new System.Drawing.Point(990, 82);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(120, 40);
-            this.btn_add.TabIndex = 6;
-            this.btn_add.Text = "Add";
-            this.btn_add.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.AutoRoundedCorners = true;
-            this.btn_clear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_clear.BorderRadius = 19;
-            this.btn_clear.BorderThickness = 1;
-            this.btn_clear.CheckedState.Parent = this.btn_clear;
-            this.btn_clear.CustomImages.Parent = this.btn_clear;
-            this.btn_clear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_clear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.HoverState.Parent = this.btn_clear;
-            this.btn_clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
-            this.btn_clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_clear.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_clear.Location = new System.Drawing.Point(990, 135);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.ShadowDecoration.Parent = this.btn_clear;
-            this.btn_clear.Size = new System.Drawing.Size(120, 40);
-            this.btn_clear.TabIndex = 8;
-            this.btn_clear.Text = "Clear";
-            this.btn_clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.AutoRoundedCorners = true;
-            this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_delete.BorderRadius = 19;
-            this.btn_delete.BorderThickness = 1;
-            this.btn_delete.CheckedState.Parent = this.btn_delete;
-            this.btn_delete.CustomImages.Parent = this.btn_delete;
-            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.HoverState.Parent = this.btn_delete;
-            this.btn_delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
-            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delete.Location = new System.Drawing.Point(1115, 135);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
-            this.btn_delete.Size = new System.Drawing.Size(125, 40);
-            this.btn_delete.TabIndex = 9;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
-            // 
-            // btn_update
-            // 
-            this.btn_update.AutoRoundedCorners = true;
-            this.btn_update.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_update.BorderRadius = 19;
-            this.btn_update.BorderThickness = 1;
-            this.btn_update.CheckedState.Parent = this.btn_update;
-            this.btn_update.CustomImages.Parent = this.btn_update;
-            this.btn_update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_update.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.HoverState.Parent = this.btn_update;
-            this.btn_update.Image = global::Alpha_Pharma.Properties.Resources.updating;
-            this.btn_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_update.Location = new System.Drawing.Point(1115, 81);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.ShadowDecoration.Parent = this.btn_update;
-            this.btn_update.Size = new System.Drawing.Size(125, 40);
-            this.btn_update.TabIndex = 7;
-            this.btn_update.Text = "Update";
-            this.btn_update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // group_Box_Customer
             // 
@@ -301,15 +210,15 @@
             // 
             // datetimepicker_CD
             // 
-            this.datetimepicker_CD.Animated = true;
             this.datetimepicker_CD.AutoRoundedCorners = true;
             this.datetimepicker_CD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.datetimepicker_CD.BorderRadius = 17;
             this.datetimepicker_CD.CheckedState.Parent = this.datetimepicker_CD;
+            this.datetimepicker_CD.CustomFormat = "  ";
             this.datetimepicker_CD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.datetimepicker_CD.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimepicker_CD.ForeColor = System.Drawing.Color.White;
-            this.datetimepicker_CD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datetimepicker_CD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetimepicker_CD.HoverState.Parent = this.datetimepicker_CD;
             this.datetimepicker_CD.Location = new System.Drawing.Point(248, 153);
             this.datetimepicker_CD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -320,6 +229,7 @@
             this.datetimepicker_CD.TabIndex = 5;
             this.datetimepicker_CD.UseTransparentBackground = true;
             this.datetimepicker_CD.Value = new System.DateTime(2021, 11, 15, 21, 32, 55, 0);
+            this.datetimepicker_CD.MouseDown += new System.Windows.Forms.MouseEventHandler(this.datetimepicker_CD_MouseDown);
             // 
             // txb_CFN
             // 
@@ -390,6 +300,100 @@
             this.txb_CLN.Size = new System.Drawing.Size(190, 32);
             this.txb_CLN.TabIndex = 2;
             // 
+            // btn_update
+            // 
+            this.btn_update.AutoRoundedCorners = true;
+            this.btn_update.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_update.BorderRadius = 19;
+            this.btn_update.BorderThickness = 1;
+            this.btn_update.CheckedState.Parent = this.btn_update;
+            this.btn_update.CustomImages.Parent = this.btn_update;
+            this.btn_update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_update.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.ForeColor = System.Drawing.Color.White;
+            this.btn_update.HoverState.Parent = this.btn_update;
+            this.btn_update.Image = global::Alpha_Pharma.Properties.Resources.updating;
+            this.btn_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_update.Location = new System.Drawing.Point(1115, 81);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.ShadowDecoration.Parent = this.btn_update;
+            this.btn_update.Size = new System.Drawing.Size(125, 40);
+            this.btn_update.TabIndex = 7;
+            this.btn_update.Text = "Update";
+            this.btn_update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.AutoRoundedCorners = true;
+            this.btn_delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_delete.BorderRadius = 19;
+            this.btn_delete.BorderThickness = 1;
+            this.btn_delete.CheckedState.Parent = this.btn_delete;
+            this.btn_delete.CustomImages.Parent = this.btn_delete;
+            this.btn_delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.HoverState.Parent = this.btn_delete;
+            this.btn_delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
+            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_delete.Location = new System.Drawing.Point(1115, 135);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.ShadowDecoration.Parent = this.btn_delete;
+            this.btn_delete.Size = new System.Drawing.Size(125, 40);
+            this.btn_delete.TabIndex = 9;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.AutoRoundedCorners = true;
+            this.btn_clear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_clear.BorderRadius = 19;
+            this.btn_clear.BorderThickness = 1;
+            this.btn_clear.CheckedState.Parent = this.btn_clear;
+            this.btn_clear.CustomImages.Parent = this.btn_clear;
+            this.btn_clear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_clear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.ForeColor = System.Drawing.Color.White;
+            this.btn_clear.HoverState.Parent = this.btn_clear;
+            this.btn_clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
+            this.btn_clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_clear.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_clear.Location = new System.Drawing.Point(990, 135);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.ShadowDecoration.Parent = this.btn_clear;
+            this.btn_clear.Size = new System.Drawing.Size(120, 40);
+            this.btn_clear.TabIndex = 8;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_add
+            // 
+            this.btn_add.AutoRoundedCorners = true;
+            this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_add.BorderRadius = 19;
+            this.btn_add.BorderThickness = 1;
+            this.btn_add.CheckedState.Parent = this.btn_add;
+            this.btn_add.CustomImages.Parent = this.btn_add;
+            this.btn_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_add.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.HoverState.Parent = this.btn_add;
+            this.btn_add.Image = global::Alpha_Pharma.Properties.Resources.add;
+            this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_add.ImageOffset = new System.Drawing.Point(6, 0);
+            this.btn_add.Location = new System.Drawing.Point(990, 82);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.ShadowDecoration.Parent = this.btn_add;
+            this.btn_add.Size = new System.Drawing.Size(120, 40);
+            this.btn_add.TabIndex = 6;
+            this.btn_add.Text = "Add";
+            this.btn_add.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
             // dgv_customer_info
             // 
             this.dgv_customer_info.AllowUserToAddRows = false;
@@ -421,10 +425,9 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_customer_info.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_customer_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_customer_info.EnableHeadersVisualStyles = false;
             this.dgv_customer_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_customer_info.Location = new System.Drawing.Point(0, 0);
+            this.dgv_customer_info.Location = new System.Drawing.Point(0, 64);
             this.dgv_customer_info.Name = "dgv_customer_info";
             this.dgv_customer_info.ReadOnly = true;
             this.dgv_customer_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -440,7 +443,7 @@
             this.dgv_customer_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_customer_info.RowTemplate.Height = 24;
             this.dgv_customer_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_customer_info.Size = new System.Drawing.Size(1250, 642);
+            this.dgv_customer_info.Size = new System.Drawing.Size(1250, 578);
             this.dgv_customer_info.TabIndex = 5;
             this.dgv_customer_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgv_customer_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -466,10 +469,54 @@
             this.dgv_customer_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_customer_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Alpha_Pharma.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(124, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txb_search
+            // 
+            this.txb_search.BackColor = System.Drawing.Color.Transparent;
+            this.txb_search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.txb_search.BorderRadius = 5;
+            this.txb_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_search.DefaultText = "";
+            this.txb_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_search.DisabledState.Parent = this.txb_search;
+            this.txb_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_search.FocusedState.Parent = this.txb_search;
+            this.txb_search.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_search.ForeColor = System.Drawing.Color.Black;
+            this.txb_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_search.HoverState.Parent = this.txb_search;
+            this.txb_search.Location = new System.Drawing.Point(132, 14);
+            this.txb_search.Margin = new System.Windows.Forms.Padding(5);
+            this.txb_search.Name = "txb_search";
+            this.txb_search.PasswordChar = '\0';
+            this.txb_search.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txb_search.PlaceholderText = "Search for Employee....";
+            this.txb_search.SelectedText = "";
+            this.txb_search.ShadowDecoration.Parent = this.txb_search;
+            this.txb_search.Size = new System.Drawing.Size(978, 33);
+            this.txb_search.TabIndex = 15;
+            this.txb_search.TextOffset = new System.Drawing.Point(0, -2);
+            this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged);
+            // 
             // CustomerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txb_search);
             this.Controls.Add(this.dgv_customer_info);
             this.Controls.Add(this.group_Box_Customer);
             this.Name = "CustomerUC";
@@ -478,6 +525,7 @@
             this.group_Box_Customer.ResumeLayout(false);
             this.group_Box_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,5 +548,7 @@
         private System.Windows.Forms.Label id_lb;
         private Guna.UI2.WinForms.Guna2TextBox txb_cus_desc;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txb_search;
     }
 }

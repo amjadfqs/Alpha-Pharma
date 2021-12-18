@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
@@ -155,6 +156,13 @@ namespace Alpha_Pharma.ManagerUC
                 btn_Delete.Enabled = false;
                 btn_Update.Enabled = false;
             }
+        }
+
+        private void txb_search_TextChanged(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(Supplier.GetSuppliers());
+            Dv.RowFilter = "Name like '%" + txb_search.Text + "%'";
+            dgv_Supplier_info.DataSource = Dv;
         }
     }
 }
