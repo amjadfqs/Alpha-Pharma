@@ -27,7 +27,7 @@ namespace Alpha_Pharma.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Pharmacy.mdf;" +
-            "Integrated Security=True;")]
+            "Integrated Security=True;Connect Timeout=30")]
         public string Pharmacy_dbConnectionString {
             get {
                 return ((string)(this["Pharmacy_dbConnectionString"]));

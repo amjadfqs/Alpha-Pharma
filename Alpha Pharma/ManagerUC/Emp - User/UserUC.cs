@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;

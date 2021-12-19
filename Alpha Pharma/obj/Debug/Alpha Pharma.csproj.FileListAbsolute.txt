@@ -77,12 +77,29 @@ C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pha
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.SuppilerUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Properties.Resources.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csproj.GenerateResource.Cache
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.Emp___User.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.UserUC.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.SessionUC.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Login.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Manager.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Pro_ReportUC.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.Reports.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.SessionUC.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employeev.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Pharmacy.mdf
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Pharmacy_log.ldf
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe.config
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.pdb
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\bin\Debug\Guna.UI2.dll
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Login.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Manager.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.CustomerUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.Emp___User.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.UserUC.resources
@@ -92,31 +109,14 @@ C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Man
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.ProductUC.FormUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.ProductUC.ProductUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.ProductUC.SectionUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Pro_ReportUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.Reports.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.SessionUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.ReceiptUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.SalesContainerUC.resources
+C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.StoreUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.SuppilerUC.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Properties.Resources.resources
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csproj.GenerateResource.Cache
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.exe
 C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.pdb
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.Emp___User.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.UserUC.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Emp___User.SessionUC.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Pro_ReportUC.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Login.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Manager.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.Reports.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.SessionUC.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Login.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Manager.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Pro_ReportUC.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.Reports.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.Reports.SessionUC.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employeev.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Loading.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Forms.Employee.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.csprojResolveAssemblyReference.cache
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.SalesContainerUC.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.StoreUC.resources
-C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.ReceiptUC.resources
