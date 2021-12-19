@@ -12,11 +12,10 @@ namespace Alpha_Pharma.Classes
         public int Cus_ID { get; set; }
         public string QTY { get; set; }
         public float Total { get; set; }
-        public float Paid { get; set; }
 
         private const string SelectQuery = "Select * from Receipt";
 
-        private const string InsertQuery = "Insert Into Receipt (emp_id, cus_id, rec_date, rec_total,rec_paid ,qty) Values (@Emp_ID, @Cus_ID, Getdate(), @Total,@QTY); " +
+        private const string InsertQuery = "Insert Into Receipt (emp_id, cus_id, rec_date, rec_total,qty) Values (@Emp_ID, @Cus_ID, Getdate(),@Total,@QTY); " +
                                            "Select Scope_Identity()";
 
 
@@ -49,7 +48,6 @@ namespace Alpha_Pharma.Classes
                     com.Parameters.AddWithValue("@Emp_ID", receipt.Emp_ID);
                     com.Parameters.AddWithValue("@Cus_ID", receipt.Cus_ID);
                     com.Parameters.AddWithValue("@Total", receipt.Total);
-                    com.Parameters.AddWithValue("@Paid", receipt.Paid);
                     com.Parameters.AddWithValue("@QTY", receipt.QTY);
                     ID = Convert.ToInt32(com.ExecuteScalar());
                 }

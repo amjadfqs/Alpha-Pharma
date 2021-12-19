@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
@@ -33,6 +34,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             txb_price.Clear();
 
             combo_product.Focus();
+            combo_discount.SelectedIndex = 0;
 
             btn_add_lst.Enabled = false;
         }
@@ -88,18 +90,24 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
 
         private void btn_add_lst_Click(object sender, EventArgs e)
         {
-            ListViewItem itm = lstv.FindItemWithText(combo_product.SelectedValue.ToString());
-
             if (lstv.Items.Count > 0)
             {
-                if (!lstv.Items.Contains(itm))
+                bool found = false;
+
+                foreach (ListViewItem item in lstv.Items)
                 {
-                    InsertIntoLisetView();
+                    if (item.SubItems[0].Text == combo_product.SelectedValue.ToString())
+                    {
+                        found = true;
+                        MessageBox.Show("Product Alraedy Added!", "Really!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        ClearControls();
+                        break;
+                    }
                 }
-                else
+
+                if (!found)
                 {
-                    MessageBox.Show("Product Alraedy Added!", "Really!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    ClearControls();
+                     InsertIntoLisetView();
                 }
             }
             else
@@ -182,6 +190,8 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
 
         private void btn_print_Click(object sender, EventArgs e)
         {
+
+            //Inserting Into ReceiptDetail Table
             int rows = 0;
             foreach (ListViewItem item in lstv.Items)
             {
@@ -202,7 +212,17 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             }
 
             dgv_receipt_info.DataSource = ReceiptDetails.GetReceiptDetail();
-            
+
+            //Printing
+
+            printDialog1.Document = printDocument1;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+
+
         }
 
         void ClearControls()
@@ -226,6 +246,65 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
                     lstv.SelectedItems[i].Remove();
                 }
             }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+            Font font = new Font("Courier New", 14);
+            float fontHeight = font.GetHeight();
+            int startx = 150;
+            int starty = 40;
+            int offset = 30;
+            float leftmargin = e.MarginBounds.Left;
+            float topmargin = e.MarginBounds.Top;
+            graphics.DrawString("Alpha Pharma",new Font("Courier New",20),new SolidBrush(Color.Black),startx + 180,starty);
+            string top = "Date:" + DateTime.Now.ToString().PadRight(5);
+            graphics.DrawString(top,font, new SolidBrush(Color.Black), startx, starty + offset+10);
+            offset = offset + 30;
+
+            string emp = "Employee:" + User.User_Name;
+            graphics.DrawString(emp, font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
+
+            string cus = "Customer:" + combo_customerName.Text;
+            graphics.DrawString(cus, font, new SolidBrush(Color.Black), startx, starty + offset);
+
+            offset = offset + (int)FontHeight;
+            graphics.DrawString("------------------------------------------------", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 30;
+            graphics.DrawString("Drug\t\t\t  Price   QTY\t Total",font,new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 30;
+            for (int i = 0; i < lstv.Items.Count; i++)
+            {
+                graphics.DrawString(lstv.Items[i].SubItems[1].Text +"\t\t"+ lstv.Items[i].SubItems[2].Text + "\t   " + lstv.Items[i].SubItems[3].Text + "\t\t  " + lstv.Items[i].SubItems[4].Text+"\t",
+                    new Font("Courier New",12), new SolidBrush(Color.Black) , startx, starty + offset);
+                offset = offset + 20;
+            }
+            offset = offset + (int)FontHeight+5;
+            graphics.DrawString("------------------------------------------------", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 15;
+
+            graphics.DrawString("TOTAL       : " + txb_grandTotal.Text + ".00",font,new SolidBrush(Color.Black), startx, starty + offset );
+            offset = offset + 20;
+
+            graphics.DrawString("DISCOUNT    : " + combo_discount.Text + "%",font,new SolidBrush(Color.Black), startx, starty + offset );
+            offset = offset + 20;
+
+            graphics.DrawString("SUB TOTAL   : " + txb_subTotal.Text + ".00", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
+
+            graphics.DrawString("PAID AMOUNT : " + txb_paid.Text + ".00", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
+
+            graphics.DrawString("REFUND      : " + txb_remain.Text + ".00", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
+
+            graphics.DrawString("------------------------------------------------", font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
+
+            graphics.DrawString("Thank You ^-^", new Font("Courier New", 20), new SolidBrush(Color.Black), startx + 180, starty + offset);
+
         }
     }
 }
