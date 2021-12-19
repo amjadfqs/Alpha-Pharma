@@ -28,27 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.date_proExp = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txb_proCode = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_proQty = new Guna.UI2.WinForms.Guna2TextBox();
-            this.combo_supplier = new System.Windows.Forms.ComboBox();
             this.combo_product = new System.Windows.Forms.ComboBox();
-            this.lb_store = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Clear = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
-            this.txb_proPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv_store_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btn_print = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_confirm = new Guna.UI2.WinForms.Guna2Button();
+            this.dgv_receipt_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txb_available = new System.Windows.Forms.TextBox();
+            this.txb_price = new System.Windows.Forms.TextBox();
+            this.txb_qty = new System.Windows.Forms.TextBox();
+            this.txb_grandTotal = new System.Windows.Forms.TextBox();
+            this.txb_totalPrice = new System.Windows.Forms.TextBox();
+            this.combo_discount = new System.Windows.Forms.ComboBox();
+            this.txb_empUsername = new System.Windows.Forms.TextBox();
+            this.combo_customerName = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lstv = new System.Windows.Forms.ListView();
+            this.btn_add_lst = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_delect_lst = new Guna.UI2.WinForms.Guna2Button();
+            this.txb_subTotal = new System.Windows.Forms.TextBox();
+            this.txb_paid = new System.Windows.Forms.TextBox();
+            this.txb_remain = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_store_info)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_receipt_info)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
@@ -56,147 +76,57 @@
             this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.BorderThickness = 0;
-            this.guna2GroupBox1.Controls.Add(this.date_proExp);
+            this.guna2GroupBox1.Controls.Add(this.label12);
+            this.guna2GroupBox1.Controls.Add(this.label11);
+            this.guna2GroupBox1.Controls.Add(this.label10);
+            this.guna2GroupBox1.Controls.Add(this.label9);
+            this.guna2GroupBox1.Controls.Add(this.label8);
+            this.guna2GroupBox1.Controls.Add(this.txb_remain);
+            this.guna2GroupBox1.Controls.Add(this.txb_paid);
+            this.guna2GroupBox1.Controls.Add(this.txb_subTotal);
+            this.guna2GroupBox1.Controls.Add(this.btn_delect_lst);
+            this.guna2GroupBox1.Controls.Add(this.btn_add_lst);
+            this.guna2GroupBox1.Controls.Add(this.lstv);
+            this.guna2GroupBox1.Controls.Add(this.label7);
+            this.guna2GroupBox1.Controls.Add(this.label6);
+            this.guna2GroupBox1.Controls.Add(this.label5);
+            this.guna2GroupBox1.Controls.Add(this.label4);
             this.guna2GroupBox1.Controls.Add(this.label3);
+            this.guna2GroupBox1.Controls.Add(this.combo_customerName);
+            this.guna2GroupBox1.Controls.Add(this.txb_empUsername);
+            this.guna2GroupBox1.Controls.Add(this.combo_discount);
+            this.guna2GroupBox1.Controls.Add(this.txb_totalPrice);
+            this.guna2GroupBox1.Controls.Add(this.txb_grandTotal);
+            this.guna2GroupBox1.Controls.Add(this.txb_qty);
+            this.guna2GroupBox1.Controls.Add(this.txb_price);
+            this.guna2GroupBox1.Controls.Add(this.txb_available);
             this.guna2GroupBox1.Controls.Add(this.label1);
             this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.txb_proCode);
-            this.guna2GroupBox1.Controls.Add(this.txb_proQty);
-            this.guna2GroupBox1.Controls.Add(this.combo_supplier);
             this.guna2GroupBox1.Controls.Add(this.combo_product);
-            this.guna2GroupBox1.Controls.Add(this.lb_store);
-            this.guna2GroupBox1.Controls.Add(this.btn_Update);
-            this.guna2GroupBox1.Controls.Add(this.btn_Delete);
-            this.guna2GroupBox1.Controls.Add(this.btn_Clear);
-            this.guna2GroupBox1.Controls.Add(this.btn_add);
-            this.guna2GroupBox1.Controls.Add(this.txb_proPrice);
+            this.guna2GroupBox1.Controls.Add(this.btn_print);
+            this.guna2GroupBox1.Controls.Add(this.btn_confirm);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 565);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 475);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 200);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1250, 290);
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Receipt Managment";
-            // 
-            // date_proExp
-            // 
-            this.date_proExp.CalendarFont = new System.Drawing.Font("Trebuchet MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_proExp.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_proExp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_proExp.Location = new System.Drawing.Point(558, 79);
-            this.date_proExp.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.date_proExp.Name = "date_proExp";
-            this.date_proExp.Size = new System.Drawing.Size(182, 27);
-            this.date_proExp.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(556, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 17);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Set Expire Date";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(369, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Select Supplier";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(182, 58);
+            this.label2.Location = new System.Drawing.Point(129, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Select Product";
-            // 
-            // txb_proCode
-            // 
-            this.txb_proCode.BackColor = System.Drawing.Color.Transparent;
-            this.txb_proCode.BorderRadius = 8;
-            this.txb_proCode.BorderThickness = 0;
-            this.txb_proCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_proCode.DefaultText = "";
-            this.txb_proCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_proCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_proCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proCode.DisabledState.Parent = this.txb_proCode;
-            this.txb_proCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_proCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proCode.FocusedState.Parent = this.txb_proCode;
-            this.txb_proCode.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_proCode.ForeColor = System.Drawing.Color.White;
-            this.txb_proCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proCode.HoverState.Parent = this.txb_proCode;
-            this.txb_proCode.Location = new System.Drawing.Point(559, 142);
-            this.txb_proCode.Margin = new System.Windows.Forms.Padding(6);
-            this.txb_proCode.Name = "txb_proCode";
-            this.txb_proCode.PasswordChar = '\0';
-            this.txb_proCode.PlaceholderText = "Product Code";
-            this.txb_proCode.SelectedText = "";
-            this.txb_proCode.ShadowDecoration.Parent = this.txb_proCode;
-            this.txb_proCode.Size = new System.Drawing.Size(189, 35);
-            this.txb_proCode.TabIndex = 5;
-            // 
-            // txb_proQty
-            // 
-            this.txb_proQty.BackColor = System.Drawing.Color.Transparent;
-            this.txb_proQty.BorderRadius = 8;
-            this.txb_proQty.BorderThickness = 0;
-            this.txb_proQty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_proQty.DefaultText = "";
-            this.txb_proQty.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_proQty.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_proQty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proQty.DisabledState.Parent = this.txb_proQty;
-            this.txb_proQty.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proQty.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_proQty.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proQty.FocusedState.Parent = this.txb_proQty;
-            this.txb_proQty.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_proQty.ForeColor = System.Drawing.Color.White;
-            this.txb_proQty.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proQty.HoverState.Parent = this.txb_proQty;
-            this.txb_proQty.Location = new System.Drawing.Point(372, 142);
-            this.txb_proQty.Margin = new System.Windows.Forms.Padding(6);
-            this.txb_proQty.Name = "txb_proQty";
-            this.txb_proQty.PasswordChar = '\0';
-            this.txb_proQty.PlaceholderText = "Product Quantity";
-            this.txb_proQty.SelectedText = "";
-            this.txb_proQty.ShadowDecoration.Parent = this.txb_proQty;
-            this.txb_proQty.Size = new System.Drawing.Size(180, 35);
-            this.txb_proQty.TabIndex = 4;
-            // 
-            // combo_supplier
-            // 
-            this.combo_supplier.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.combo_supplier.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.combo_supplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.combo_supplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo_supplier.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_supplier.ForeColor = System.Drawing.SystemColors.Window;
-            this.combo_supplier.Location = new System.Drawing.Point(372, 78);
-            this.combo_supplier.Name = "combo_supplier";
-            this.combo_supplier.Size = new System.Drawing.Size(180, 26);
-            this.combo_supplier.TabIndex = 1;
-            this.combo_supplier.Text = "Select Supplier";
             // 
             // combo_product
             // 
@@ -206,236 +136,491 @@
             this.combo_product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.combo_product.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_product.ForeColor = System.Drawing.SystemColors.Window;
-            this.combo_product.Location = new System.Drawing.Point(185, 78);
+            this.combo_product.Location = new System.Drawing.Point(30, 124);
             this.combo_product.Name = "combo_product";
-            this.combo_product.Size = new System.Drawing.Size(180, 26);
+            this.combo_product.Size = new System.Drawing.Size(294, 26);
             this.combo_product.TabIndex = 0;
             this.combo_product.Text = "Select Product";
+            this.combo_product.SelectedIndexChanged += new System.EventHandler(this.combo_product_SelectedIndexChanged);
             // 
-            // lb_store
+            // btn_print
             // 
-            this.lb_store.BackColor = System.Drawing.Color.Transparent;
-            this.lb_store.BorderRadius = 8;
-            this.lb_store.BorderThickness = 0;
-            this.lb_store.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lb_store.DefaultText = "";
-            this.lb_store.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.lb_store.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.lb_store.DisabledState.Parent = this.lb_store;
-            this.lb_store.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
-            this.lb_store.Enabled = false;
-            this.lb_store.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.lb_store.FocusedState.Parent = this.lb_store;
-            this.lb_store.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_store.ForeColor = System.Drawing.Color.White;
-            this.lb_store.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_store.HoverState.Parent = this.lb_store;
-            this.lb_store.Location = new System.Drawing.Point(44, 75);
-            this.lb_store.Margin = new System.Windows.Forms.Padding(6);
-            this.lb_store.Name = "lb_store";
-            this.lb_store.PasswordChar = '\0';
-            this.lb_store.PlaceholderText = "Store ID";
-            this.lb_store.ReadOnly = true;
-            this.lb_store.SelectedText = "";
-            this.lb_store.ShadowDecoration.Parent = this.lb_store;
-            this.lb_store.Size = new System.Drawing.Size(87, 30);
-            this.lb_store.TabIndex = 9;
+            this.btn_print.AutoRoundedCorners = true;
+            this.btn_print.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_print.BorderRadius = 19;
+            this.btn_print.BorderThickness = 1;
+            this.btn_print.CheckedState.Parent = this.btn_print;
+            this.btn_print.CustomImages.Parent = this.btn_print;
+            this.btn_print.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_print.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.ForeColor = System.Drawing.Color.White;
+            this.btn_print.HoverState.Parent = this.btn_print;
+            this.btn_print.Image = global::Alpha_Pharma.Properties.Resources.updating;
+            this.btn_print.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_print.Location = new System.Drawing.Point(1104, 224);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.ShadowDecoration.Parent = this.btn_print;
+            this.btn_print.Size = new System.Drawing.Size(137, 40);
+            this.btn_print.TabIndex = 7;
+            this.btn_print.Text = "Print";
+            this.btn_print.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btn_Update
+            // btn_confirm
             // 
-            this.btn_Update.AutoRoundedCorners = true;
-            this.btn_Update.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_Update.BorderRadius = 19;
-            this.btn_Update.BorderThickness = 1;
-            this.btn_Update.CheckedState.Parent = this.btn_Update;
-            this.btn_Update.CustomImages.Parent = this.btn_Update;
-            this.btn_Update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_Update.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.HoverState.Parent = this.btn_Update;
-            this.btn_Update.Image = global::Alpha_Pharma.Properties.Resources.updating;
-            this.btn_Update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Update.Location = new System.Drawing.Point(1111, 77);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.ShadowDecoration.Parent = this.btn_Update;
-            this.btn_Update.Size = new System.Drawing.Size(125, 40);
-            this.btn_Update.TabIndex = 7;
-            this.btn_Update.Text = "Update";
-            this.btn_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_confirm.AutoRoundedCorners = true;
+            this.btn_confirm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_confirm.BorderRadius = 19;
+            this.btn_confirm.BorderThickness = 1;
+            this.btn_confirm.CheckedState.Parent = this.btn_confirm;
+            this.btn_confirm.CustomImages.Parent = this.btn_confirm;
+            this.btn_confirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_confirm.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_confirm.ForeColor = System.Drawing.Color.White;
+            this.btn_confirm.HoverState.Parent = this.btn_confirm;
+            this.btn_confirm.Image = global::Alpha_Pharma.Properties.Resources.add;
+            this.btn_confirm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_confirm.Location = new System.Drawing.Point(1104, 178);
+            this.btn_confirm.Name = "btn_confirm";
+            this.btn_confirm.ShadowDecoration.Parent = this.btn_confirm;
+            this.btn_confirm.Size = new System.Drawing.Size(137, 40);
+            this.btn_confirm.TabIndex = 6;
+            this.btn_confirm.Text = "Confirm";
+            this.btn_confirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // btn_Delete
+            // dgv_receipt_info
             // 
-            this.btn_Delete.AutoRoundedCorners = true;
-            this.btn_Delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_Delete.BorderRadius = 19;
-            this.btn_Delete.BorderThickness = 1;
-            this.btn_Delete.CheckedState.Parent = this.btn_Delete;
-            this.btn_Delete.CustomImages.Parent = this.btn_Delete;
-            this.btn_Delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.btn_Delete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.HoverState.Parent = this.btn_Delete;
-            this.btn_Delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
-            this.btn_Delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Delete.Location = new System.Drawing.Point(1111, 132);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.ShadowDecoration.Parent = this.btn_Delete;
-            this.btn_Delete.Size = new System.Drawing.Size(125, 40);
-            this.btn_Delete.TabIndex = 8;
-            this.btn_Delete.Text = "Delete";
-            this.btn_Delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dgv_receipt_info.AllowUserToAddRows = false;
+            this.dgv_receipt_info.AllowUserToDeleteRows = false;
+            this.dgv_receipt_info.AllowUserToResizeColumns = false;
+            this.dgv_receipt_info.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgv_receipt_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_receipt_info.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_receipt_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_receipt_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_receipt_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgv_receipt_info.ColumnHeadersHeight = 27;
+            this.dgv_receipt_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_receipt_info.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dgv_receipt_info.EnableHeadersVisualStyles = false;
+            this.dgv_receipt_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_receipt_info.Location = new System.Drawing.Point(0, 0);
+            this.dgv_receipt_info.Name = "dgv_receipt_info";
+            this.dgv_receipt_info.ReadOnly = true;
+            this.dgv_receipt_info.RowHeadersVisible = false;
+            this.dgv_receipt_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_receipt_info.RowTemplate.Height = 24;
+            this.dgv_receipt_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_receipt_info.Size = new System.Drawing.Size(1250, 480);
+            this.dgv_receipt_info.TabIndex = 4;
+            this.dgv_receipt_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgv_receipt_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_receipt_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_receipt_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_receipt_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_receipt_info.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_receipt_info.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgv_receipt_info.ThemeStyle.ReadOnly = true;
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_receipt_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btn_Clear
+            // label1
             // 
-            this.btn_Clear.AutoRoundedCorners = true;
-            this.btn_Clear.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_Clear.BorderRadius = 19;
-            this.btn_Clear.BorderThickness = 1;
-            this.btn_Clear.CheckedState.Parent = this.btn_Clear;
-            this.btn_Clear.CustomImages.Parent = this.btn_Clear;
-            this.btn_Clear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_Clear.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.HoverState.Parent = this.btn_Clear;
-            this.btn_Clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
-            this.btn_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Clear.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Clear.Location = new System.Drawing.Point(985, 132);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.ShadowDecoration.Parent = this.btn_Clear;
-            this.btn_Clear.Size = new System.Drawing.Size(120, 40);
-            this.btn_Clear.TabIndex = 9;
-            this.btn_Clear.Text = "Clear";
-            this.btn_Clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(60, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Available";
             // 
-            // btn_add
+            // txb_available
             // 
-            this.btn_add.AutoRoundedCorners = true;
-            this.btn_add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_add.BorderRadius = 19;
-            this.btn_add.BorderThickness = 1;
-            this.btn_add.CheckedState.Parent = this.btn_add;
-            this.btn_add.CustomImages.Parent = this.btn_add;
-            this.btn_add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_add.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.HoverState.Parent = this.btn_add;
-            this.btn_add.Image = global::Alpha_Pharma.Properties.Resources.add;
-            this.btn_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add.ImageOffset = new System.Drawing.Point(6, 0);
-            this.btn_add.Location = new System.Drawing.Point(985, 77);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.ShadowDecoration.Parent = this.btn_add;
-            this.btn_add.Size = new System.Drawing.Size(120, 40);
-            this.btn_add.TabIndex = 6;
-            this.btn_add.Text = "Add";
-            this.btn_add.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txb_available.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_available.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_available.Enabled = false;
+            this.txb_available.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_available.Location = new System.Drawing.Point(30, 68);
+            this.txb_available.Multiline = true;
+            this.txb_available.Name = "txb_available";
+            this.txb_available.Size = new System.Drawing.Size(135, 28);
+            this.txb_available.TabIndex = 18;
+            this.txb_available.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txb_proPrice
+            // txb_price
             // 
-            this.txb_proPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txb_proPrice.BorderRadius = 8;
-            this.txb_proPrice.BorderThickness = 0;
-            this.txb_proPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_proPrice.DefaultText = "";
-            this.txb_proPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_proPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_proPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proPrice.DisabledState.Parent = this.txb_proPrice;
-            this.txb_proPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_proPrice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_proPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proPrice.FocusedState.Parent = this.txb_proPrice;
-            this.txb_proPrice.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_proPrice.ForeColor = System.Drawing.Color.White;
-            this.txb_proPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_proPrice.HoverState.Parent = this.txb_proPrice;
-            this.txb_proPrice.Location = new System.Drawing.Point(185, 142);
-            this.txb_proPrice.Margin = new System.Windows.Forms.Padding(6);
-            this.txb_proPrice.Name = "txb_proPrice";
-            this.txb_proPrice.PasswordChar = '\0';
-            this.txb_proPrice.PlaceholderText = "Product Price";
-            this.txb_proPrice.SelectedText = "";
-            this.txb_proPrice.ShadowDecoration.Parent = this.txb_proPrice;
-            this.txb_proPrice.Size = new System.Drawing.Size(180, 35);
-            this.txb_proPrice.TabIndex = 3;
+            this.txb_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_price.Enabled = false;
+            this.txb_price.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_price.Location = new System.Drawing.Point(189, 68);
+            this.txb_price.Multiline = true;
+            this.txb_price.Name = "txb_price";
+            this.txb_price.Size = new System.Drawing.Size(135, 28);
+            this.txb_price.TabIndex = 19;
+            this.txb_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dgv_store_info
+            // txb_qty
             // 
-            this.dgv_store_info.AllowUserToAddRows = false;
-            this.dgv_store_info.AllowUserToDeleteRows = false;
-            this.dgv_store_info.AllowUserToResizeColumns = false;
-            this.dgv_store_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_store_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_store_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_store_info.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_store_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_store_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_store_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_store_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_store_info.ColumnHeadersHeight = 27;
-            this.dgv_store_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_store_info.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_store_info.EnableHeadersVisualStyles = false;
-            this.dgv_store_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_store_info.Location = new System.Drawing.Point(0, 0);
-            this.dgv_store_info.Name = "dgv_store_info";
-            this.dgv_store_info.ReadOnly = true;
-            this.dgv_store_info.RowHeadersVisible = false;
-            this.dgv_store_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_store_info.RowTemplate.Height = 24;
-            this.dgv_store_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_store_info.Size = new System.Drawing.Size(1250, 565);
-            this.dgv_store_info.TabIndex = 4;
-            this.dgv_store_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgv_store_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_store_info.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_store_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_store_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_store_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_store_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_store_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_store_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.dgv_store_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_store_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_store_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_store_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_store_info.ThemeStyle.HeaderStyle.Height = 27;
-            this.dgv_store_info.ThemeStyle.ReadOnly = true;
-            this.dgv_store_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_store_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_store_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_store_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_store_info.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_store_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_store_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.txb_qty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_qty.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_qty.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_qty.Location = new System.Drawing.Point(30, 178);
+            this.txb_qty.Multiline = true;
+            this.txb_qty.Name = "txb_qty";
+            this.txb_qty.Size = new System.Drawing.Size(135, 28);
+            this.txb_qty.TabIndex = 20;
+            this.txb_qty.TextChanged += new System.EventHandler(this.txb_qty_TextChanged);
+            // 
+            // txb_grandTotal
+            // 
+            this.txb_grandTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_grandTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_grandTotal.Enabled = false;
+            this.txb_grandTotal.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_grandTotal.Location = new System.Drawing.Point(882, 104);
+            this.txb_grandTotal.Multiline = true;
+            this.txb_grandTotal.Name = "txb_grandTotal";
+            this.txb_grandTotal.Size = new System.Drawing.Size(90, 30);
+            this.txb_grandTotal.TabIndex = 21;
+            this.txb_grandTotal.Text = "0";
+            this.txb_grandTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txb_totalPrice
+            // 
+            this.txb_totalPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_totalPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_totalPrice.Enabled = false;
+            this.txb_totalPrice.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_totalPrice.Location = new System.Drawing.Point(189, 178);
+            this.txb_totalPrice.Multiline = true;
+            this.txb_totalPrice.Name = "txb_totalPrice";
+            this.txb_totalPrice.Size = new System.Drawing.Size(135, 28);
+            this.txb_totalPrice.TabIndex = 22;
+            // 
+            // combo_discount
+            // 
+            this.combo_discount.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_discount.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_discount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.combo_discount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_discount.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_discount.ForeColor = System.Drawing.SystemColors.Window;
+            this.combo_discount.Items.AddRange(new object[] {
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"});
+            this.combo_discount.Location = new System.Drawing.Point(977, 104);
+            this.combo_discount.Name = "combo_discount";
+            this.combo_discount.Size = new System.Drawing.Size(100, 30);
+            this.combo_discount.TabIndex = 23;
+            this.combo_discount.SelectedIndexChanged += new System.EventHandler(this.combo_discount_SelectedIndexChanged);
+            // 
+            // txb_empUsername
+            // 
+            this.txb_empUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_empUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_empUsername.Enabled = false;
+            this.txb_empUsername.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_empUsername.Location = new System.Drawing.Point(30, 242);
+            this.txb_empUsername.Multiline = true;
+            this.txb_empUsername.Name = "txb_empUsername";
+            this.txb_empUsername.Size = new System.Drawing.Size(135, 28);
+            this.txb_empUsername.TabIndex = 24;
+            // 
+            // combo_customerName
+            // 
+            this.combo_customerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_customerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_customerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.combo_customerName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_customerName.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_customerName.ForeColor = System.Drawing.SystemColors.Window;
+            this.combo_customerName.Location = new System.Drawing.Point(180, 244);
+            this.combo_customerName.Name = "combo_customerName";
+            this.combo_customerName.Size = new System.Drawing.Size(144, 26);
+            this.combo_customerName.TabIndex = 25;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(236, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 17);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Price";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(68, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 17);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Quantity";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(237, 160);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 17);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Total";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(193, 224);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 17);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Customer Name";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Location = new System.Drawing.Point(46, 224);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 17);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Emp username";
+            // 
+            // lstv
+            // 
+            this.lstv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.lstv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lstv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lstv.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstv.Location = new System.Drawing.Point(370, 104);
+            this.lstv.Name = "lstv";
+            this.lstv.Size = new System.Drawing.Size(468, 166);
+            this.lstv.TabIndex = 32;
+            this.lstv.UseCompatibleStateImageBehavior = false;
+            this.lstv.View = System.Windows.Forms.View.Details;
+            // 
+            // btn_add_lst
+            // 
+            this.btn_add_lst.AutoRoundedCorners = true;
+            this.btn_add_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_add_lst.BorderRadius = 16;
+            this.btn_add_lst.BorderThickness = 1;
+            this.btn_add_lst.CheckedState.Parent = this.btn_add_lst;
+            this.btn_add_lst.CustomImages.Parent = this.btn_add_lst;
+            this.btn_add_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_add_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_lst.ForeColor = System.Drawing.Color.White;
+            this.btn_add_lst.HoverState.Parent = this.btn_add_lst;
+            this.btn_add_lst.Image = global::Alpha_Pharma.Properties.Resources.add;
+            this.btn_add_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_add_lst.ImageOffset = new System.Drawing.Point(6, 0);
+            this.btn_add_lst.Location = new System.Drawing.Point(481, 63);
+            this.btn_add_lst.Name = "btn_add_lst";
+            this.btn_add_lst.ShadowDecoration.Parent = this.btn_add_lst;
+            this.btn_add_lst.Size = new System.Drawing.Size(120, 34);
+            this.btn_add_lst.TabIndex = 33;
+            this.btn_add_lst.Text = "Add";
+            this.btn_add_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_add_lst.Click += new System.EventHandler(this.btn_add_lst_Click);
+            // 
+            // btn_delect_lst
+            // 
+            this.btn_delect_lst.AutoRoundedCorners = true;
+            this.btn_delect_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_delect_lst.BorderRadius = 16;
+            this.btn_delect_lst.BorderThickness = 1;
+            this.btn_delect_lst.CheckedState.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.CustomImages.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.btn_delect_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delect_lst.ForeColor = System.Drawing.Color.White;
+            this.btn_delect_lst.HoverState.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.Image = global::Alpha_Pharma.Properties.Resources.delete;
+            this.btn_delect_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_delect_lst.Location = new System.Drawing.Point(607, 64);
+            this.btn_delect_lst.Name = "btn_delect_lst";
+            this.btn_delect_lst.ShadowDecoration.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.Size = new System.Drawing.Size(136, 34);
+            this.btn_delect_lst.TabIndex = 34;
+            this.btn_delect_lst.Text = "Remove";
+            this.btn_delect_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txb_subTotal
+            // 
+            this.txb_subTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_subTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_subTotal.Enabled = false;
+            this.txb_subTotal.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_subTotal.Location = new System.Drawing.Point(882, 173);
+            this.txb_subTotal.Multiline = true;
+            this.txb_subTotal.Name = "txb_subTotal";
+            this.txb_subTotal.Size = new System.Drawing.Size(90, 30);
+            this.txb_subTotal.TabIndex = 35;
+            this.txb_subTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txb_paid
+            // 
+            this.txb_paid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_paid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_paid.ForeColor = System.Drawing.SystemColors.Window;
+            this.txb_paid.Location = new System.Drawing.Point(882, 240);
+            this.txb_paid.Multiline = true;
+            this.txb_paid.Name = "txb_paid";
+            this.txb_paid.Size = new System.Drawing.Size(90, 30);
+            this.txb_paid.TabIndex = 36;
+            this.txb_paid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txb_paid.TextChanged += new System.EventHandler(this.txb_paid_TextChanged);
+            // 
+            // txb_remain
+            // 
+            this.txb_remain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_remain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txb_remain.Enabled = false;
+            this.txb_remain.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_remain.Location = new System.Drawing.Point(978, 240);
+            this.txb_remain.Multiline = true;
+            this.txb_remain.Name = "txb_remain";
+            this.txb_remain.Size = new System.Drawing.Size(90, 30);
+            this.txb_remain.TabIndex = 37;
+            this.txb_remain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(885, 85);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 17);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Grand Total";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(987, 84);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 17);
+            this.label9.TabIndex = 39;
+            this.label9.Text = "Discount %";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label10.Location = new System.Drawing.Point(889, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 17);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Sub Total";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label11.Location = new System.Drawing.Point(880, 221);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 17);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Paid Amount";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label12.Location = new System.Drawing.Point(992, 221);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 17);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Refund";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Item Name";
+            this.columnHeader1.Width = 150;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Price";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Qty";
+            this.columnHeader3.Width = 40;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Total";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "ID";
+            this.columnHeader7.Width = 30;
             // 
             // ReceiptUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgv_store_info);
+            this.Controls.Add(this.dgv_receipt_info);
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "ReceiptUC";
             this.Size = new System.Drawing.Size(1250, 765);
+            this.Load += new System.EventHandler(this.ReceiptUC_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_store_info)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_receipt_info)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -443,20 +628,40 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private System.Windows.Forms.DateTimePicker date_proExp;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox txb_proCode;
-        private Guna.UI2.WinForms.Guna2TextBox txb_proQty;
-        private System.Windows.Forms.ComboBox combo_supplier;
         private System.Windows.Forms.ComboBox combo_product;
-        private Guna.UI2.WinForms.Guna2TextBox lb_store;
-        private Guna.UI2.WinForms.Guna2Button btn_Update;
-        private Guna.UI2.WinForms.Guna2Button btn_Delete;
-        private Guna.UI2.WinForms.Guna2Button btn_Clear;
-        private Guna.UI2.WinForms.Guna2Button btn_add;
-        private Guna.UI2.WinForms.Guna2TextBox txb_proPrice;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_store_info;
+        private Guna.UI2.WinForms.Guna2Button btn_print;
+        private Guna.UI2.WinForms.Guna2Button btn_confirm;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_receipt_info;
+        private System.Windows.Forms.ComboBox combo_customerName;
+        private System.Windows.Forms.TextBox txb_empUsername;
+        private System.Windows.Forms.ComboBox combo_discount;
+        private System.Windows.Forms.TextBox txb_totalPrice;
+        private System.Windows.Forms.TextBox txb_grandTotal;
+        private System.Windows.Forms.TextBox txb_qty;
+        private System.Windows.Forms.TextBox txb_price;
+        private System.Windows.Forms.TextBox txb_available;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView lstv;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btn_add_lst;
+        private Guna.UI2.WinForms.Guna2Button btn_delect_lst;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txb_remain;
+        private System.Windows.Forms.TextBox txb_paid;
+        private System.Windows.Forms.TextBox txb_subTotal;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

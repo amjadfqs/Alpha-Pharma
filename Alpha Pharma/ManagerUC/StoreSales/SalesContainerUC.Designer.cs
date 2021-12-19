@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_income = new Guna.UI2.WinForms.Guna2Button();
             this.btn_store = new Guna.UI2.WinForms.Guna2Button();
             this.btn_receipt = new Guna.UI2.WinForms.Guna2Button();
             this.panel_Sales_container = new System.Windows.Forms.Panel();
-            this.btn_income = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1250, 60);
             this.panel1.TabIndex = 4;
+            // 
+            // btn_income
+            // 
+            this.btn_income.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_income.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_income.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btn_income.CheckedState.Parent = this.btn_income;
+            this.btn_income.CustomImages.Parent = this.btn_income;
+            this.btn_income.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.btn_income.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_income.ForeColor = System.Drawing.Color.White;
+            this.btn_income.HoverState.Parent = this.btn_income;
+            this.btn_income.Location = new System.Drawing.Point(360, 25);
+            this.btn_income.Name = "btn_income";
+            this.btn_income.ShadowDecoration.Parent = this.btn_income;
+            this.btn_income.Size = new System.Drawing.Size(175, 36);
+            this.btn_income.TabIndex = 2;
+            this.btn_income.Text = "Income";
             // 
             // btn_store
             // 
@@ -84,6 +102,7 @@
             this.btn_receipt.Size = new System.Drawing.Size(175, 36);
             this.btn_receipt.TabIndex = 1;
             this.btn_receipt.Text = "Receipt";
+            this.btn_receipt.Click += new System.EventHandler(this.btn_receipt_Click);
             // 
             // panel_Sales_container
             // 
@@ -92,24 +111,6 @@
             this.panel_Sales_container.Name = "panel_Sales_container";
             this.panel_Sales_container.Size = new System.Drawing.Size(1250, 765);
             this.panel_Sales_container.TabIndex = 5;
-            // 
-            // btn_income
-            // 
-            this.btn_income.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btn_income.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_income.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.btn_income.CheckedState.Parent = this.btn_income;
-            this.btn_income.CustomImages.Parent = this.btn_income;
-            this.btn_income.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.btn_income.Font = new System.Drawing.Font("Century Gothic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_income.ForeColor = System.Drawing.Color.White;
-            this.btn_income.HoverState.Parent = this.btn_income;
-            this.btn_income.Location = new System.Drawing.Point(360, 25);
-            this.btn_income.Name = "btn_income";
-            this.btn_income.ShadowDecoration.Parent = this.btn_income;
-            this.btn_income.Size = new System.Drawing.Size(175, 36);
-            this.btn_income.TabIndex = 2;
-            this.btn_income.Text = "Income";
             // 
             // SalesContainerUC
             // 

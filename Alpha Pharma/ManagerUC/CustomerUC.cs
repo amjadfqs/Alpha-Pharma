@@ -156,6 +156,7 @@ namespace Alpha_Pharma.ManagerUC
 
         private void CustomerUC_Load(object sender, EventArgs e)
         {
+            dgv_customer_info.Columns["FullName"].Visible = false;
             if (User.User_Type == "Employee")
             {
                 btn_delete.Enabled = false;

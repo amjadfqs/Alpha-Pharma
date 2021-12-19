@@ -421,7 +421,6 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_customer_info.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_customer_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_customer_info.EnableHeadersVisualStyles = false;
             this.dgv_customer_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer_info.Location = new System.Drawing.Point(0, 0);

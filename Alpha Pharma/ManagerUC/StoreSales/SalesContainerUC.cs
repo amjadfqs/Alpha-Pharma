@@ -23,5 +23,11 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             StoreUC uc = new StoreUC();
             openSalesControl(uc);
         }
+
+        private void btn_receipt_Click(object sender, EventArgs e)
+        {
+            ReceiptUC uc = new ReceiptUC();
+            openSalesControl(uc);
+        }
     }
 }
