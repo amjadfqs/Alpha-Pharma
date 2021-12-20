@@ -147,6 +147,9 @@ namespace Alpha_Pharma.ManagerUC.ProductUC
             combo_FormID.DisplayMember = "FormName";
             combo_FormID.ValueMember = "ID";
             combo_FormID.SelectedIndex = -1;
+
+            dgv_drug_info.Columns["DrugAll"].Visible = false;
+
         }
 
         private void dgv_drug_info_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -120,6 +120,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "SalesContainerUC";
             this.Size = new System.Drawing.Size(1250, 825);
+            this.Load += new System.EventHandler(this.SalesContainerUC_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

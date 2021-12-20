@@ -196,9 +196,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(79, 235);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 34);
+            this.label1.Size = new System.Drawing.Size(159, 34);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Manager";
+            this.label1.Text = "Employee";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PictureBox1
@@ -236,6 +236,7 @@
             this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Employee_FormClosed);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -2,7 +2,6 @@
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
@@ -17,6 +16,8 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
         {
             InitializeComponent();
         }
+
+
 
         private void ReceiptUC_Load(object sender, EventArgs e)
         {
@@ -140,7 +141,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
         {
             if (combo_discount.Text.Length>0)
             {
-                float dis = (Convert.ToInt32(txb_grandTotal.Text) * (Convert.ToInt32(combo_discount.Text) / 100));
+                float dis = (Convert.ToInt32(txb_grandTotal.Text) * (Convert.ToSingle(combo_discount.Text) / 100));
                 txb_subTotal.Text = (Convert.ToInt32(txb_grandTotal.Text) - dis).ToString();
             }
         }
@@ -322,6 +323,23 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
 
             graphics.DrawString("Thank You ^-^", new Font("Courier New", 20), new SolidBrush(Color.Black), startx + 180, starty + offset);
 
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            txb_available.Clear();
+            txb_price.Clear();
+            combo_product.Text = "";
+            txb_qty.Clear();
+            txb_totalPrice.Clear();
+            lstv.Items.Clear();
+            txb_TotalQty.Clear();
+            txb_qty.Clear();
+            combo_discount.Text = "0";
+            txb_grandTotal.Clear();
+            txb_subTotal.Clear();
+            txb_paid.Clear();
+            txb_remain.Clear();
         }
     }
 }
