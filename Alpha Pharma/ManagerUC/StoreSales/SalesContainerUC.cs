@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Alpha_Pharma.Classes;
 
 namespace Alpha_Pharma.ManagerUC.StoreSales
 {
@@ -28,6 +29,14 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
         {
             ReceiptUC uc = new ReceiptUC();
             openSalesControl(uc);
+        }
+
+        private void SalesContainerUC_Load(object sender, EventArgs e)
+        {
+            if (User.User_Type == "Employee")
+            {
+                btn_store.Enabled = false;
+            }
         }
     }
 }

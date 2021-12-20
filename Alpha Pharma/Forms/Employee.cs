@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 using Alpha_Pharma.ManagerUC;
+using Alpha_Pharma.ManagerUC.StoreSales;
 
 namespace Alpha_Pharma.Forms
 {
@@ -34,7 +35,8 @@ namespace Alpha_Pharma.Forms
 
         private void btn_SaleMana_Click(object sender, EventArgs e)
         {
-
+            SalesContainerUC uc = new SalesContainerUC();
+            openUserControl(uc);
         }
 
         private void product_report_Click(object sender, EventArgs e)
@@ -53,6 +55,11 @@ namespace Alpha_Pharma.Forms
             this.Hide();
             Login f = new Login();
             f.Show();
+        }
+
+        private void Employee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            btn_logout.PerformClick();
         }
     }
     
