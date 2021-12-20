@@ -229,7 +229,6 @@ namespace Alpha_Pharma.ManagerUC
                     {
                         if (DR.HasRows)
                         {
-                            var bmp = 
                             status_pic.Image = Resources.no;
                         }
                         else if (txb_username.Text.Trim() == "")

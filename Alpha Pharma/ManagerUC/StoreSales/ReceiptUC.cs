@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
@@ -34,9 +35,9 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             txb_price.Clear();
 
             combo_product.Focus();
-            combo_discount.SelectedIndex = 0;
 
             btn_add_lst.Enabled = false;
+            btn_print.Enabled = false;
         }
 
         private void combo_product_SelectedIndexChanged(object sender, EventArgs e)
@@ -139,7 +140,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
         {
             if (combo_discount.Text.Length>0)
             {
-                float dis = (Convert.ToInt32(txb_grandTotal.Text) * (Convert.ToSingle(combo_discount.Text) / 100));
+                float dis = (Convert.ToInt32(txb_grandTotal.Text) * (Convert.ToInt32(combo_discount.Text) / 100));
                 txb_subTotal.Text = (Convert.ToInt32(txb_grandTotal.Text) - dis).ToString();
             }
         }
@@ -148,20 +149,28 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
         {
             try
             {
-                if (txb_paid.Text.Length>0)
+                if (txb_paid.Text.Length > 0  &&  (Convert.ToInt32(txb_paid.Text) >= Convert.ToInt32(txb_subTotal.Text)))
                 {
+
                     txb_remain.Text = (Convert.ToInt32(txb_paid.Text) - Convert.ToInt32(txb_subTotal.Text)).ToString();
+                    btn_print.Enabled = true;
+                }
+                else 
+                {
+                    // MessageBox.Show("The Paid Amount Is less than the Total!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btn_print.Enabled = false;
                 }
             }
             catch (Exception)
             {   
+                txb_paid.Clear();
                 txb_remain.Clear();
             }
         }
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
-            combo_discount.Enabled = true;
+            combo_discount.Enabled = false;
 
             receipt.Emp_ID = User.User_ID.ToString();
             receipt.Total = float.Parse(txb_subTotal.Text);
@@ -186,6 +195,9 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
                 receiptDetails.Pro_Qty = item.SubItems[3].Text;
                 receiptDetails.UpdateProQty(receiptDetails);
             }
+
+            btn_confirm.Enabled = false;
+
         }
 
         private void btn_print_Click(object sender, EventArgs e)
@@ -202,27 +214,28 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
                 rows = receiptDetails.InsertReceiptDetail(receiptDetails);
                 rows++;
             }
+
             if (rows>0)
             {
                 MessageBox.Show(rows+ " " + "Receipt has been added successfully");
+
+                //Printing
+
+                printDialog1.Document = printDocument1;
+                DialogResult result = printDialog1.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    printDocument1.Print();
+                }
             }
             else
             {
                 MessageBox.Show(@"Error occurd. Pleas try again...");
+
             }
 
+            lstv.Items.Clear();
             dgv_receipt_info.DataSource = ReceiptDetails.GetReceiptDetail();
-
-            //Printing
-
-            printDialog1.Document = printDocument1;
-            DialogResult result = printDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-            }
-
-
         }
 
         void ClearControls()
@@ -259,9 +272,13 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             float leftmargin = e.MarginBounds.Left;
             float topmargin = e.MarginBounds.Top;
             graphics.DrawString("Alpha Pharma",new Font("Courier New",20),new SolidBrush(Color.Black),startx + 180,starty);
+
+            string ID = "Receipt ID:" + lastReceiptID;
+            graphics.DrawString(ID, font, new SolidBrush(Color.Black), startx, starty + offset + 5);
+
             string top = "Date:" + DateTime.Now.ToString().PadRight(5);
-            graphics.DrawString(top,font, new SolidBrush(Color.Black), startx, starty + offset+10);
-            offset = offset + 30;
+            graphics.DrawString(top,font, new SolidBrush(Color.Black), startx, starty + offset + 30);
+            offset = offset + 60;
 
             string emp = "Employee:" + User.User_Name;
             graphics.DrawString(emp, font, new SolidBrush(Color.Black), startx, starty + offset);
