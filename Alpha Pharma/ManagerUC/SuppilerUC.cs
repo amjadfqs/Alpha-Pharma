@@ -159,13 +159,7 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-        private void txb_search_TextChanged(object sender, EventArgs e)
-        {
-            DataView Dv = new DataView(Supplier.GetSuppliers());
-            Dv.RowFilter = "Name like '%" + txb_search.Text + "%'";
-            dgv_Supplier_info.DataSource = Dv;
-        }
-
+        
         private void txb_SN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (!Regex.IsMatch(txb_SN.Text, "^[A-Za-z]{1,50}$"))
@@ -205,6 +199,27 @@ namespace Alpha_Pharma.ManagerUC
             else
             {
                 MessageBox.Show("Error");
+            }
+        }
+
+        private void txb_search_TextChanged_1(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(Supplier.GetSuppliers());
+            Dv.RowFilter = "Name like '%" + txb_search.Text + "%'";
+            dgv_Supplier_info.DataSource = Dv;
+        }
+
+        private void txb_SPN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (txb_SPN.Text.Count(Char.IsDigit) != 9)
+            {
+                errorProvider1.SetError(txb_SPN, "The phone number should have 9 number only!");
+                txb_SPN.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
             }
         }
     }

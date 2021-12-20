@@ -49,13 +49,13 @@
             this.btn_clear = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_customer_info = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txb_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txb_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.group_Box_Customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // group_Box_Customer
@@ -172,6 +172,7 @@
             this.mb_CPN.TabIndex = 3;
             this.mb_CPN.TextOffset = new System.Drawing.Point(0, -2);
             this.mb_CPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mb_CPN_KeyPress);
+            this.mb_CPN.Validating += new System.ComponentModel.CancelEventHandler(this.mb_CPN_Validating);
             // 
             // label3
             // 
@@ -432,7 +433,7 @@
             this.dgv_customer_info.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_customer_info.EnableHeadersVisualStyles = false;
             this.dgv_customer_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_customer_info.Location = new System.Drawing.Point(0, 64);
+            this.dgv_customer_info.Location = new System.Drawing.Point(0, 73);
             this.dgv_customer_info.Name = "dgv_customer_info";
             this.dgv_customer_info.ReadOnly = true;
             this.dgv_customer_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -448,7 +449,7 @@
             this.dgv_customer_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_customer_info.RowTemplate.Height = 24;
             this.dgv_customer_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_customer_info.Size = new System.Drawing.Size(1250, 578);
+            this.dgv_customer_info.Size = new System.Drawing.Size(1250, 569);
             this.dgv_customer_info.TabIndex = 5;
             this.dgv_customer_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dgv_customer_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -475,15 +476,19 @@
             this.dgv_customer_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellClick);
             this.dgv_customer_info.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellContentClick);
             // 
-            // pictureBox1
+            // errorProvider1
             // 
-            this.pictureBox1.Image = global::Alpha_Pharma.Properties.Resources.search;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Alpha_Pharma.Properties.Resources.search;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(91, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
             // 
             // txb_search
             // 
@@ -497,13 +502,14 @@
             this.txb_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txb_search.DisabledState.Parent = this.txb_search;
             this.txb_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.txb_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_search.FocusedState.Parent = this.txb_search;
             this.txb_search.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_search.ForeColor = System.Drawing.Color.Black;
             this.txb_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txb_search.HoverState.Parent = this.txb_search;
-            this.txb_search.Location = new System.Drawing.Point(132, 14);
+            this.txb_search.Location = new System.Drawing.Point(103, 19);
             this.txb_search.Margin = new System.Windows.Forms.Padding(5);
             this.txb_search.Name = "txb_search";
             this.txb_search.PasswordChar = '\0';
@@ -511,21 +517,17 @@
             this.txb_search.PlaceholderText = "Search for Employee....";
             this.txb_search.SelectedText = "";
             this.txb_search.ShadowDecoration.Parent = this.txb_search;
-            this.txb_search.Size = new System.Drawing.Size(978, 33);
-            this.txb_search.TabIndex = 15;
+            this.txb_search.Size = new System.Drawing.Size(416, 33);
+            this.txb_search.TabIndex = 17;
             this.txb_search.TextOffset = new System.Drawing.Point(0, -2);
-            this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged_1);
             // 
             // CustomerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txb_search);
             this.Controls.Add(this.dgv_customer_info);
             this.Controls.Add(this.group_Box_Customer);
@@ -535,8 +537,8 @@
             this.group_Box_Customer.ResumeLayout(false);
             this.group_Box_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -559,8 +561,8 @@
         private System.Windows.Forms.Label id_lb;
         private Guna.UI2.WinForms.Guna2TextBox txb_cus_desc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txb_search;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txb_search;
     }
 }

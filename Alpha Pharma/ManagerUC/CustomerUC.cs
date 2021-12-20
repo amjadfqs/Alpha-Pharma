@@ -143,10 +143,10 @@ namespace Alpha_Pharma.ManagerUC
                 id_lb.Text = dgv_customer_info.Rows[index].Cells[0].Value.ToString();
                 txb_CFN.Text = dgv_customer_info.Rows[index].Cells[1].Value.ToString();
                 txb_CLN.Text = dgv_customer_info.Rows[index].Cells[2].Value.ToString();
-                mb_CPN.Text = dgv_customer_info.Rows[index].Cells[3].Value.ToString();
-                combo_CG.Text = dgv_customer_info.Rows[index].Cells[4].Value.ToString();
-                datetimepicker_CD.Text = dgv_customer_info.Rows[index].Cells[5].Value.ToString();
-                txb_cus_desc.Text = dgv_customer_info.Rows[index].Cells[6].Value.ToString();
+                mb_CPN.Text = dgv_customer_info.Rows[index].Cells[4].Value.ToString();
+                combo_CG.Text = dgv_customer_info.Rows[index].Cells[5].Value.ToString();
+                datetimepicker_CD.Text = dgv_customer_info.Rows[index].Cells[6].Value.ToString();
+                txb_cus_desc.Text = dgv_customer_info.Rows[index].Cells[7].Value.ToString();
                 datetimepicker_CD.Format = DateTimePickerFormat.Custom;
                 datetimepicker_CD.CustomFormat = "MM/dd/yyyy";
             }
@@ -170,6 +170,7 @@ namespace Alpha_Pharma.ManagerUC
         private void CustomerUC_Load(object sender, EventArgs e)
         {
             dgv_customer_info.Columns["FullName"].Visible = false;
+
             if (User.User_Type == "Employee")
             {
                 btn_delete.Enabled = false;
@@ -177,13 +178,7 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-        private void txb_search_TextChanged(object sender, EventArgs e)
-        {
-            DataView Dv = new DataView(Customer.GetCustomers());
-            Dv.RowFilter = "FirstName like '%" + txb_search.Text + "%'";
-            dgv_customer_info.DataSource = Dv;
-        }
-
+        
         private void datetimepicker_CD_MouseDown(object sender, MouseEventArgs e)
         {
             datetimepicker_CD.CustomFormat = "MM/dd/yyyy";
@@ -224,19 +219,38 @@ namespace Alpha_Pharma.ManagerUC
             try
             {
                 String info;
-                if (e.ColumnIndex == 6)
+                if (e.ColumnIndex == 7)
                 {
                     info = dgv_customer_info.Rows[e.RowIndex].Cells["Customer_Desc"].Value.ToString();
-                    MessageBox.Show(info, @"All Description", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show(info, @"All Description", MessageBoxButtons.OK);
                 }
             }
             catch(Exception)
             {
                 return;
             }
-       
-           
+            
+        }
 
+        private void txb_search_TextChanged_1(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(Customer.GetCustomers());
+            Dv.RowFilter = "FirstName like '%" + txb_search.Text + "%'";
+            dgv_customer_info.DataSource = Dv;
+        }
+
+        private void mb_CPN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (mb_CPN.Text.Count(Char.IsDigit) != 9)
+            {
+                errorProvider1.SetError(mb_CPN, "The phone number should have 9 number only!");
+                mb_CPN.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
         }
     }
 }
