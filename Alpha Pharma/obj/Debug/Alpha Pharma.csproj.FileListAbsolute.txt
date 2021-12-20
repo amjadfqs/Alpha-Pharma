@@ -119,3 +119,4 @@ C:\Users\asus\Desktop\Alpha\Alpha Pharma\Alpha Pharma\obj\Debug\Alpha Pharma.pdb
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.ReceiptUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.SalesContainerUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.StoreSales.StoreUC.resources
+C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\App.config

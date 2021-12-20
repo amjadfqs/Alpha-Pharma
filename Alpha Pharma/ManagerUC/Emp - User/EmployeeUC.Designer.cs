@@ -239,14 +239,14 @@
             this.btn_update.ForeColor = System.Drawing.Color.White;
             this.btn_update.HoverState.Parent = this.btn_update;
             this.btn_update.Image = global::Alpha_Pharma.Properties.Resources.updating;
-            this.btn_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_update.Location = new System.Drawing.Point(1118, 79);
             this.btn_update.Name = "btn_update";
             this.btn_update.ShadowDecoration.Parent = this.btn_update;
             this.btn_update.Size = new System.Drawing.Size(125, 40);
             this.btn_update.TabIndex = 10;
             this.btn_update.Text = "Update";
-            this.btn_update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_update.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click_1);
             // 
             // btn_Emp_delete
@@ -262,14 +262,14 @@
             this.btn_Emp_delete.ForeColor = System.Drawing.Color.White;
             this.btn_Emp_delete.HoverState.Parent = this.btn_Emp_delete;
             this.btn_Emp_delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
-            this.btn_Emp_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Emp_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Emp_delete.Location = new System.Drawing.Point(1118, 133);
             this.btn_Emp_delete.Name = "btn_Emp_delete";
             this.btn_Emp_delete.ShadowDecoration.Parent = this.btn_Emp_delete;
             this.btn_Emp_delete.Size = new System.Drawing.Size(125, 40);
             this.btn_Emp_delete.TabIndex = 12;
             this.btn_Emp_delete.Text = "Delete";
-            this.btn_Emp_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Emp_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Emp_delete.Click += new System.EventHandler(this.btn_Emp_delete_Click_1);
             // 
             // btn_Emp_clear
@@ -285,7 +285,7 @@
             this.btn_Emp_clear.ForeColor = System.Drawing.Color.White;
             this.btn_Emp_clear.HoverState.Parent = this.btn_Emp_clear;
             this.btn_Emp_clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
-            this.btn_Emp_clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Emp_clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Emp_clear.ImageSize = new System.Drawing.Size(30, 30);
             this.btn_Emp_clear.Location = new System.Drawing.Point(993, 133);
             this.btn_Emp_clear.Name = "btn_Emp_clear";
@@ -293,7 +293,7 @@
             this.btn_Emp_clear.Size = new System.Drawing.Size(120, 40);
             this.btn_Emp_clear.TabIndex = 11;
             this.btn_Emp_clear.Text = "Clear";
-            this.btn_Emp_clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Emp_clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Emp_clear.Click += new System.EventHandler(this.btn_Emp_clear_Click);
             // 
             // btn_Emp_Click
@@ -309,7 +309,7 @@
             this.btn_Emp_Click.ForeColor = System.Drawing.Color.White;
             this.btn_Emp_Click.HoverState.Parent = this.btn_Emp_Click;
             this.btn_Emp_Click.Image = global::Alpha_Pharma.Properties.Resources.add;
-            this.btn_Emp_Click.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Emp_Click.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Emp_Click.ImageOffset = new System.Drawing.Point(6, 0);
             this.btn_Emp_Click.Location = new System.Drawing.Point(993, 80);
             this.btn_Emp_Click.Name = "btn_Emp_Click";
@@ -317,7 +317,7 @@
             this.btn_Emp_Click.Size = new System.Drawing.Size(120, 40);
             this.btn_Emp_Click.TabIndex = 9;
             this.btn_Emp_Click.Text = "Add";
-            this.btn_Emp_Click.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Emp_Click.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Emp_Click.Click += new System.EventHandler(this.btn_Emp_Click_Click);
             // 
             // label2

@@ -79,14 +79,14 @@
             this.btn_Update.ForeColor = System.Drawing.Color.White;
             this.btn_Update.HoverState.Parent = this.btn_Update;
             this.btn_Update.Image = global::Alpha_Pharma.Properties.Resources.updating;
-            this.btn_Update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Update.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Update.Location = new System.Drawing.Point(1110, 76);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.ShadowDecoration.Parent = this.btn_Update;
             this.btn_Update.Size = new System.Drawing.Size(125, 40);
             this.btn_Update.TabIndex = 1;
             this.btn_Update.Text = "Update";
-            this.btn_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Delete
@@ -102,14 +102,14 @@
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
             this.btn_Delete.HoverState.Parent = this.btn_Delete;
             this.btn_Delete.Image = global::Alpha_Pharma.Properties.Resources.delete;
-            this.btn_Delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Delete.Location = new System.Drawing.Point(1110, 130);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.ShadowDecoration.Parent = this.btn_Delete;
             this.btn_Delete.Size = new System.Drawing.Size(125, 40);
             this.btn_Delete.TabIndex = 3;
             this.btn_Delete.Text = "Delete";
-            this.btn_Delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Clear
@@ -125,7 +125,7 @@
             this.btn_Clear.ForeColor = System.Drawing.Color.White;
             this.btn_Clear.HoverState.Parent = this.btn_Clear;
             this.btn_Clear.Image = global::Alpha_Pharma.Properties.Resources.eraser;
-            this.btn_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Clear.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Clear.ImageSize = new System.Drawing.Size(30, 30);
             this.btn_Clear.Location = new System.Drawing.Point(985, 130);
             this.btn_Clear.Name = "btn_Clear";
@@ -133,7 +133,7 @@
             this.btn_Clear.Size = new System.Drawing.Size(120, 40);
             this.btn_Clear.TabIndex = 2;
             this.btn_Clear.Text = "Clear";
-            this.btn_Clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Clear.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // btn_Add
@@ -149,7 +149,7 @@
             this.btn_Add.ForeColor = System.Drawing.Color.White;
             this.btn_Add.HoverState.Parent = this.btn_Add;
             this.btn_Add.Image = global::Alpha_Pharma.Properties.Resources.add;
-            this.btn_Add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Add.ImageOffset = new System.Drawing.Point(6, 0);
             this.btn_Add.Location = new System.Drawing.Point(985, 77);
             this.btn_Add.Name = "btn_Add";
@@ -157,7 +157,7 @@
             this.btn_Add.Size = new System.Drawing.Size(120, 40);
             this.btn_Add.TabIndex = 0;
             this.btn_Add.Text = "Add";
-            this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // lb_QID
@@ -250,6 +250,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_dose_info.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_dose_info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_dose_info.EnableHeadersVisualStyles = false;
             this.dgv_dose_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_dose_info.Location = new System.Drawing.Point(0, 0);
             this.dgv_dose_info.Name = "dgv_dose_info";

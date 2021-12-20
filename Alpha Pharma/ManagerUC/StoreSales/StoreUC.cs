@@ -30,66 +30,102 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-           
-            store.Pro_ID = combo_product.SelectedValue.ToString();
-            store.Sup_ID = combo_supplier.SelectedValue.ToString();
-            store.Pro_Expire = date_proExp.Text;
-            store.Pro_Price = txb_proPrice.Text;
-            store.Pro_Qty = txb_proQty.Text;
-            store.Pro_Code = txb_proCode.Text;
 
-            bool success = store.InsertStore(store);
-            dgv_store_info.DataSource = Store.GetStore();
-            if (success)
+
+            if (txb_proCode.Text.Trim() != "" && txb_proPrice.Text.Trim() != "" && txb_proQty.Text.Trim() != "")
             {
-                ClearControls();
-                MessageBox.Show(@"Information has been added successfully");
+                try
+                {
+                    store.Pro_ID = combo_product.SelectedValue.ToString();
+                    store.Sup_ID = combo_supplier.SelectedValue.ToString();
+                    store.Pro_Expire = date_proExp.Text;
+                    store.Pro_Price = txb_proPrice.Text;
+                    store.Pro_Qty = txb_proQty.Text;
+                    store.Pro_Code = txb_proCode.Text;
+
+                    bool success = store.InsertStore(store);
+                    dgv_store_info.DataSource = Store.GetStore();
+                    if (success)
+                    {
+                        ClearControls();
+                        MessageBox.Show(@"Information has been added successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show(@"Error occurd. Pleas try again...");
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Error occurd .text empty...");
+                }
             }
             else
             {
-                MessageBox.Show(@"Error occurd. Pleas try again...");
+                MessageBox.Show(@"please fill all text",@"Error");
             }
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-            store.ID = lb_store.Text;
-            store.Pro_ID = combo_product.SelectedValue.ToString();
-            store.Sup_ID = combo_supplier.SelectedValue.ToString();
-            store.Pro_Expire = date_proExp.Text;
-            store.Pro_Price = txb_proPrice.Text;
-            store.Pro_Qty = txb_proQty.Text;
-            store.Pro_Code = txb_proCode.Text;
-
-            bool success = store.UpdateStore(store);
-            dgv_store_info.DataSource = Store.GetStore();
-
-            if (success)
+            if (txb_proCode.Text.Trim() != "" && txb_proPrice.Text.Trim() != "" && txb_proQty.Text.Trim() != "")
             {
-                ClearControls();
-                MessageBox.Show(@"Information has been Updated successfully");
+                try
+                {
+                    store.ID = lb_store.Text;
+                    store.Pro_ID = combo_product.SelectedValue.ToString();
+                    store.Sup_ID = combo_supplier.SelectedValue.ToString();
+                    store.Pro_Expire = date_proExp.Text;
+                    store.Pro_Price = txb_proPrice.Text;
+                    store.Pro_Qty = txb_proQty.Text;
+                    store.Pro_Code = txb_proCode.Text;
+
+                    bool success = store.UpdateStore(store);
+                    dgv_store_info.DataSource = Store.GetStore();
+
+                    if (success)
+                    {
+                        ClearControls();
+                        MessageBox.Show(@"Information has been Updated successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show(@"Error occurd. Pleas try again...");
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Error occurd .text empty...");
+                }
             }
             else
             {
-                MessageBox.Show(@"Error occurd. Pleas try again...");
+                MessageBox.Show(@"please select a store information", @"Error");
             }
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            store.ID = lb_store.Text;
-
-            bool success = store.DeleteStore(store);
-            dgv_store_info.DataSource = Store.GetStore();
-
-            if (success)
+            try
             {
-                ClearControls();
-                MessageBox.Show(@"Information has been Deleted successfully");
+                store.ID = lb_store.Text;
+
+                bool success = store.DeleteStore(store);
+                dgv_store_info.DataSource = Store.GetStore();
+
+                if (success)
+                {
+                    ClearControls();
+                    MessageBox.Show(@"Information has been Deleted successfully");
+                }
+                else
+                {
+                    MessageBox.Show(@"Error occurd. Pleas try again...");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show(@"Error occurd. Pleas try again...");
+              return;
             }
 
         }
