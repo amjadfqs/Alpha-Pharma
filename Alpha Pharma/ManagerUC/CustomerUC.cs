@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
@@ -10,6 +11,7 @@ namespace Alpha_Pharma.ManagerUC
     {
 
         Customer custmer = new Customer();
+
         public CustomerUC()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Alpha_Pharma.ManagerUC
         private void btn_add_Click(object sender, EventArgs e)
         {
             if (txb_CFN.Text.Trim() != "" && txb_CLN.Text.Trim() != "" && mb_CPN.Text.All(char.IsDigit) &&
-                combo_CG.Text.Trim() != "" )
+                combo_CG.Text.Trim() != "")
             {
                 try
                 {
@@ -45,11 +47,12 @@ namespace Alpha_Pharma.ManagerUC
                 {
                     MessageBox.Show("Error", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-               
+
             }
             else
             {
-                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
             }
         }
 
@@ -86,15 +89,17 @@ namespace Alpha_Pharma.ManagerUC
             }
             else
             {
-                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Empty text please Fill all field", "Error Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
             }
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
             ClearControls();
-           
+
         }
+
         private void ClearControls()
         {
             id_lb.Text = "";
@@ -122,6 +127,7 @@ namespace Alpha_Pharma.ManagerUC
                 }
                 else
                     MessageBox.Show(@"Error Happened");
+               
             }
             catch (Exception exce)
             {
@@ -180,6 +186,56 @@ namespace Alpha_Pharma.ManagerUC
         private void datetimepicker_CD_MouseDown(object sender, MouseEventArgs e)
         {
             datetimepicker_CD.CustomFormat = "MM/dd/yyyy";
+        }
+
+        private void txb_CFN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txb_CFN.Text, "^[A-Za-z]{1,50}$"))
+            {
+                txb_CFN.Focus();
+                errorProvider1.SetError(txb_CFN,
+                    "Please Enter The Customer FirstName without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+        private void txb_CLN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txb_CLN.Text, "^[A-Za-z]{1,50}$"))
+            {
+                txb_CLN.Focus();
+                errorProvider1.SetError(txb_CLN,
+                    "Please Enter The Customer LastName without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+        private void dgv_customer_info_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                String info;
+                if (e.ColumnIndex == 6)
+                {
+                    info = dgv_customer_info.Rows[e.RowIndex].Cells["Customer_Desc"].Value.ToString();
+                    MessageBox.Show(info, @"All Description", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+            }
+            catch(Exception)
+            {
+                return;
+            }
+       
+           
+
         }
     }
 }

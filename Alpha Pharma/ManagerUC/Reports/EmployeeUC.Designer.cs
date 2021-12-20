@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txb_Emp_FN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_LN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Emp_email = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.compo_Emp_DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lb_Emp_id = new System.Windows.Forms.Label();
             this.btn_update = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Emp_delete = new Guna.UI2.WinForms.Guna2Button();
@@ -54,7 +55,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgv_Employee_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.compo_Emp_DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,6 +193,30 @@
             this.guna2GroupBox1.TabIndex = 3;
             this.guna2GroupBox1.Text = "Employee Managment";
             // 
+            // compo_Emp_DOB
+            // 
+            this.compo_Emp_DOB.Animated = true;
+            this.compo_Emp_DOB.AutoRoundedCorners = true;
+            this.compo_Emp_DOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.compo_Emp_DOB.BorderRadius = 17;
+            this.compo_Emp_DOB.CheckedState.Parent = this.compo_Emp_DOB;
+            this.compo_Emp_DOB.CustomFormat = "  ";
+            this.compo_Emp_DOB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.compo_Emp_DOB.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compo_Emp_DOB.ForeColor = System.Drawing.Color.White;
+            this.compo_Emp_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.compo_Emp_DOB.HoverState.Parent = this.compo_Emp_DOB;
+            this.compo_Emp_DOB.Location = new System.Drawing.Point(434, 169);
+            this.compo_Emp_DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.compo_Emp_DOB.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.compo_Emp_DOB.Name = "compo_Emp_DOB";
+            this.compo_Emp_DOB.ShadowDecoration.Parent = this.compo_Emp_DOB;
+            this.compo_Emp_DOB.Size = new System.Drawing.Size(190, 36);
+            this.compo_Emp_DOB.TabIndex = 13;
+            this.compo_Emp_DOB.UseTransparentBackground = true;
+            this.compo_Emp_DOB.Value = new System.DateTime(2021, 11, 15, 21, 32, 55, 0);
+            this.compo_Emp_DOB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.compo_Emp_DOB_MouseDown);
+            // 
             // lb_Emp_id
             // 
             this.lb_Emp_id.AutoSize = true;
@@ -223,7 +247,7 @@
             this.btn_update.TabIndex = 10;
             this.btn_update.Text = "Update";
             this.btn_update.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click_1);
             // 
             // btn_Emp_delete
             // 
@@ -246,7 +270,7 @@
             this.btn_Emp_delete.TabIndex = 12;
             this.btn_Emp_delete.Text = "Delete";
             this.btn_Emp_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_Emp_delete.Click += new System.EventHandler(this.btn_Emp_delete_Click);
+            this.btn_Emp_delete.Click += new System.EventHandler(this.btn_Emp_delete_Click_1);
             // 
             // btn_Emp_clear
             // 
@@ -413,7 +437,7 @@
             this.txb_Emp_phone_no.TabIndex = 5;
             this.txb_Emp_phone_no.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_Emp_phone_no.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Emp_phone_no_KeyPress);
-            this.txb_Emp_phone_no.Validating += new System.ComponentModel.CancelEventHandler(this.Control_Validating2);
+            this.txb_Emp_phone_no.Validating += new System.ComponentModel.CancelEventHandler(this.txb_Emp_phone_no_Validating);
             // 
             // txb_Emp_salary
             // 
@@ -473,7 +497,7 @@
             this.txb_search.PlaceholderText = "Search for Employee....";
             this.txb_search.SelectedText = "";
             this.txb_search.ShadowDecoration.Parent = this.txb_search;
-            this.txb_search.Size = new System.Drawing.Size(978, 33);
+            this.txb_search.Size = new System.Drawing.Size(416, 33);
             this.txb_search.TabIndex = 13;
             this.txb_search.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged);
@@ -494,45 +518,45 @@
             this.dgv_Employee_info.AllowUserToDeleteRows = false;
             this.dgv_Employee_info.AllowUserToResizeColumns = false;
             this.dgv_Employee_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dgv_Employee_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Employee_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Employee_info.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Employee_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Employee_info.CausesValidation = false;
             this.dgv_Employee_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_Employee_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_Employee_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Employee_info.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_Employee_info.EnableHeadersVisualStyles = false;
             this.dgv_Employee_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Employee_info.Location = new System.Drawing.Point(0, 74);
             this.dgv_Employee_info.Name = "dgv_Employee_info";
             this.dgv_Employee_info.ReadOnly = true;
             this.dgv_Employee_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Employee_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_Employee_info.RowHeadersVisible = false;
             this.dgv_Employee_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_Employee_info.RowTemplate.Height = 24;
@@ -566,29 +590,6 @@
             // errorProvider2
             // 
             this.errorProvider2.ContainerControl = this;
-            // 
-            // compo_Emp_DOB
-            // 
-            this.compo_Emp_DOB.Animated = true;
-            this.compo_Emp_DOB.AutoRoundedCorners = true;
-            this.compo_Emp_DOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.compo_Emp_DOB.BorderRadius = 17;
-            this.compo_Emp_DOB.CheckedState.Parent = this.compo_Emp_DOB;
-            this.compo_Emp_DOB.CustomFormat = "  ";
-            this.compo_Emp_DOB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.compo_Emp_DOB.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compo_Emp_DOB.ForeColor = System.Drawing.Color.White;
-            this.compo_Emp_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.compo_Emp_DOB.HoverState.Parent = this.compo_Emp_DOB;
-            this.compo_Emp_DOB.Location = new System.Drawing.Point(434, 169);
-            this.compo_Emp_DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.compo_Emp_DOB.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.compo_Emp_DOB.Name = "compo_Emp_DOB";
-            this.compo_Emp_DOB.ShadowDecoration.Parent = this.compo_Emp_DOB;
-            this.compo_Emp_DOB.Size = new System.Drawing.Size(190, 36);
-            this.compo_Emp_DOB.TabIndex = 13;
-            this.compo_Emp_DOB.UseTransparentBackground = true;
-            this.compo_Emp_DOB.Value = new System.DateTime(2021, 11, 15, 21, 32, 55, 0);
             // 
             // EmployeeUC
             // 

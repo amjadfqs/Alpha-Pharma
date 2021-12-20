@@ -112,10 +112,10 @@
     <Compile Include="ManagerUC\ProductUC\DrugUC.Designer.cs">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUC\Emp - User\EmployeeUC.cs">
+    <Compile Include="ManagerUC\Reports\EmployeeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManagerUC\Emp - User\EmployeeUC.Designer.cs">
+    <Compile Include="ManagerUC\Reports\EmployeeUC.Designer.cs">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUC\ProductUC\FormUC.cs">
@@ -195,7 +195,7 @@
     <EmbeddedResource Include="ManagerUC\ProductUC\DrugUC.resx">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUC\Emp - User\EmployeeUC.resx">
+    <EmbeddedResource Include="ManagerUC\Reports\EmployeeUC.resx">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\FormUC.resx">

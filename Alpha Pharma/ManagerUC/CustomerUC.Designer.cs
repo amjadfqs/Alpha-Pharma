@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -50,9 +51,11 @@
             this.dgv_customer_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txb_search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.group_Box_Customer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // group_Box_Customer
@@ -259,6 +262,7 @@
             this.txb_CFN.ShadowDecoration.Parent = this.txb_CFN;
             this.txb_CFN.Size = new System.Drawing.Size(190, 30);
             this.txb_CFN.TabIndex = 1;
+            this.txb_CFN.Validating += new System.ComponentModel.CancelEventHandler(this.txb_CFN_Validating);
             // 
             // label1
             // 
@@ -299,6 +303,7 @@
             this.txb_CLN.ShadowDecoration.Parent = this.txb_CLN;
             this.txb_CLN.Size = new System.Drawing.Size(190, 32);
             this.txb_CLN.TabIndex = 2;
+            this.txb_CLN.Validating += new System.ComponentModel.CancelEventHandler(this.txb_CLN_Validating);
             // 
             // btn_update
             // 
@@ -468,6 +473,7 @@
             this.dgv_customer_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_customer_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellClick);
+            this.dgv_customer_info.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_customer_info_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -510,6 +516,10 @@
             this.txb_search.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // CustomerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -526,6 +536,7 @@
             this.group_Box_Customer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -550,5 +561,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txb_search;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

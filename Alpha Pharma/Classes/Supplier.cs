@@ -13,7 +13,7 @@ namespace Alpha_Pharma
         public string Sup_phone { get; set; }
         public string Suppplier_Desc { get; set; }
 
-        private const string SelectQuery = "Select sup_id as ID , sup_name as Name ,sup_address as Address ,sup_phone as Phone,sup_desc from Suppliers";
+        private const string SelectQuery = "Select sup_id as ID , sup_name as Name ,sup_address as Address ,sup_phone as Phone,sup_desc as Description from Suppliers";
         private const string InsertQuery = "Insert Into Suppliers(sup_name, sup_address, sup_phone, sup_desc ) Values (@Sup_name ,@Sup_address , @Sup_phone, @Suppplier_Desc)";
         private const string UpdateQuery = "Update Suppliers set sup_name=@Sup_name , sup_address=@Sup_address, sup_phone=@Sup_phone, sup_desc=@Suppplier_Desc where sup_id=@Sup_id";
         private const string DeleteQuery = "Delete from Suppliers where sup_id=@Sup_id";

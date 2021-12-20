@@ -105,9 +105,9 @@ namespace Alpha_Pharma.Classes
             string uname = null;
 
             // string select = "select * from Users where user_name=" + "'" + name + "'" + "and user_pass=" + "'" + pass + "'" ;
-            string select = "select * from Users where user_name= @Name and user_pass= @Pass"  ;
+            string select = "select * from Users where user_name= @Name and user_pass= @Pass";
 
-            using (SqlConnection con = new SqlConnection(myconn)) 
+            using (SqlConnection con = new SqlConnection(myconn))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(select, con))
@@ -116,12 +116,12 @@ namespace Alpha_Pharma.Classes
                     com.Parameters.AddWithValue("@Pass", pass);
                     using (SqlDataReader DR = com.ExecuteReader())
                     {
-                        if (DR.HasRows)     
+                        if (DR.HasRows)
                         {
                             while (DR.Read())
                             {
                                 type = DR["user_type"].ToString();
-                                id = (int) DR["emp_id"];
+                                id = (int)DR["emp_id"];
                                 uname = DR["user_name"].ToString();
                             }
                         }

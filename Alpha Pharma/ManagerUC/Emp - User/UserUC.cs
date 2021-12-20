@@ -34,7 +34,7 @@ namespace Alpha_Pharma.ManagerUC
                     {
                         while (DR.Read())
                         {
-                            // type = DR["user_type"].ToString();
+                            //type = DR["user_type"].ToString();
                             mycollection.Add(DR.GetValue(0).ToString());
                         }
                     }

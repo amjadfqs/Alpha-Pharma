@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gro = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txb_sup_desc = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_id = new System.Windows.Forms.Label();
-            this.txb_SPN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_SA = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txb_SN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv_Supplier_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Clear = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
+            this.txb_SPN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txb_SA = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txb_SN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgv_Supplier_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txb_search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.gro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Supplier_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // gro
@@ -129,171 +132,6 @@
             this.lb_id.Size = new System.Drawing.Size(0, 24);
             this.lb_id.TabIndex = 8;
             this.lb_id.Visible = false;
-            // 
-            // txb_SPN
-            // 
-            this.txb_SPN.BackColor = System.Drawing.Color.Transparent;
-            this.txb_SPN.BorderColor = System.Drawing.Color.Transparent;
-            this.txb_SPN.BorderRadius = 8;
-            this.txb_SPN.BorderThickness = 0;
-            this.txb_SPN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_SPN.DefaultText = "";
-            this.txb_SPN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_SPN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_SPN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SPN.DisabledState.Parent = this.txb_SPN;
-            this.txb_SPN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SPN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_SPN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SPN.FocusedState.Parent = this.txb_SPN;
-            this.txb_SPN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_SPN.ForeColor = System.Drawing.Color.White;
-            this.txb_SPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SPN.HoverState.Parent = this.txb_SPN;
-            this.txb_SPN.Location = new System.Drawing.Point(83, 174);
-            this.txb_SPN.Margin = new System.Windows.Forms.Padding(5);
-            this.txb_SPN.Name = "txb_SPN";
-            this.txb_SPN.PasswordChar = '\0';
-            this.txb_SPN.PlaceholderText = "Phone Number";
-            this.txb_SPN.SelectedText = "";
-            this.txb_SPN.ShadowDecoration.Parent = this.txb_SPN;
-            this.txb_SPN.Size = new System.Drawing.Size(190, 30);
-            this.txb_SPN.TabIndex = 3;
-            this.txb_SPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_SPN_KeyPress);
-            // 
-            // txb_SA
-            // 
-            this.txb_SA.BackColor = System.Drawing.Color.Transparent;
-            this.txb_SA.BorderRadius = 8;
-            this.txb_SA.BorderThickness = 0;
-            this.txb_SA.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_SA.DefaultText = "";
-            this.txb_SA.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_SA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_SA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SA.DisabledState.Parent = this.txb_SA;
-            this.txb_SA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SA.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_SA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SA.FocusedState.Parent = this.txb_SA;
-            this.txb_SA.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_SA.ForeColor = System.Drawing.Color.White;
-            this.txb_SA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SA.HoverState.Parent = this.txb_SA;
-            this.txb_SA.Location = new System.Drawing.Point(83, 122);
-            this.txb_SA.Margin = new System.Windows.Forms.Padding(8);
-            this.txb_SA.Name = "txb_SA";
-            this.txb_SA.PasswordChar = '\0';
-            this.txb_SA.PlaceholderText = "Address";
-            this.txb_SA.SelectedText = "";
-            this.txb_SA.ShadowDecoration.Parent = this.txb_SA;
-            this.txb_SA.Size = new System.Drawing.Size(190, 30);
-            this.txb_SA.TabIndex = 2;
-            // 
-            // txb_SN
-            // 
-            this.txb_SN.BackColor = System.Drawing.Color.Transparent;
-            this.txb_SN.BorderRadius = 8;
-            this.txb_SN.BorderThickness = 0;
-            this.txb_SN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_SN.DefaultText = "";
-            this.txb_SN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txb_SN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txb_SN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SN.DisabledState.Parent = this.txb_SN;
-            this.txb_SN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txb_SN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.txb_SN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SN.FocusedState.Parent = this.txb_SN;
-            this.txb_SN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_SN.ForeColor = System.Drawing.Color.White;
-            this.txb_SN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txb_SN.HoverState.Parent = this.txb_SN;
-            this.txb_SN.Location = new System.Drawing.Point(83, 69);
-            this.txb_SN.Margin = new System.Windows.Forms.Padding(6);
-            this.txb_SN.Name = "txb_SN";
-            this.txb_SN.PasswordChar = '\0';
-            this.txb_SN.PlaceholderText = "Name";
-            this.txb_SN.SelectedText = "";
-            this.txb_SN.ShadowDecoration.Parent = this.txb_SN;
-            this.txb_SN.Size = new System.Drawing.Size(190, 30);
-            this.txb_SN.TabIndex = 1;
-            // 
-            // dgv_Supplier_info
-            // 
-            this.dgv_Supplier_info.AllowUserToAddRows = false;
-            this.dgv_Supplier_info.AllowUserToDeleteRows = false;
-            this.dgv_Supplier_info.AllowUserToResizeColumns = false;
-            this.dgv_Supplier_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgv_Supplier_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_Supplier_info.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_Supplier_info.CausesValidation = false;
-            this.dgv_Supplier_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Supplier_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Supplier_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgv_Supplier_info.ColumnHeadersHeight = 27;
-            this.dgv_Supplier_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Supplier_info.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dgv_Supplier_info.EnableHeadersVisualStyles = false;
-            this.dgv_Supplier_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Supplier_info.Location = new System.Drawing.Point(0, 64);
-            this.dgv_Supplier_info.Name = "dgv_Supplier_info";
-            this.dgv_Supplier_info.ReadOnly = true;
-            this.dgv_Supplier_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Supplier_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgv_Supplier_info.RowHeadersVisible = false;
-            this.dgv_Supplier_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            this.dgv_Supplier_info.RowTemplate.Height = 24;
-            this.dgv_Supplier_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Supplier_info.Size = new System.Drawing.Size(1250, 576);
-            this.dgv_Supplier_info.TabIndex = 5;
-            this.dgv_Supplier_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_Supplier_info.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.Height = 27;
-            this.dgv_Supplier_info.ThemeStyle.ReadOnly = true;
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Supplier_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_Supplier_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Supplier_info_CellClick);
             // 
             // btn_Update
             // 
@@ -389,6 +227,174 @@
             this.btn_Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
+            // txb_SPN
+            // 
+            this.txb_SPN.BackColor = System.Drawing.Color.Transparent;
+            this.txb_SPN.BorderColor = System.Drawing.Color.Transparent;
+            this.txb_SPN.BorderRadius = 8;
+            this.txb_SPN.BorderThickness = 0;
+            this.txb_SPN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_SPN.DefaultText = "";
+            this.txb_SPN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_SPN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_SPN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SPN.DisabledState.Parent = this.txb_SPN;
+            this.txb_SPN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SPN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_SPN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SPN.FocusedState.Parent = this.txb_SPN;
+            this.txb_SPN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_SPN.ForeColor = System.Drawing.Color.White;
+            this.txb_SPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SPN.HoverState.Parent = this.txb_SPN;
+            this.txb_SPN.Location = new System.Drawing.Point(83, 174);
+            this.txb_SPN.Margin = new System.Windows.Forms.Padding(5);
+            this.txb_SPN.Name = "txb_SPN";
+            this.txb_SPN.PasswordChar = '\0';
+            this.txb_SPN.PlaceholderText = "Phone Number";
+            this.txb_SPN.SelectedText = "";
+            this.txb_SPN.ShadowDecoration.Parent = this.txb_SPN;
+            this.txb_SPN.Size = new System.Drawing.Size(190, 30);
+            this.txb_SPN.TabIndex = 3;
+            this.txb_SPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_SPN_KeyPress);
+            // 
+            // txb_SA
+            // 
+            this.txb_SA.BackColor = System.Drawing.Color.Transparent;
+            this.txb_SA.BorderRadius = 8;
+            this.txb_SA.BorderThickness = 0;
+            this.txb_SA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_SA.DefaultText = "";
+            this.txb_SA.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_SA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_SA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SA.DisabledState.Parent = this.txb_SA;
+            this.txb_SA.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SA.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_SA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SA.FocusedState.Parent = this.txb_SA;
+            this.txb_SA.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_SA.ForeColor = System.Drawing.Color.White;
+            this.txb_SA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SA.HoverState.Parent = this.txb_SA;
+            this.txb_SA.Location = new System.Drawing.Point(83, 122);
+            this.txb_SA.Margin = new System.Windows.Forms.Padding(8);
+            this.txb_SA.Name = "txb_SA";
+            this.txb_SA.PasswordChar = '\0';
+            this.txb_SA.PlaceholderText = "Address";
+            this.txb_SA.SelectedText = "";
+            this.txb_SA.ShadowDecoration.Parent = this.txb_SA;
+            this.txb_SA.Size = new System.Drawing.Size(190, 30);
+            this.txb_SA.TabIndex = 2;
+            this.txb_SA.Validating += new System.ComponentModel.CancelEventHandler(this.txb_SA_Validating);
+            // 
+            // txb_SN
+            // 
+            this.txb_SN.BackColor = System.Drawing.Color.Transparent;
+            this.txb_SN.BorderRadius = 8;
+            this.txb_SN.BorderThickness = 0;
+            this.txb_SN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_SN.DefaultText = "";
+            this.txb_SN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_SN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_SN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SN.DisabledState.Parent = this.txb_SN;
+            this.txb_SN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.txb_SN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SN.FocusedState.Parent = this.txb_SN;
+            this.txb_SN.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_SN.ForeColor = System.Drawing.Color.White;
+            this.txb_SN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SN.HoverState.Parent = this.txb_SN;
+            this.txb_SN.Location = new System.Drawing.Point(83, 69);
+            this.txb_SN.Margin = new System.Windows.Forms.Padding(6);
+            this.txb_SN.Name = "txb_SN";
+            this.txb_SN.PasswordChar = '\0';
+            this.txb_SN.PlaceholderText = "Name";
+            this.txb_SN.SelectedText = "";
+            this.txb_SN.ShadowDecoration.Parent = this.txb_SN;
+            this.txb_SN.Size = new System.Drawing.Size(190, 30);
+            this.txb_SN.TabIndex = 1;
+            this.txb_SN.Validating += new System.ComponentModel.CancelEventHandler(this.txb_SN_Validating);
+            // 
+            // dgv_Supplier_info
+            // 
+            this.dgv_Supplier_info.AllowUserToAddRows = false;
+            this.dgv_Supplier_info.AllowUserToDeleteRows = false;
+            this.dgv_Supplier_info.AllowUserToResizeColumns = false;
+            this.dgv_Supplier_info.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Supplier_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Supplier_info.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_Supplier_info.CausesValidation = false;
+            this.dgv_Supplier_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Supplier_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Supplier_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_Supplier_info.ColumnHeadersHeight = 27;
+            this.dgv_Supplier_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Supplier_info.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_Supplier_info.EnableHeadersVisualStyles = false;
+            this.dgv_Supplier_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier_info.Location = new System.Drawing.Point(0, 64);
+            this.dgv_Supplier_info.Name = "dgv_Supplier_info";
+            this.dgv_Supplier_info.ReadOnly = true;
+            this.dgv_Supplier_info.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Supplier_info.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_Supplier_info.RowHeadersVisible = false;
+            this.dgv_Supplier_info.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
+            this.dgv_Supplier_info.RowTemplate.Height = 24;
+            this.dgv_Supplier_info.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Supplier_info.Size = new System.Drawing.Size(1250, 576);
+            this.dgv_Supplier_info.TabIndex = 5;
+            this.dgv_Supplier_info.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier_info.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_Supplier_info.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_Supplier_info.ThemeStyle.HeaderStyle.Height = 27;
+            this.dgv_Supplier_info.ThemeStyle.ReadOnly = true;
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_Supplier_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Supplier_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Supplier_info_CellClick);
+            this.dgv_Supplier_info.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Supplier_info_CellContentClick);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Alpha_Pharma.Properties.Resources.search;
@@ -430,6 +436,10 @@
             this.txb_search.TextOffset = new System.Drawing.Point(0, -2);
             this.txb_search.TextChanged += new System.EventHandler(this.txb_search_TextChanged);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // SuppilerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -446,6 +456,7 @@
             this.gro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Supplier_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,5 +477,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txb_search;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

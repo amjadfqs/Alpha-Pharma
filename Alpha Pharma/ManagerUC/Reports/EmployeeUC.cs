@@ -64,7 +64,7 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
+        private void btn_update_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -102,8 +102,9 @@ namespace Alpha_Pharma.ManagerUC
             ClearControls();
         }
 
-        private void btn_Emp_delete_Click(object sender, EventArgs e)
+        private void btn_Emp_delete_Click_1(object sender, EventArgs e)
         {
+
             employee.Id = lb_Emp_id.Text;
             employee.FName = txb_Emp_FN.Text;
             var success = employee.DeleteEmployee(employee);
@@ -184,32 +185,11 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-        private void Control_Validating2(object sender, CancelEventArgs e)
-        {
-            //double i = 0;
-            //if (double.TryParse(txb_Emp_phone_no.Text, out i))
-            //{
-            //    errorProvider1.SetError(txb_Emp_salary, "");
-            //    e.Cancel = false;
-            //}
-            //else
-            //{
-            //    e.Cancel = true;
-            //    errorProvider1.SetError(txb_Emp_salary, "Its allowad number only");
-            //}
-
-            //if you want it to work delete the txb_Emp_phone_no_KeyPress or see anything else!....
-
-        }
-
-       
-
-        private void compo_Emp_DOB_MouseDown_1(object sender, MouseEventArgs e)
+        private void compo_Emp_DOB_MouseDown(object sender, MouseEventArgs e)
         {
             compo_Emp_DOB.CustomFormat = "MM/dd/yyyy";
         }
-
-
+        
         private void txb_search_TextChanged(object sender, EventArgs e)
         {
             DataView Dv = new DataView(Employee.GetEmployees());
@@ -217,41 +197,27 @@ namespace Alpha_Pharma.ManagerUC
             dgv_Employee_info.DataSource = Dv;
         }
 
-      
-
-        private void txb_Emp_FN_Validated(object sender, EventArgs e)
-        {
-            //if (string.IsNullOrEmpty(((Control)sender).Text))
-            //{
-
-            //    ((Control)sender).Focus();
-            //    errorProvider1.SetError((Control)sender, "This field is required!");
-            //}
-            //else
-            //{
-
-            //    errorProvider1.SetError((Control)sender, null);
-            //}
-        }
-
         private void txb_Emp_email_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(txb_Emp_email.Text.Trim()))
-            {
-                txb_Emp_FN.Focus();
-                errorProvider1.SetError(txb_Emp_email, "Please Enter Employee's email");
-            }
-            string error = null;
             try
             {
                 new MailAddress(txb_Emp_email.Text);
+                if (string.IsNullOrEmpty(txb_Emp_email.Text.Trim()))
+                {
+                    txb_Emp_FN.Focus();
+                   
+                }
+                else
+                {
+                    errorProvider1.Clear();
+                }
             }
             catch (Exception)
             {
-                error = "Please use a valid format email";
+                errorProvider1.SetError(txb_Emp_email, "Please Enter Employee's email");
                 e.Cancel = true;
-
             }
+        
         }
 
         private void txb_Emp_FN_Validating(object sender, CancelEventArgs e)
@@ -276,6 +242,21 @@ namespace Alpha_Pharma.ManagerUC
             {
                 txb_Emp_FN.Focus();
                 errorProvider1.SetError(txb_Emp_LN, "Please Enter The employee FName without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+        private void txb_Emp_phone_no_Validating(object sender, CancelEventArgs e)
+        {
+
+            if (txb_Emp_phone_no.Text.Count(Char.IsDigit) != 9)
+            {
+                errorProvider1.SetError(txb_Emp_phone_no, "The phone number should have 9 number only!");
+                txb_Emp_phone_no.Focus();
             }
             else
             {
