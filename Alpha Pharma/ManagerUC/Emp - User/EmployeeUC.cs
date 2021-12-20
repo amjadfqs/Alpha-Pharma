@@ -265,6 +265,9 @@ namespace Alpha_Pharma.ManagerUC
             }
         }
 
-       
+        private void EmployeeUC_Load(object sender, EventArgs e)
+        {
+            dgv_Employee_info.Columns[0].Width = 25;
+        }
     }
 }

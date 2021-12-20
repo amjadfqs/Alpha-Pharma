@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_Session_info = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Session_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Session_info)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +62,6 @@
             this.dgv_Session_info.ColumnHeadersHeight = 27;
             this.dgv_Session_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_Session_info.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Session_ID,
             this.ID});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -117,17 +115,6 @@
             this.dgv_Session_info.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Session_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Session_ID
-            // 
-            this.Session_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Session_ID.DataPropertyName = "SessionID";
-            this.Session_ID.Frozen = true;
-            this.Session_ID.HeaderText = "Ses_ID";
-            this.Session_ID.Name = "Session_ID";
-            this.Session_ID.ReadOnly = true;
-            this.Session_ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Session_ID.Width = 60;
-            // 
             // ID
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -146,6 +133,7 @@
             this.Controls.Add(this.dgv_Session_info);
             this.Name = "SessionUC";
             this.Size = new System.Drawing.Size(1250, 765);
+            this.Load += new System.EventHandler(this.SessionUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Session_info)).EndInit();
             this.ResumeLayout(false);
 
@@ -154,7 +142,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgv_Session_info;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Session_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
     }
 }
