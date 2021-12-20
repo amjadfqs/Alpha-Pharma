@@ -32,7 +32,7 @@ namespace Alpha_Pharma.ManagerUC
                     {
                         while (DR.Read())
                         {
-                            // type = DR["user_type"].ToString();
+                            //type = DR["user_type"].ToString();
                             mycollection.Add(DR.GetValue(0).ToString());
                         }
                     }
@@ -54,13 +54,21 @@ namespace Alpha_Pharma.ManagerUC
 
                         using (SqlDataReader DR = com.ExecuteReader())
                         {
-                            while (DR.Read())
+                            try
                             {
-                                txb_ID.Text = DR.GetValue(0).ToString();
-                                txb_Fname.Text = DR.GetValue(1).ToString();
-                                txb_Lname.Text = DR.GetValue(2).ToString();
-                                txb_posi.Text = DR.GetValue(3).ToString();
+                                while (DR.Read())
+                                {
+                                    txb_ID.Text = DR.GetValue(0).ToString();
+                                    txb_Fname.Text = DR.GetValue(1).ToString();
+                                    txb_Lname.Text = DR.GetValue(2).ToString();
+                                    txb_posi.Text = DR.GetValue(3).ToString();
+                                }
                             }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("Please Choose a number");
+                            }
+                            
                         }
                     }
                 }

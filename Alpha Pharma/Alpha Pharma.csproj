@@ -115,10 +115,10 @@
     <Compile Include="ManagerUC\ProductUC\DrugUC.Designer.cs">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUC\Emp - User\EmployeeUC.cs">
+    <Compile Include="ManagerUC\Reports\EmployeeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManagerUC\Emp - User\EmployeeUC.Designer.cs">
+    <Compile Include="ManagerUC\Reports\EmployeeUC.Designer.cs">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerUC\ProductUC\FormUC.cs">
@@ -216,7 +216,7 @@
     <EmbeddedResource Include="ManagerUC\ProductUC\DrugUC.resx">
       <DependentUpon>DrugUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerUC\Emp - User\EmployeeUC.resx">
+    <EmbeddedResource Include="ManagerUC\Reports\EmployeeUC.resx">
       <DependentUpon>EmployeeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\ProductUC\FormUC.resx">
@@ -291,6 +291,9 @@
       <DependentUpon>Pharmacy.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\onebit_34.ico" />
+    <Content Include="Resources\search %281%29.png" />
+    <Content Include="Resources\search.png" />
     <None Include="Resources\LOAD.png" />
     <Content Include="Resources\output-onlinegiftools.gif" />
     <None Include="Resources\report.png" />

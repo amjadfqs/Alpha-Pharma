@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Alpha_Pharma.Classes;
 
@@ -154,6 +156,55 @@ namespace Alpha_Pharma.ManagerUC
             {
                 btn_Delete.Enabled = false;
                 btn_Update.Enabled = false;
+            }
+        }
+
+        private void txb_search_TextChanged(object sender, EventArgs e)
+        {
+            DataView Dv = new DataView(Supplier.GetSuppliers());
+            Dv.RowFilter = "Name like '%" + txb_search.Text + "%'";
+            dgv_Supplier_info.DataSource = Dv;
+        }
+
+        private void txb_SN_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txb_SN.Text, "^[A-Za-z]{1,50}$"))
+            {
+                txb_SN.Focus();
+                errorProvider1.SetError(txb_SN, "Please Enter The Supplier Name without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+        private void txb_SA_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Regex.IsMatch(txb_SA.Text, "^[A-Za-z]{1,50}$"))
+            {
+                txb_SA.Focus();
+                errorProvider1.SetError(txb_SA, "Please Enter The Supplier Address without any numbers or 1@_=&*^%$#");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                e.Cancel = false;
+            }
+        }
+
+        private void dgv_Supplier_info_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String info;
+            if (e.ColumnIndex == 4)
+            {
+                info = dgv_Supplier_info.Rows[e.RowIndex].Cells["Description"].Value.ToString();
+                MessageBox.Show(info, "All Description", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+            else
+            {
+                MessageBox.Show("Error");
             }
         }
     }

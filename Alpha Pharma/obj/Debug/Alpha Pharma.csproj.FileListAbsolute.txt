@@ -65,8 +65,6 @@ C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\Pharmacy_
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.exe
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\Alpha Pharma.pdb
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\bin\Debug\Guna.UI2.dll
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Form1.resources
-C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.Manager.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.CustomerUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.ProductUC.DoseUC.resources
 C:\Users\asus tuf\Documents\GitHub\Alpha-Pharma\Alpha Pharma\obj\Debug\Alpha_Pharma.ManagerUC.ProductUC.DrugUC.resources

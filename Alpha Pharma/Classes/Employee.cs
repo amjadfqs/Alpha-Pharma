@@ -21,7 +21,7 @@ namespace Alpha_Pharma
 
         //select
         private const string SelectQuery =
-            "Select emp_id as Id, emp_fname as FName," +
+            "Select emp_id as ID, emp_fname as FNAME," +
             " emp_lname as LName, emp_salary as Salary, emp_phone as Phone," +
             "emp_email as Email, emp_sex as Gender," +
             " emp_position as Position, emp_dob as DOB," +
@@ -88,7 +88,7 @@ namespace Alpha_Pharma
                 con.Open();
                 using (SqlCommand com = new SqlCommand(UpdateQuery, con))
                 {
-                    com.Parameters.AddWithValue("@Id", employee.Id);
+                    com.Parameters.AddWithValue("@ID", employee.Id);
                     com.Parameters.AddWithValue("@FName", employee.FName);
                     com.Parameters.AddWithValue("@LName", employee.LName);
                     com.Parameters.AddWithValue("@Salary", employee.Salary);
@@ -111,7 +111,7 @@ namespace Alpha_Pharma
                 con.Open();
                 using (SqlCommand com = new SqlCommand(DeleteQuery, con))
                 {
-                    com.Parameters.AddWithValue("Id", employee.Id);
+                    com.Parameters.AddWithValue("ID", employee.Id);
                     rows = com.ExecuteNonQuery();
                 }
             }

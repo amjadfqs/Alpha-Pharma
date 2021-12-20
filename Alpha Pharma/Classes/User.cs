@@ -105,9 +105,9 @@ namespace Alpha_Pharma.Classes
             string uname = null;
 
             // string select = "select * from Users where user_name=" + "'" + name + "'" + "and user_pass=" + "'" + pass + "'" ;
-            string select = "select * from Users where user_name= @Name and user_pass= @Pass"  ;
+            string select = "select * from Users where user_name= @Name and user_pass= @Pass";
 
-            using (SqlConnection con = new SqlConnection(myconn)) 
+            using (SqlConnection con = new SqlConnection(myconn))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand(select, con))
