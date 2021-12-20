@@ -8,7 +8,7 @@ namespace Alpha_Pharma.ManagerUC.Reports
         public SessionUC()
         {
             InitializeComponent();
-            dgv_Session_info.DataSource = Employee.GetEmployees();
+            dgv_Session_info.DataSource = Session.GetSession();
         }
     }
 }

@@ -20,8 +20,8 @@ namespace Alpha_Pharma.Classes
         private const string SelectQuery = "Select ses_id as SessionID, E.emp_id as ID, E.emp_fname as Fname, E.emp_lname as Lname, Convert(VARCHAR, ses_start ,100) as SessionStart,Convert(VARCHAR, ses_end ,100) as SessionEnd,DateDiff(Hour,ses_start, ses_end) As Duration_in_Hour from Sessions AS U " +
                                            "Join Employees AS E on U.emp_id = E.emp_id";
         private const string InsertQuery = "Insert Into Sessions (ses_start, ses_end, emp_id) Values (@SessionStart, @SessionEnd, @ID)";
-        private const string UpdateQuery = "Update Sessions set ses_start = @SessionStart, ses_end = @SessionEnd where ses_id = @SessionID";
-        private const string DeletQuery = "Delete from Sessions where ses_id = @SessionID";
+        // private const string UpdateQuery = "Update Sessions set ses_start = @SessionStart, ses_end = @SessionEnd where ses_id = @SessionID";
+        // private const string DeletQuery = "Delete from Sessions where ses_id = @SessionID";
 
         public static DataTable GetSession()
         {
@@ -57,37 +57,6 @@ namespace Alpha_Pharma.Classes
 
             return (rows > 0) ? true : false;
         }
-        public bool UpdatSession(Session session)
-        {
-            int rows;
-            using (SqlConnection con = new SqlConnection(myconn))
-            {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(UpdateQuery, con))
-                {
-                    com.Parameters.AddWithValue("@SessionID", session.SessionID);
-                    //com.Parameters.AddWithValue("@ID", session.ID);
-                    com.Parameters.AddWithValue("@SessionStart", session.SessionStart);
-                    com.Parameters.AddWithValue("@SessionEnd", session.SessionEnd);
-                    rows = com.ExecuteNonQuery();
-                }
-            }
-            return (rows > 0) ? true : false;
-        }
-        public bool DeleteSession(Session session)
-        {
-            int rows;
-            using (SqlConnection con = new SqlConnection(myconn))
-            {
-                con.Open();
-                using (SqlCommand com = new SqlCommand(DeletQuery, con))
-                {
-                    com.Parameters.AddWithValue("@SessionID", session.SessionID);
-                    rows = com.ExecuteNonQuery();
-                }
-            }
-
-            return (rows > 0) ? true : false;
-        }
+       
     }
 }
