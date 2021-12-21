@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lb_DID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
@@ -40,11 +40,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.combo_DoseID = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.combo_FormID = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.combo_SecID = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txb_DrugN = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_drug_info = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.combo_DoseID = new System.Windows.Forms.ComboBox();
+            this.combo_FormID = new System.Windows.Forms.ComboBox();
+            this.combo_SecID = new System.Windows.Forms.ComboBox();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_drug_info)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,9 @@
             this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.BorderThickness = 0;
+            this.guna2GroupBox1.Controls.Add(this.combo_SecID);
+            this.guna2GroupBox1.Controls.Add(this.combo_FormID);
+            this.guna2GroupBox1.Controls.Add(this.combo_DoseID);
             this.guna2GroupBox1.Controls.Add(this.lb_DID);
             this.guna2GroupBox1.Controls.Add(this.btn_Update);
             this.guna2GroupBox1.Controls.Add(this.btn_Delete);
@@ -62,9 +65,6 @@
             this.guna2GroupBox1.Controls.Add(this.label3);
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.combo_DoseID);
-            this.guna2GroupBox1.Controls.Add(this.combo_FormID);
-            this.guna2GroupBox1.Controls.Add(this.combo_SecID);
             this.guna2GroupBox1.Controls.Add(this.txb_DrugN);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
             this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -204,119 +204,36 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(474, 118);
+            this.label3.Location = new System.Drawing.Point(659, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.Size = new System.Drawing.Size(61, 19);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Dose ID";
+            this.label3.Tag = " ";
+            this.label3.Text = "Dose :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(256, 118);
+            this.label2.Location = new System.Drawing.Point(454, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 17);
+            this.label2.Size = new System.Drawing.Size(59, 19);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Form ID";
+            this.label2.Text = "Form :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(34, 118);
+            this.label1.Location = new System.Drawing.Point(250, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Section ID";
-            // 
-            // combo_DoseID
-            // 
-            this.combo_DoseID.AutoRoundedCorners = true;
-            this.combo_DoseID.BackColor = System.Drawing.Color.Transparent;
-            this.combo_DoseID.BorderRadius = 17;
-            this.combo_DoseID.BorderThickness = 0;
-            this.combo_DoseID.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_DoseID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_DoseID.DropDownHeight = 115;
-            this.combo_DoseID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_DoseID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.combo_DoseID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo_DoseID.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_DoseID.FocusedState.Parent = this.combo_DoseID;
-            this.combo_DoseID.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combo_DoseID.ForeColor = System.Drawing.Color.White;
-            this.combo_DoseID.FormattingEnabled = true;
-            this.combo_DoseID.HoverState.Parent = this.combo_DoseID;
-            this.combo_DoseID.IntegralHeight = false;
-            this.combo_DoseID.ItemHeight = 30;
-            this.combo_DoseID.ItemsAppearance.Parent = this.combo_DoseID;
-            this.combo_DoseID.Location = new System.Drawing.Point(465, 138);
-            this.combo_DoseID.MaxDropDownItems = 4;
-            this.combo_DoseID.Name = "combo_DoseID";
-            this.combo_DoseID.ShadowDecoration.Parent = this.combo_DoseID;
-            this.combo_DoseID.Size = new System.Drawing.Size(190, 36);
-            this.combo_DoseID.TabIndex = 5;
-            // 
-            // combo_FormID
-            // 
-            this.combo_FormID.AutoRoundedCorners = true;
-            this.combo_FormID.BackColor = System.Drawing.Color.Transparent;
-            this.combo_FormID.BorderRadius = 17;
-            this.combo_FormID.BorderThickness = 0;
-            this.combo_FormID.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_FormID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_FormID.DropDownHeight = 115;
-            this.combo_FormID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_FormID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.combo_FormID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo_FormID.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_FormID.FocusedState.Parent = this.combo_FormID;
-            this.combo_FormID.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combo_FormID.ForeColor = System.Drawing.Color.White;
-            this.combo_FormID.FormattingEnabled = true;
-            this.combo_FormID.HoverState.Parent = this.combo_FormID;
-            this.combo_FormID.IntegralHeight = false;
-            this.combo_FormID.ItemHeight = 30;
-            this.combo_FormID.ItemsAppearance.Parent = this.combo_FormID;
-            this.combo_FormID.Location = new System.Drawing.Point(247, 138);
-            this.combo_FormID.MaxDropDownItems = 4;
-            this.combo_FormID.Name = "combo_FormID";
-            this.combo_FormID.ShadowDecoration.Parent = this.combo_FormID;
-            this.combo_FormID.Size = new System.Drawing.Size(190, 36);
-            this.combo_FormID.TabIndex = 5;
-            // 
-            // combo_SecID
-            // 
-            this.combo_SecID.AutoRoundedCorners = true;
-            this.combo_SecID.BackColor = System.Drawing.Color.Transparent;
-            this.combo_SecID.BorderRadius = 17;
-            this.combo_SecID.BorderThickness = 0;
-            this.combo_SecID.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_SecID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_SecID.DropDownHeight = 115;
-            this.combo_SecID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_SecID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
-            this.combo_SecID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.combo_SecID.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_SecID.FocusedState.Parent = this.combo_SecID;
-            this.combo_SecID.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combo_SecID.ForeColor = System.Drawing.Color.White;
-            this.combo_SecID.FormattingEnabled = true;
-            this.combo_SecID.HoverState.Parent = this.combo_SecID;
-            this.combo_SecID.IntegralHeight = false;
-            this.combo_SecID.ItemHeight = 30;
-            this.combo_SecID.ItemsAppearance.Parent = this.combo_SecID;
-            this.combo_SecID.Location = new System.Drawing.Point(28, 138);
-            this.combo_SecID.MaxDropDownItems = 4;
-            this.combo_SecID.Name = "combo_SecID";
-            this.combo_SecID.ShadowDecoration.Parent = this.combo_SecID;
-            this.combo_SecID.Size = new System.Drawing.Size(190, 36);
-            this.combo_SecID.TabIndex = 5;
+            this.label1.Text = "Section :";
             // 
             // txb_DrugN
             // 
@@ -353,31 +270,31 @@
             this.dgv_drug_info.AllowUserToDeleteRows = false;
             this.dgv_drug_info.AllowUserToResizeColumns = false;
             this.dgv_drug_info.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_drug_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgv_drug_info.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_drug_info.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_drug_info.BackgroundColor = System.Drawing.Color.White;
             this.dgv_drug_info.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_drug_info.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_drug_info.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_drug_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_drug_info.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_drug_info.ColumnHeadersHeight = 27;
             this.dgv_drug_info.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_drug_info.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_drug_info.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_drug_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_drug_info.EnableHeadersVisualStyles = false;
             this.dgv_drug_info.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -414,6 +331,48 @@
             this.dgv_drug_info.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_drug_info.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_drug_info_CellClick);
             // 
+            // combo_DoseID
+            // 
+            this.combo_DoseID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_DoseID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_DoseID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.combo_DoseID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_DoseID.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_DoseID.ForeColor = System.Drawing.SystemColors.Window;
+            this.combo_DoseID.Location = new System.Drawing.Point(663, 142);
+            this.combo_DoseID.Name = "combo_DoseID";
+            this.combo_DoseID.Size = new System.Drawing.Size(180, 26);
+            this.combo_DoseID.TabIndex = 10;
+            this.combo_DoseID.Text = "Select Dose";
+            // 
+            // combo_FormID
+            // 
+            this.combo_FormID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_FormID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_FormID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.combo_FormID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_FormID.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_FormID.ForeColor = System.Drawing.SystemColors.Window;
+            this.combo_FormID.Location = new System.Drawing.Point(457, 142);
+            this.combo_FormID.Name = "combo_FormID";
+            this.combo_FormID.Size = new System.Drawing.Size(180, 26);
+            this.combo_FormID.TabIndex = 11;
+            this.combo_FormID.Text = "Select Dose";
+            // 
+            // combo_SecID
+            // 
+            this.combo_SecID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.combo_SecID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_SecID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(167)))), ((int)(((byte)(214)))));
+            this.combo_SecID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_SecID.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_SecID.ForeColor = System.Drawing.SystemColors.Window;
+            this.combo_SecID.Location = new System.Drawing.Point(253, 142);
+            this.combo_SecID.Name = "combo_SecID";
+            this.combo_SecID.Size = new System.Drawing.Size(180, 26);
+            this.combo_SecID.TabIndex = 12;
+            this.combo_SecID.Text = "Select Dose";
+            // 
             // DrugUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -439,12 +398,12 @@
         private Guna.UI2.WinForms.Guna2Button btn_Add;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_FormID;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_SecID;
         private Guna.UI2.WinForms.Guna2TextBox txb_DrugN;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_DoseID;
         private Guna.UI2.WinForms.Guna2TextBox lb_DID;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_drug_info;
+        private System.Windows.Forms.ComboBox combo_DoseID;
+        private System.Windows.Forms.ComboBox combo_SecID;
+        private System.Windows.Forms.ComboBox combo_FormID;
     }
 }

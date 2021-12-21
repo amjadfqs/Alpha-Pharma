@@ -157,6 +157,12 @@
     <Compile Include="ManagerUC\Reports\SessionUC.Designer.cs">
       <DependentUpon>SessionUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUC\StoreSales\IncomeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerUC\StoreSales\IncomeUC.Designer.cs">
+      <DependentUpon>IncomeUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerUC\StoreSales\ReceiptUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     <EmbeddedResource Include="ManagerUC\Reports\SessionUC.resx">
       <DependentUpon>SessionUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUC\StoreSales\IncomeUC.resx">
+      <DependentUpon>IncomeUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerUC\StoreSales\ReceiptUC.resx">
       <DependentUpon>ReceiptUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,8 +303,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\debit-card.png" />
+    <None Include="Resources\next %281%29.png" />
     <Content Include="Resources\onebit_34.ico" />
     <Content Include="Resources\printer %281%29.png" />
+    <None Include="Resources\right-arrow %282%29.png" />
     <Content Include="Resources\search %281%29.png" />
     <Content Include="Resources\search.png" />
     <None Include="Resources\LOAD.png" />

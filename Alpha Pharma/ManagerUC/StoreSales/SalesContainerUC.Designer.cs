@@ -65,6 +65,7 @@
             this.btn_income.Size = new System.Drawing.Size(175, 36);
             this.btn_income.TabIndex = 2;
             this.btn_income.Text = "Income";
+            this.btn_income.Click += new System.EventHandler(this.btn_income_Click);
             // 
             // btn_store
             // 

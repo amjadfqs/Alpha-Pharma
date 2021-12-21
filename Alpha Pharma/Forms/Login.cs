@@ -56,6 +56,9 @@ namespace Alpha_Pharma.Forms
                     else
                     {
                         MessageBox.Show("Invalid Inforamtion !", "Try Again");
+                        txb_Pass.Clear();
+                        txb_UserName.Clear();
+                        txb_UserName.Focus();
                     }
                 }
                 else

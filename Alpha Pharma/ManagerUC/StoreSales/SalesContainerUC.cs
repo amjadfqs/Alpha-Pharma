@@ -38,5 +38,11 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
                 btn_store.Enabled = false;
             }
         }
+
+        private void btn_income_Click(object sender, EventArgs e)
+        {
+            IncomeUC uc = new IncomeUC();
+            openSalesControl(uc);
+        }
     }
 }
