@@ -40,6 +40,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             btn_add_lst.Enabled = false;
             btn_print.Enabled = false;
             btn_next.Enabled = false;
+            btn_confirm.Enabled = false;
         }
 
         private void combo_product_SelectedIndexChanged(object sender, EventArgs e)
@@ -117,6 +118,8 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             {
                 InsertIntoLisetView();
             }
+
+            btn_confirm.Enabled = true;
         }
 
         void InsertIntoLisetView()
