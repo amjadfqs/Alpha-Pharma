@@ -41,8 +41,6 @@
             this.txb_remain = new System.Windows.Forms.TextBox();
             this.txb_paid = new System.Windows.Forms.TextBox();
             this.txb_subTotal = new System.Windows.Forms.TextBox();
-            this.btn_delect_lst = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_add_lst = new Guna.UI2.WinForms.Guna2Button();
             this.lstv = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -65,12 +63,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.combo_product = new System.Windows.Forms.ComboBox();
-            this.btn_print = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_confirm = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_receipt_info = new Guna.UI2.WinForms.Guna2DataGridView();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.btn_next = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_delect_lst = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add_lst = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_print = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_confirm = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_receipt_info)).BeginInit();
             this.SuspendLayout();
@@ -230,53 +230,6 @@
             this.txb_subTotal.Size = new System.Drawing.Size(90, 30);
             this.txb_subTotal.TabIndex = 35;
             this.txb_subTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btn_delect_lst
-            // 
-            this.btn_delect_lst.AutoRoundedCorners = true;
-            this.btn_delect_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_delect_lst.BorderRadius = 16;
-            this.btn_delect_lst.BorderThickness = 1;
-            this.btn_delect_lst.CheckedState.Parent = this.btn_delect_lst;
-            this.btn_delect_lst.CustomImages.Parent = this.btn_delect_lst;
-            this.btn_delect_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.btn_delect_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delect_lst.ForeColor = System.Drawing.Color.White;
-            this.btn_delect_lst.HoverState.Parent = this.btn_delect_lst;
-            this.btn_delect_lst.Image = global::Alpha_Pharma.Properties.Resources.delete;
-            this.btn_delect_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_delect_lst.Location = new System.Drawing.Point(607, 64);
-            this.btn_delect_lst.Name = "btn_delect_lst";
-            this.btn_delect_lst.ShadowDecoration.Parent = this.btn_delect_lst;
-            this.btn_delect_lst.Size = new System.Drawing.Size(136, 34);
-            this.btn_delect_lst.TabIndex = 4;
-            this.btn_delect_lst.Text = "Remove";
-            this.btn_delect_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_delect_lst.Click += new System.EventHandler(this.btn_delect_lst_Click);
-            // 
-            // btn_add_lst
-            // 
-            this.btn_add_lst.AutoRoundedCorners = true;
-            this.btn_add_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_add_lst.BorderRadius = 16;
-            this.btn_add_lst.BorderThickness = 1;
-            this.btn_add_lst.CheckedState.Parent = this.btn_add_lst;
-            this.btn_add_lst.CustomImages.Parent = this.btn_add_lst;
-            this.btn_add_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_add_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_lst.ForeColor = System.Drawing.Color.White;
-            this.btn_add_lst.HoverState.Parent = this.btn_add_lst;
-            this.btn_add_lst.Image = global::Alpha_Pharma.Properties.Resources.add;
-            this.btn_add_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_add_lst.ImageOffset = new System.Drawing.Point(6, 0);
-            this.btn_add_lst.Location = new System.Drawing.Point(481, 63);
-            this.btn_add_lst.Name = "btn_add_lst";
-            this.btn_add_lst.ShadowDecoration.Parent = this.btn_add_lst;
-            this.btn_add_lst.Size = new System.Drawing.Size(120, 34);
-            this.btn_add_lst.TabIndex = 3;
-            this.btn_add_lst.Text = "Add";
-            this.btn_add_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add_lst.Click += new System.EventHandler(this.btn_add_lst_Click);
             // 
             // lstv
             // 
@@ -526,54 +479,6 @@
             this.combo_product.Text = "Select Product";
             this.combo_product.SelectedIndexChanged += new System.EventHandler(this.combo_product_SelectedIndexChanged);
             // 
-            // btn_print
-            // 
-            this.btn_print.AutoRoundedCorners = true;
-            this.btn_print.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_print.BorderRadius = 19;
-            this.btn_print.BorderThickness = 1;
-            this.btn_print.CheckedState.Parent = this.btn_print;
-            this.btn_print.CustomImages.Parent = this.btn_print;
-            this.btn_print.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_print.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_print.ForeColor = System.Drawing.Color.White;
-            this.btn_print.HoverState.Parent = this.btn_print;
-            this.btn_print.Image = global::Alpha_Pharma.Properties.Resources.printer__1_;
-            this.btn_print.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_print.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_print.Location = new System.Drawing.Point(1110, 195);
-            this.btn_print.Name = "btn_print";
-            this.btn_print.ShadowDecoration.Parent = this.btn_print;
-            this.btn_print.Size = new System.Drawing.Size(120, 40);
-            this.btn_print.TabIndex = 8;
-            this.btn_print.Text = "Print";
-            this.btn_print.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
-            // 
-            // btn_confirm
-            // 
-            this.btn_confirm.AutoRoundedCorners = true;
-            this.btn_confirm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
-            this.btn_confirm.BorderRadius = 19;
-            this.btn_confirm.BorderThickness = 1;
-            this.btn_confirm.CheckedState.Parent = this.btn_confirm;
-            this.btn_confirm.CustomImages.Parent = this.btn_confirm;
-            this.btn_confirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
-            this.btn_confirm.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_confirm.ForeColor = System.Drawing.Color.White;
-            this.btn_confirm.HoverState.Parent = this.btn_confirm;
-            this.btn_confirm.Image = global::Alpha_Pharma.Properties.Resources.debit_card;
-            this.btn_confirm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_confirm.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_confirm.Location = new System.Drawing.Point(1110, 149);
-            this.btn_confirm.Name = "btn_confirm";
-            this.btn_confirm.ShadowDecoration.Parent = this.btn_confirm;
-            this.btn_confirm.Size = new System.Drawing.Size(120, 40);
-            this.btn_confirm.TabIndex = 7;
-            this.btn_confirm.Text = "Confirm";
-            this.btn_confirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
-            // 
             // dgv_receipt_info
             // 
             this.dgv_receipt_info.AllowUserToAddRows = false;
@@ -659,7 +564,7 @@
             this.btn_next.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next.ForeColor = System.Drawing.Color.White;
             this.btn_next.HoverState.Parent = this.btn_next;
-            this.btn_next.Image = global::Alpha_Pharma.Properties.Resources.add;
+            this.btn_next.Image = global::Alpha_Pharma.Properties.Resources.next__1_;
             this.btn_next.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_next.ImageOffset = new System.Drawing.Point(6, 0);
             this.btn_next.Location = new System.Drawing.Point(1110, 241);
@@ -670,6 +575,101 @@
             this.btn_next.Text = "Next";
             this.btn_next.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            // 
+            // btn_delect_lst
+            // 
+            this.btn_delect_lst.AutoRoundedCorners = true;
+            this.btn_delect_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_delect_lst.BorderRadius = 16;
+            this.btn_delect_lst.BorderThickness = 1;
+            this.btn_delect_lst.CheckedState.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.CustomImages.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.btn_delect_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delect_lst.ForeColor = System.Drawing.Color.White;
+            this.btn_delect_lst.HoverState.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.Image = global::Alpha_Pharma.Properties.Resources.delete;
+            this.btn_delect_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_delect_lst.Location = new System.Drawing.Point(607, 64);
+            this.btn_delect_lst.Name = "btn_delect_lst";
+            this.btn_delect_lst.ShadowDecoration.Parent = this.btn_delect_lst;
+            this.btn_delect_lst.Size = new System.Drawing.Size(136, 34);
+            this.btn_delect_lst.TabIndex = 4;
+            this.btn_delect_lst.Text = "Remove";
+            this.btn_delect_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_delect_lst.Click += new System.EventHandler(this.btn_delect_lst_Click);
+            // 
+            // btn_add_lst
+            // 
+            this.btn_add_lst.AutoRoundedCorners = true;
+            this.btn_add_lst.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_add_lst.BorderRadius = 16;
+            this.btn_add_lst.BorderThickness = 1;
+            this.btn_add_lst.CheckedState.Parent = this.btn_add_lst;
+            this.btn_add_lst.CustomImages.Parent = this.btn_add_lst;
+            this.btn_add_lst.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_add_lst.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_lst.ForeColor = System.Drawing.Color.White;
+            this.btn_add_lst.HoverState.Parent = this.btn_add_lst;
+            this.btn_add_lst.Image = global::Alpha_Pharma.Properties.Resources.add;
+            this.btn_add_lst.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_add_lst.ImageOffset = new System.Drawing.Point(6, 0);
+            this.btn_add_lst.Location = new System.Drawing.Point(481, 63);
+            this.btn_add_lst.Name = "btn_add_lst";
+            this.btn_add_lst.ShadowDecoration.Parent = this.btn_add_lst;
+            this.btn_add_lst.Size = new System.Drawing.Size(120, 34);
+            this.btn_add_lst.TabIndex = 3;
+            this.btn_add_lst.Text = "Add";
+            this.btn_add_lst.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_add_lst.Click += new System.EventHandler(this.btn_add_lst_Click);
+            // 
+            // btn_print
+            // 
+            this.btn_print.AutoRoundedCorners = true;
+            this.btn_print.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_print.BorderRadius = 19;
+            this.btn_print.BorderThickness = 1;
+            this.btn_print.CheckedState.Parent = this.btn_print;
+            this.btn_print.CustomImages.Parent = this.btn_print;
+            this.btn_print.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_print.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.ForeColor = System.Drawing.Color.White;
+            this.btn_print.HoverState.Parent = this.btn_print;
+            this.btn_print.Image = global::Alpha_Pharma.Properties.Resources.printer__1_;
+            this.btn_print.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_print.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_print.Location = new System.Drawing.Point(1110, 195);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.ShadowDecoration.Parent = this.btn_print;
+            this.btn_print.Size = new System.Drawing.Size(120, 40);
+            this.btn_print.TabIndex = 8;
+            this.btn_print.Text = "Print";
+            this.btn_print.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
+            // 
+            // btn_confirm
+            // 
+            this.btn_confirm.AutoRoundedCorners = true;
+            this.btn_confirm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(129)))), ((int)(((byte)(167)))));
+            this.btn_confirm.BorderRadius = 19;
+            this.btn_confirm.BorderThickness = 1;
+            this.btn_confirm.CheckedState.Parent = this.btn_confirm;
+            this.btn_confirm.CustomImages.Parent = this.btn_confirm;
+            this.btn_confirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(205)))), ((int)(((byte)(144)))));
+            this.btn_confirm.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_confirm.ForeColor = System.Drawing.Color.White;
+            this.btn_confirm.HoverState.Parent = this.btn_confirm;
+            this.btn_confirm.Image = global::Alpha_Pharma.Properties.Resources.debit_card;
+            this.btn_confirm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_confirm.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_confirm.Location = new System.Drawing.Point(1110, 149);
+            this.btn_confirm.Name = "btn_confirm";
+            this.btn_confirm.ShadowDecoration.Parent = this.btn_confirm;
+            this.btn_confirm.Size = new System.Drawing.Size(120, 40);
+            this.btn_confirm.TabIndex = 7;
+            this.btn_confirm.Text = "Confirm";
+            this.btn_confirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
             // 
             // ReceiptUC
             // 

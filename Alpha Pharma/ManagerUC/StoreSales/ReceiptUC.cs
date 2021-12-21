@@ -39,6 +39,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
 
             btn_add_lst.Enabled = false;
             btn_print.Enabled = false;
+            btn_next.Enabled = false;
         }
 
         private void combo_product_SelectedIndexChanged(object sender, EventArgs e)
@@ -213,21 +214,19 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
                 receiptDetails.Pro_Price = item.SubItems[2].Text;
                 receiptDetails.Pro_Qty = item.SubItems[3].Text;
                 rows = receiptDetails.InsertReceiptDetail(receiptDetails);
-                rows++;
+                // rows++;
             }
 
             if (rows>0)
             {
-                MessageBox.Show(rows+ " " + "Receipt has been added successfully");
+                // MessageBox.Show(rows+ " " + "Receipt has been added successfully");
 
                 //Printing
 
                 printDialog1.Document = printDocument1;
-                DialogResult result = printDialog1.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    printDocument1.Print();
-                }
+                printDocument1.DocumentName = @"c:\document1.pdf";
+                printDocument1.Print();
+                btn_next.Enabled = true;
             }
             else
             {
@@ -236,7 +235,6 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             }
 
             lstv.Items.Clear();
-            dgv_receipt_info.DataSource = ReceiptDetails.GetReceiptDetail();
         }
 
         void ClearControls()
@@ -269,17 +267,18 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             float fontHeight = font.GetHeight();
             int startx = 150;
             int starty = 40;
-            int offset = 30;
+            int offset = 40;
             float leftmargin = e.MarginBounds.Left;
             float topmargin = e.MarginBounds.Top;
             graphics.DrawString("Alpha Pharma",new Font("Courier New",20),new SolidBrush(Color.Black),startx + 180,starty);
 
             string ID = "Receipt ID:" + lastReceiptID;
-            graphics.DrawString(ID, font, new SolidBrush(Color.Black), startx, starty + offset + 5);
+            graphics.DrawString(ID, font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
 
             string top = "Date:" + DateTime.Now.ToString().PadRight(5);
-            graphics.DrawString(top,font, new SolidBrush(Color.Black), startx, starty + offset + 30);
-            offset = offset + 60;
+            graphics.DrawString(top,font, new SolidBrush(Color.Black), startx, starty + offset);
+            offset = offset + 20;
 
             string emp = "Employee:" + User.User_Name;
             graphics.DrawString(emp, font, new SolidBrush(Color.Black), startx, starty + offset);
@@ -295,7 +294,7 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             offset = offset + 30;
             for (int i = 0; i < lstv.Items.Count; i++)
             {
-                graphics.DrawString(lstv.Items[i].SubItems[1].Text +"\t\t"+ lstv.Items[i].SubItems[2].Text + "\t   " + lstv.Items[i].SubItems[3].Text + "\t\t  " + lstv.Items[i].SubItems[4].Text+"\t",
+                graphics.DrawString(lstv.Items[i].SubItems[1].Text +"\t\t"+ lstv.Items[i].SubItems[2].Text + "\t   " + lstv.Items[i].SubItems[3].Text + "\t\t " + lstv.Items[i].SubItems[4].Text+"\t",
                     new Font("Courier New",12), new SolidBrush(Color.Black) , startx, starty + offset);
                 offset = offset + 20;
             }
@@ -330,16 +329,17 @@ namespace Alpha_Pharma.ManagerUC.StoreSales
             txb_available.Clear();
             txb_price.Clear();
             combo_product.Text = "";
-            txb_qty.Clear();
-            txb_totalPrice.Clear();
+            txb_qty.Text = "0";
+            txb_totalPrice.Text = "0";
             lstv.Items.Clear();
-            txb_TotalQty.Clear();
+            txb_TotalQty.Text = "0";
             txb_qty.Clear();
             combo_discount.Text = "0";
-            txb_grandTotal.Clear();
-            txb_subTotal.Clear();
+            txb_grandTotal.Text = "0";
+            txb_subTotal.Text = "0";
             txb_paid.Clear();
             txb_remain.Clear();
+            btn_confirm.Enabled = true;
         }
     }
 }

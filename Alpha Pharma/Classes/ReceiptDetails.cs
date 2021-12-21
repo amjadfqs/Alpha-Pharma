@@ -12,7 +12,11 @@ namespace Alpha_Pharma.Classes
         public string Pro_Price { get; set; }
         public string Pro_Qty { get; set; }
 
-        private const string SelectQuery = "Select * from Receipt_Detail";
+        private const string SelectQuery = "Select RD.rec_id as ReceID, R.emp_id EmpID, RD.pro_id as ProID, pro_price as UntiPrice, RD.pro_qty as QTY, (RD.pro_price*RD.pro_qty) As Total, rec_date as Date from Receipt_Detail as RD " +
+                                           "Join Receipt as R on RD.rec_id = R.rec_id " +
+                                           "join Products as P on RD.pro_id = P.pro_id " +
+                                           "group by RD.rec_id , R.emp_id,RD.pro_id ,pro_price , pro_qty,R.rec_date " +
+                                           "Order by R.rec_date";
 
         private const string InsertQuery =
             "Insert Into Receipt_Detail (rec_id, pro_id, pro_price, pro_qty) Values (@Rec_ID, @Pro_ID, @Pro_Price, @Pro_Qty)";
