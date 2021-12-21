@@ -176,15 +176,15 @@ namespace Alpha_Pharma.ManagerUC
 
         private void txb_SA_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (!Regex.IsMatch(txb_SA.Text, "^[A-Za-z]{1,50}$"))
+            if (string.IsNullOrEmpty(txb_SA.Text))
             {
                 txb_SA.Focus();
-                errorProvider1.SetError(txb_SA, "Please Enter The Supplier Address without any numbers or 1@_=&*^%$#");
+                errorProvider1.SetError(txb_SA, "please fill the text");
+
             }
             else
             {
                 errorProvider1.Clear();
-                e.Cancel = false;
             }
         }
 
