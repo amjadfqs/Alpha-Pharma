@@ -58,6 +58,7 @@ namespace Alpha_Pharma.ManagerUC
                             {
                                 while (DR.Read())
                                 {
+                                    
                                     txb_ID.Text = DR.GetValue(0).ToString();
                                     txb_Fname.Text = DR.GetValue(1).ToString();
                                     txb_Lname.Text = DR.GetValue(2).ToString();
